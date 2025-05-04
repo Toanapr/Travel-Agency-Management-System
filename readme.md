@@ -5,8 +5,6 @@
   - Triệu Tuấn Kiệt - MSSV: 23120137
   - Lê Nhật Minh Tâm - MSSV: 23120163
 
----
-
 ## Phân công công việc
 
 | Thành viên | Phụ trách chính                     | Nhiệm vụ cụ thể                                                                                                                                               | Mức độ hoàn thiện |
@@ -73,3 +71,28 @@ Dưới đây là thống kê đóng góp của các thành viên trong dự án
 ![GitHub Collaboration Insights](https://i.imgur.com/UYewAbU.png)
 
 [Imgur](https://imgur.com/UYewAbU)
+
+---
+
+## Hướng dẫn chạy chương trình
+
+1. **Biên dịch chương trình**:
+   - Chạy file `build.bat` trong thư mục `source` của dự án bằng cách nhấp đúp vào nó hoặc mở Command Prompt và thực thi:
+
+     ```
+     .\source\build.bat
+     ```
+
+   - File batch sẽ tự động biên dịch mã nguồn và tạo file thực thi trong thư mục `release`
+
+2. **Chạy chương trình**:
+   - Sau khi biên dịch thành công, vào thư mục `release` và chạy file `TravelAgencySystem.exe`
+   - Hoặc từ Command Prompt:
+
+     ```
+      .\release\TravelAgencySystem.exe
+     ```
+
+3. **Yêu cầu hệ thống**:
+   - Windows 10/11
+   - Đã cài đặt trình biên dịch C++ (g++ hoặc tương đương)
