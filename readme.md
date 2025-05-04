@@ -19,7 +19,7 @@
 
 ---
 
-## Thiết kế phần mềm và mô hình hướng đối tượng
+## I. Thiết kế phần mềm và mô hình hướng đối tượng
 
 ### 1. Viết lại theo hướng đối tượng
 
@@ -63,3 +63,13 @@
 #### Các phần có thể hoàn thiện
 
 - Cơ sở dữ liệu chưa thực sự hoàn chỉnh: mới chỉ dùng file CSV, chưa tích hợp với hệ thống cơ sở dữ liệu như SQLite, MySQL,...
+
+## II. GitHub
+
+### Thống kê đóng góp của các thành viên
+
+Dưới đây là thống kê đóng góp của các thành viên trong dự án, được lấy từ GitHub Insights:
+
+![GitHub Collaboration Insights](https://i.imgur.com/UYewAbU.png)
+
+[Imgur](https://imgur.com/UYewAbU)
