@@ -5,6 +5,8 @@
 #include <vector>
 #include <limits>
 #include <iostream>
+#include <memory>
+#include "OutputFormatter.h"
 
 /**
  * @class InputHandler
@@ -17,10 +19,24 @@
 class InputHandler
 {
 private:
+    std::shared_ptr<OutputFormatter> _outputFormatter; ///< Formatter for error messages and output
+    
     /**
      * @brief Clear the input stream after errors
      */
     void clearInputStream();
+
+public:
+    /**
+     * @brief Default constructor
+     */
+    InputHandler();
+    
+    /**
+     * @brief Constructor with OutputFormatter
+     * @param outputFormatter Shared pointer to the output formatter
+     */
+    InputHandler(std::shared_ptr<OutputFormatter> outputFormatter);
 
     /**
      * @brief Validate email format
@@ -42,12 +58,6 @@ private:
      * @return true if the date format is valid, false otherwise
      */
     bool validateDate(const std::string &date);
-
-public:
-    /**
-     * @brief Default constructor
-     */
-    InputHandler() = default;
 
     // Basic input methods
     /**
