@@ -9,6 +9,22 @@
 #include "../../business/models/Booking.h"
 
 /**
+ * @enum ConsoleColor
+ * @brief Enumeration of text colors for console output
+ */
+enum class ConsoleColor
+{
+    DEFAULT,
+    RED,     // Error messages
+    GREEN,   // Success messages
+    YELLOW,  // Warnings or important notices
+    BLUE,    // Informational messages
+    MAGENTA, // Special highlighted information
+    CYAN,    // Menu titles and headers
+    WHITE    // Regular text with emphasis
+};
+
+/**
  * @class OutputFormatter
  * @brief Handles the formatting and display of data to the console
  *
@@ -20,25 +36,15 @@ class OutputFormatter
 {
 private:
     /**
-     * @brief Draw a horizontal line on the console
-     * @param width Width of the line in characters
-     * @param symbol Character to use for drawing the line
+     * @brief Set console text color
+     * @param color Color to set
      */
-    void drawLine(int width = 80, char symbol = '-') const;
+    void setColor(ConsoleColor color) const;
 
     /**
-     * @brief Draw a header with title on the console
-     * @param title Text to display in the header
-     * @param width Width of the header in characters
+     * @brief Reset console text color to default
      */
-    void drawHeader(const std::string &title, int width = 80) const;
-
-    /**
-     * @brief Center text on the console
-     * @param text Text to center
-     * @param width Total width available for centering
-     */
-    void center(const std::string &text, int width = 80) const;
+    void resetColor() const;
 
 public:
     /**
@@ -46,12 +52,65 @@ public:
      */
     OutputFormatter() = default;
 
+    // Drawing methods
+    /**
+     * @brief Draw a horizontal line on the console (simple version)
+     * @param width Width of the line in characters
+     * @param symbol Character to use for drawing the line
+     */
+    void drawLine(int width = 80, char symbol = '-') const;
+
+    /**
+     * @brief Draw a horizontal line on the console with color
+     * @param width Width of the line in characters
+     * @param symbol Character to use for drawing the line
+     * @param color Color to use for the line
+     */
+    void drawLine(int width, char symbol, ConsoleColor color) const;
+
+    /**
+     * @brief Draw a header with title on the console (simple version)
+     * @param title Text to display in the header
+     * @param width Width of the header in characters
+     */
+    void drawHeader(const std::string &title, int width = 80) const;
+
+    /**
+     * @brief Draw a header with title on the console with color
+     * @param title Text to display in the header
+     * @param width Width of the header in characters
+     * @param color Color to use for the header
+     */
+    void drawHeader(const std::string &title, int width, ConsoleColor color) const;
+
+    /**
+     * @brief Center text on the console (simple version)
+     * @param text Text to center
+     * @param width Total width available for centering
+     */
+    void center(const std::string &text, int width = 80) const;
+
+    /**
+     * @brief Center text on the console with color
+     * @param text Text to center
+     * @param width Total width available for centering
+     * @param color Color to use for the text
+     */
+    void center(const std::string &text, int width, ConsoleColor color) const;
+
     // Display message methods
     /**
-     * @brief Display a standard message to the console
+     * @brief Display a standard message to the console (simple version)
      * @param message Text message to display
      */
     void displayMessage(const std::string &message) const;
+
+    /**
+     * @brief Display a standard message to the console with color
+     * @param message Text message to display
+     * @param color Color to use for the message
+     */
+    void displayMessage(const std::string &message, ConsoleColor color) const;
 
     /**
      * @brief Display an error message to the console
@@ -64,6 +123,18 @@ public:
      * @param message Success message to display
      */
     void displaySuccessMessage(const std::string &message) const;
+
+    /**
+     * @brief Display a warning message to the console
+     * @param message Warning message to display
+     */
+    void displayWarningMessage(const std::string &message) const;
+
+    /**
+     * @brief Display an information message to the console
+     * @param message Information message to display
+     */
+    void displayInfoMessage(const std::string &message) const;
 
     // Display entity methods
     /**
