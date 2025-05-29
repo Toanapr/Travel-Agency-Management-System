@@ -44,15 +44,8 @@ bool BookingService::createBooking(int userId, int tripId, const std::string &bo
     // Calculate total cost
     double totalCost = calculateTotalCost(tripId, numberOfPeople);
 
-    // Create booking
-    int nextId = 1;
-    auto allBookings = _bookingRepository->getAll();
-    if (!allBookings.empty())
-    {
-        nextId = allBookings.back().getId() + 1;
-    }
-
-    Booking booking(nextId, userId, tripId, bookingDate, numberOfPeople, totalCost, "Confirmed");
+    // Create booking with ID=0, the repository will assign a proper ID
+    Booking booking(0, userId, tripId, bookingDate, numberOfPeople, totalCost, "Confirmed");
 
     // Add booking to repository
     bool success = _bookingRepository->add(booking);

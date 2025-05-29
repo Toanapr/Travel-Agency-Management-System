@@ -1,8 +1,10 @@
 #include "TripService.h"
+#include "BookingService.h"
 #include <algorithm>
+#include <iterator>
 
-TripService::TripService(std::shared_ptr<ITripRepository> tripRepository)
-    : _tripRepository(tripRepository)
+TripService::TripService(std::shared_ptr<ITripRepository> tripRepository, std::shared_ptr<BookingService> bookingService)
+    : _tripRepository(tripRepository), _bookingService(bookingService)
 {
 }
 
@@ -33,7 +35,24 @@ bool TripService::updateTrip(const Trip &trip)
 
 bool TripService::deleteTrip(int id)
 {
+    // Check if there are any bookings for this trip
+    if (_bookingService && hasTripBookings(id))
+    {
+        // Can't delete a trip that has bookings
+        return false;
+    }
     return _tripRepository->remove(id);
+}
+
+bool TripService::hasTripBookings(int tripId)
+{
+    if (!_bookingService)
+    {
+        return false;
+    }
+    
+    auto bookings = _bookingService->findBookingsByTripId(tripId);
+    return !bookings.empty();
 }
 
 std::vector<Trip> TripService::searchTripsByCriteria(const std::string &destination,

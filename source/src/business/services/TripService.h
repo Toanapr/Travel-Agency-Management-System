@@ -8,6 +8,9 @@
 #include "../interfaces/ITripRepository.h"
 #include "../models/Trip.h"
 
+// Forward declaration to avoid circular dependency
+class BookingService;
+
 /**
  * @class TripService
  * @brief Service class for trip-related business logic
@@ -20,13 +23,16 @@ class TripService
 {
 private:
     std::shared_ptr<ITripRepository> _tripRepository; ///< Repository for trip data access
+    std::shared_ptr<BookingService> _bookingService;  ///< Service for booking operations
 
 public:
     /**
      * @brief Constructor for TripService
      * @param tripRepository Repository implementation for trip data access
+     * @param bookingService Service for booking operations
      */
-    TripService(std::shared_ptr<ITripRepository> tripRepository);
+    TripService(std::shared_ptr<ITripRepository> tripRepository, 
+               std::shared_ptr<BookingService> bookingService = nullptr);
 
     // Trip management methods
     /**
@@ -61,14 +67,20 @@ public:
      * @param trip The trip object with updated information
      * @return true if successfully updated, false otherwise
      */
-    bool updateTrip(const Trip &trip);
-
-    /**
+    bool updateTrip(const Trip &trip);    /**
      * @brief Delete a trip from the system
      * @param id The unique identifier of the trip to delete
      * @return true if successfully deleted, false otherwise
+     *         Returns false if the trip is referenced in any bookings
      */
     bool deleteTrip(int id);
+    
+    /**
+     * @brief Check if a trip has any associated bookings
+     * @param tripId The unique identifier of the trip
+     * @return true if bookings exist for this trip, false otherwise
+     */
+    bool hasTripBookings(int tripId);
 
     // Additional business logic
     /**

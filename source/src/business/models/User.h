@@ -60,9 +60,13 @@ public:
      * @brief Get the user's email
      * @return The email address
      */
-    std::string getEmail() const;
+    std::string getEmail() const; // Setters
+    /**
+     * @brief Set the user's ID
+     * @param id The new ID for the user
+     */
+    void setId(int id);
 
-    // Setters
     /**
      * @brief Set the user's name
      * @param name The new name for the user
@@ -86,6 +90,13 @@ public:
      * @param email The new email for the user
      */
     void setEmail(const std::string &email);
+
+    /**
+     * @brief Equality operator for comparing User objects
+     * @param other The other User object to compare with
+     * @return true if all fields are equal, false otherwise
+     */
+    bool operator==(const User &other) const;
 };
 
 #endif // USER_H
