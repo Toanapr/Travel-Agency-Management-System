@@ -1,0 +1,7 @@
+<map id="DatabaseConnection::getInstance" name="DatabaseConnection::getInstance">
+<area shape="rect" id="Node000001" title="Get the singleton instance of DatabaseConnection." alt="" coords="438,5,581,48"/>
+<area shape="rect" id="Node000002" href="$class_application.html#ae087205b30ec536f5785b3d68c44f3ba" title="Initialize database connection." alt="" coords="194,13,390,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,29,390,29,390,24,423,24"/>
+<area shape="rect" id="Node000003" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,13,146,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,29,146,29,146,24,178,24"/>
+</map>

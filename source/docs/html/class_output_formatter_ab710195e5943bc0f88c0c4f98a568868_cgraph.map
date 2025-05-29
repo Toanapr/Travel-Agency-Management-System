@@ -1,0 +1,7 @@
+<map id="OutputFormatter::center" name="OutputFormatter::center">
+<area shape="rect" id="Node000001" title="Center text on the console with color." alt="" coords="5,31,166,57"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#a990575e816e049d1a4a188a04a2be83d" title="Reset console text color to default." alt="" coords="214,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,32,198,28,198,34,166,37"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#afa16c7275082edd5198940cd3cf5a140" title="Set console text color." alt="" coords="219,56,392,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,51,204,55,203,60,166,56"/>
+</map>

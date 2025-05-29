@@ -1,0 +1,20 @@
+<map id="User::getAddress" name="User::getAddress">
+<area shape="rect" id="Node000001" title="Get the user&#39;s address." alt="" coords="671,115,795,141"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a52c72247448def6d127af3cdf34c13ef" title="Convert a User object to CSV format." alt="" coords="431,48,622,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="668,113,603,94,605,89,670,107"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e" title="Display a user&#39;s details to the console." alt="" coords="430,115,623,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="656,131,624,131,624,125,656,125"/>
+<area shape="rect" id="Node000007" href="$class_user_menu.html#ae2fab27f19100767213c16f24f4aeec1" title="Edit an existing user." alt="" coords="458,165,596,192"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="661,148,585,167,583,162,660,143"/>
+<area shape="rect" id="Node000003" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="207,5,348,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,49,346,35,347,30,417,44"/>
+<area shape="rect" id="Node000004" href="$class_user_repository.html#a09c11ddad0f11c08521e241d15d838a5" title="Remove a user from storage." alt="" coords="196,56,360,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="416,72,360,72,360,67,416,67"/>
+<area shape="rect" id="Node000005" href="$class_user_repository.html#a5d7e55cecb098c1fb7cc86c2d266de46" title="Update an existing user in storage." alt="" coords="198,107,358,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="417,94,347,109,346,103,415,89"/>
+<area shape="rect" id="Node000008" href="$class_user_menu.html#adc6cd631547a11cef41150c02ce5a2c9" title="Process user&#39;s menu choice." alt="" coords="174,165,382,192"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="442,181,382,181,382,176,442,176"/>
+<area shape="rect" id="Node000009" href="$class_user_menu.html#a86506f9b70c23435801e4f9a0c44dd28" title="Display the user management menu and process selection." alt="" coords="5,165,126,192"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="158,190,126,190,126,184,158,185"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="141,167,173,167,174,172,141,173"/>
+</map>

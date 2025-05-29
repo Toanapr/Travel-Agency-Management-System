@@ -1,0 +1,13 @@
+<map id="DatabaseConnection::DatabaseConnection" name="DatabaseConnection::DatabaseConnection">
+<area shape="rect" id="Node000001" title="Private constructor for Singleton pattern." alt="" coords="637,72,789,115"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a76d5fcb71beacd3d7afc5f68e96e0924" title="Delete copy constructor to enforce Singleton pattern." alt="" coords="438,5,589,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="632,69,579,51,581,46,634,64"/>
+<area shape="rect" id="Node000003" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="442,72,585,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="622,96,586,96,586,91,622,91"/>
+<area shape="rect" id="Node000006" href="$class_database_connection.html#a33f0014906a4c6efaaf52e5a522b81d9" title="Delete assignment operator to enforce Singleton pattern." alt="" coords="442,139,585,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="634,123,581,141,579,135,632,118"/>
+<area shape="rect" id="Node000004" href="$class_application.html#ae087205b30ec536f5785b3d68c44f3ba" title="Initialize database connection." alt="" coords="194,80,390,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="426,96,390,96,390,91,426,91"/>
+<area shape="rect" id="Node000005" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,80,146,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,96,146,96,146,91,178,91"/>
+</map>

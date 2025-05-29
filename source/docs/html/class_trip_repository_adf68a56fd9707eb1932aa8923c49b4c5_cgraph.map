@@ -1,0 +1,21 @@
+<map id="TripRepository::remove" name="TripRepository::remove">
+<area shape="rect" id="Node000001" title="Remove a trip from storage." alt="" coords="5,237,163,264"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7ea328edbca928f10e45e44725ae0e77" title="Convert a Trip object to CSV format." alt="" coords="211,149,390,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,234,225,195,227,200,123,239"/>
+<area shape="rect" id="Node000009" href="$class_trip_repository.html#ae25b1b5288a754371d1e8b58d0038f9b" title="Retrieve all trips from storage." alt="" coords="227,267,374,293"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="163,259,212,265,211,271,163,264"/>
+<area shape="rect" id="Node000003" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="444,5,600,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,147,367,95,401,66,437,42,448,36,450,41,439,46,404,71,371,99,321,151"/>
+<area shape="rect" id="Node000004" href="$class_trip.html#aae8a752399f67ae8285c95fc48787cf4" title="Get the trip cost." alt="" coords="474,56,571,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,147,382,119,437,92,458,84,460,89,439,97,385,124,337,151"/>
+<area shape="rect" id="Node000005" href="$class_trip.html#a1bffa42e3ad67ff372a4db983054e33b" title="Get the trip end date." alt="" coords="462,107,582,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,148,446,135,447,140,391,153"/>
+<area shape="rect" id="Node000006" href="$class_trip.html#a8252498c2f6bc3fa1ee5b5741bf11817" title="Get the trip ID." alt="" coords="482,157,562,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="390,168,467,168,467,173,390,173"/>
+<area shape="rect" id="Node000007" href="$class_trip.html#afcd1ecc0f4d443d7780c0e03df12e9cb" title="Get the trip name." alt="" coords="470,208,574,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="391,189,456,204,455,209,390,194"/>
+<area shape="rect" id="Node000008" href="$class_trip.html#a2e89ab3f6311199106c9aa904988f6cb" title="Get the trip start date." alt="" coords="460,259,585,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="337,190,385,218,439,244,456,251,454,256,437,249,382,222,335,195"/>
+<area shape="rect" id="Node000010" href="$class_trip_repository.html#a87b22ef05feeceed224d0a3f92ec1e7b" title="Convert a CSV line to a Trip object." alt="" coords="438,309,606,352"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="363,291,423,305,422,311,362,297"/>
+</map>

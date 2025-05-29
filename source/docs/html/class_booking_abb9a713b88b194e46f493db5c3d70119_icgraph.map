@@ -1,0 +1,7 @@
+<map id="Booking::setStatus" name="Booking::setStatus">
+<area shape="rect" id="Node000001" title="Set the booking status." alt="" coords="260,35,392,61"/>
+<area shape="rect" id="Node000002" href="$class_booking_service.html#a746c4d2ae89abc0c3a5718eb769eb658" title="Cancel an existing booking." alt="" coords="6,5,211,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,40,211,35,212,30,245,34"/>
+<area shape="rect" id="Node000003" href="$class_booking_service.html#a05b94fad01d56925490a62fec6703037" title="Update the status of an existing booking." alt="" coords="5,56,212,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,62,213,66,212,61,244,56"/>
+</map>

@@ -1,0 +1,52 @@
+\doxysection{Main\+Menu.\+h}
+\hypertarget{_main_menu_8h_source}{}\label{_main_menu_8h_source}\index{TravelAgency/source/src/presentation/menu/MainMenu.h@{TravelAgency/source/src/presentation/menu/MainMenu.h}}
+\mbox{\hyperlink{_main_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ MAIN\_MENU\_H}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ MAIN\_MENU\_H}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_handler_8h}{../console/InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_formatter_8h}{../console/OutputFormatter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_menu_8h}{UserMenu.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_menu_8h}{TripMenu.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_menu_8h}{BookingMenu.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00020}\mbox{\hyperlink{class_main_menu}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_menu_afe1a825995698042b508b9e3407db41e}{MainMenu}}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00022}00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00023}\mbox{\hyperlink{class_main_menu_a8f945841a7ab84e1a4d5e5f5f22d276f}{00023}}\ \ \ \ \ std::shared\_ptr<InputHandler>\ \mbox{\hyperlink{class_main_menu_a8f945841a7ab84e1a4d5e5f5f22d276f}{\_inputHandler}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00024}\mbox{\hyperlink{class_main_menu_a2fa1d49fa620c7db64b2fa733ad3e5c2}{00024}}\ \ \ \ \ std::shared\_ptr<OutputFormatter>\ \mbox{\hyperlink{class_main_menu_a2fa1d49fa620c7db64b2fa733ad3e5c2}{\_outputFormatter}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00025}\mbox{\hyperlink{class_main_menu_a34c3d2df260e5dfd9e07a426376d51ef}{00025}}\ \ \ \ \ std::shared\_ptr<UserMenu>\ \mbox{\hyperlink{class_main_menu_a34c3d2df260e5dfd9e07a426376d51ef}{\_userMenu}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00026}\mbox{\hyperlink{class_main_menu_a82926980ceeb64b27e6e761c3a29ba9a}{00026}}\ \ \ \ \ std::shared\_ptr<TripMenu>\ \mbox{\hyperlink{class_main_menu_a82926980ceeb64b27e6e761c3a29ba9a}{\_tripMenu}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00027}\mbox{\hyperlink{class_main_menu_a21ded977da4149a61a5e962a59889acc}{00027}}\ \ \ \ \ std::shared\_ptr<BookingMenu>\ \mbox{\hyperlink{class_main_menu_a21ded977da4149a61a5e962a59889acc}{\_bookingMenu}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00028}\mbox{\hyperlink{class_main_menu_a5370ee287470aa4c0fe7c2bbbab203c8}{00028}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_menu_a5370ee287470aa4c0fe7c2bbbab203c8}{\_running}};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ Menu\ options}}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00031}\mbox{\hyperlink{class_main_menu_a5f86ac7928f65478256fbe19d9be50f3}{00031}}\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_main_menu_a5f86ac7928f65478256fbe19d9be50f3}{\_menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}User\ Management"{}},}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Trip\ Management"{}},}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Booking\ Management"{}},}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Exit\ Application"{}}\};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_menu_a352af7dea2ba5ab3a6b6691222c339a3}{displayWelcomeMessage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00047}00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_menu_aea8511716df4f0d14ee77367a385a602}{processMenuChoice}}(\textcolor{keywordtype}{int}\ choice);}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00049}00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{class_main_menu_afe1a825995698042b508b9e3407db41e}{MainMenu}}(std::shared\_ptr<InputHandler>\ inputHandler,}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<OutputFormatter>\ outputFormatter,}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<UserMenu>\ userMenu,}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<TripMenu>\ tripMenu,}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<BookingMenu>\ bookingMenu);}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_menu_acaf88050b5924f0292a08e8e43465b65}{show}}();}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00073}00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_menu_a9f36fb3b373293658efafc6cdab41004}{run}}();}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00074}00074\ \};}
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_main_menu_8h_source_l00076}00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAIN\_MENU\_H}}
+
+\end{DoxyCode}

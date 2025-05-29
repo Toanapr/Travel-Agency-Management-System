@@ -1,0 +1,581 @@
+\doxysection{Booking\+Menu Class Reference}
+\hypertarget{class_booking_menu}{}\label{class_booking_menu}\index{BookingMenu@{BookingMenu}}
+
+
+Handles the booking management menu functionality.  
+
+
+
+
+{\ttfamily \#include $<$Booking\+Menu.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_booking_menu_a27afc15b73fbd6170619569742ee0c6e}{Booking\+Menu}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_input_handler}{Input\+Handler}} $>$ input\+Handler, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$ output\+Formatter, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ booking\+Service, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$ user\+Service, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$ trip\+Service, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_view}{Booking\+View}} $>$ booking\+View)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_booking_menu}{Booking\+Menu}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6}{show}} ()
+\begin{DoxyCompactList}\small\item\em Display the booking management menu and process selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa}{process\+Menu\+Choice}} (int choice)
+\begin{DoxyCompactList}\small\item\em Process booking\textquotesingle{}s menu choice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a4b1fecdaa03ee6fb820e10288c017b78}{view\+All\+Bookings}} () const
+\begin{DoxyCompactList}\small\item\em Display all bookings in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882}{find\+Booking}} () const
+\begin{DoxyCompactList}\small\item\em Display the find booking submenu with different search options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015}{find\+Booking\+By\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Find a booking by its ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a0dc734a9635d02b4aefe381de3827415}{find\+Bookings\+By\+User}} () const
+\begin{DoxyCompactList}\small\item\em Find all bookings made by a specific user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a3d273ea8c71b3c3bf6c7f05a1dbdf17d}{find\+Bookings\+By\+Trip}} () const
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific trip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a9afd7cd29eaffacb5675fb4a5417be8d}{create\+Booking}} ()
+\begin{DoxyCompactList}\small\item\em Create a new booking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a}{update\+Booking\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Update the status of an existing booking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31}{cancel\+Booking}} ()
+\begin{DoxyCompactList}\small\item\em Cancel an existing booking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_input_handler}{Input\+Handler}} $>$ \mbox{\hyperlink{class_booking_menu_ae1b16906906d623e3c489c93c9a2d4f7}{\+\_\+input\+Handler}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$ \mbox{\hyperlink{class_booking_menu_a38cd5cdb72b39b6a4af9d3464c52a442}{\+\_\+output\+Formatter}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ \mbox{\hyperlink{class_booking_menu_a0bcf58daaf2b71679f495adfee9ee6dd}{\+\_\+booking\+Service}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$ \mbox{\hyperlink{class_booking_menu_ae7ebe5e9a02300ce9c8ef777dba43a2f}{\+\_\+user\+Service}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$ \mbox{\hyperlink{class_booking_menu_abb7034fc0a05ab6a187eca505d191563}{\+\_\+trip\+Service}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_view}{Booking\+View}} $>$ \mbox{\hyperlink{class_booking_menu_acf1b1b2f21ff620ddb4b59695ea6a15f}{\+\_\+booking\+View}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_booking_menu_a8075839420a172b8dd94ee492ec60c82}{\+\_\+menu\+Options}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the booking management menu functionality. 
+
+This class manages the menu for booking operations including viewing all bookings, finding bookings, creating new bookings, updating and canceling bookings. 
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00021}{21}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_booking_menu_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_booking_menu_a27afc15b73fbd6170619569742ee0c6e}\index{BookingMenu@{BookingMenu}!BookingMenu@{BookingMenu}}
+\index{BookingMenu@{BookingMenu}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{BookingMenu()}{BookingMenu()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a27afc15b73fbd6170619569742ee0c6e} 
+Booking\+Menu\+::\+Booking\+Menu (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_input_handler}{Input\+Handler}} $>$}]{input\+Handler}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$}]{output\+Formatter}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$}]{booking\+Service}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$}]{user\+Service}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$}]{trip\+Service}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_view}{Booking\+View}} $>$}]{booking\+View}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_booking_menu}{Booking\+Menu}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Handler} & Shared pointer to \doxylink{class_input_handler}{Input\+Handler} for user input \\
+\hline
+{\em output\+Formatter} & Shared pointer to \doxylink{class_output_formatter}{Output\+Formatter} for display \\
+\hline
+{\em booking\+Service} & Shared pointer to \doxylink{class_booking_service}{Booking\+Service} for business logic \\
+\hline
+{\em user\+Service} & Shared pointer to \doxylink{class_user_service}{User\+Service} for user data \\
+\hline
+{\em trip\+Service} & Shared pointer to \doxylink{class_trip_service}{Trip\+Service} for trip data \\
+\hline
+{\em booking\+View} & Shared pointer to \doxylink{class_booking_view}{Booking\+View} for presentation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00029}{\+\_\+booking\+View}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, and \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_booking_menu_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31}\index{BookingMenu@{BookingMenu}!cancelBooking@{cancelBooking}}
+\index{cancelBooking@{cancelBooking}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{cancelBooking()}{cancelBooking()}}
+{\footnotesize\ttfamily \label{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31} 
+void Booking\+Menu\+::cancel\+Booking (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cancel an existing booking. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{398}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}, \mbox{\hyperlink{_booking_8cpp_source_l00042}{Booking\+::get\+Status()}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00017}{Booking\+::get\+User\+Id()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a9afd7cd29eaffacb5675fb4a5417be8d}\index{BookingMenu@{BookingMenu}!createBooking@{createBooking}}
+\index{createBooking@{createBooking}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{createBooking()}{createBooking()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a9afd7cd29eaffacb5675fb4a5417be8d} 
+void Booking\+Menu\+::create\+Booking (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a new booking. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{243}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, and \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a9afd7cd29eaffacb5675fb4a5417be8d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882}\index{BookingMenu@{BookingMenu}!findBooking@{findBooking}}
+\index{findBooking@{findBooking}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{findBooking()}{findBooking()}}
+{\footnotesize\ttfamily \label{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882} 
+void Booking\+Menu\+::find\+Booking (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Display the find booking submenu with different search options. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015}\index{BookingMenu@{BookingMenu}!findBookingById@{findBookingById}}
+\index{findBookingById@{findBookingById}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{findBookingById()}{findBookingById()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015} 
+void Booking\+Menu\+::find\+Booking\+By\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find a booking by its ID. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{121}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00029}{\+\_\+booking\+View}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00017}{Booking\+::get\+User\+Id()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a3d273ea8c71b3c3bf6c7f05a1dbdf17d}\index{BookingMenu@{BookingMenu}!findBookingsByTrip@{findBookingsByTrip}}
+\index{findBookingsByTrip@{findBookingsByTrip}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{findBookingsByTrip()}{findBookingsByTrip()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a3d273ea8c71b3c3bf6c7f05a1dbdf17d} 
+void Booking\+Menu\+::find\+Bookings\+By\+Trip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find all bookings for a specific trip. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{203}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00029}{\+\_\+booking\+View}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, and \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a3d273ea8c71b3c3bf6c7f05a1dbdf17d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a0dc734a9635d02b4aefe381de3827415}\index{BookingMenu@{BookingMenu}!findBookingsByUser@{findBookingsByUser}}
+\index{findBookingsByUser@{findBookingsByUser}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{findBookingsByUser()}{findBookingsByUser()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a0dc734a9635d02b4aefe381de3827415} 
+void Booking\+Menu\+::find\+Bookings\+By\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find all bookings made by a specific user. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{163}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00029}{\+\_\+booking\+View}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, and \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a0dc734a9635d02b4aefe381de3827415_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa}\index{BookingMenu@{BookingMenu}!processMenuChoice@{processMenuChoice}}
+\index{processMenuChoice@{processMenuChoice}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{processMenuChoice()}{processMenuChoice()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa} 
+void Booking\+Menu\+::process\+Menu\+Choice (\begin{DoxyParamCaption}\item[{int}]{choice}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Process booking\textquotesingle{}s menu choice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The option selected by the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{show()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{show()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6}\index{BookingMenu@{BookingMenu}!show@{show}}
+\index{show@{show}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6} 
+void Booking\+Menu\+::show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Display the booking management menu and process selection. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00030}{\+\_\+menu\+Options}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a}\index{BookingMenu@{BookingMenu}!updateBookingStatus@{updateBookingStatus}}
+\index{updateBookingStatus@{updateBookingStatus}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{updateBookingStatus()}{updateBookingStatus()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a} 
+void Booking\+Menu\+::update\+Booking\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the status of an existing booking. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{325}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00024}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}, \mbox{\hyperlink{_booking_8cpp_source_l00042}{Booking\+::get\+Status()}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00017}{Booking\+::get\+User\+Id()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_menu_a4b1fecdaa03ee6fb820e10288c017b78}\index{BookingMenu@{BookingMenu}!viewAllBookings@{viewAllBookings}}
+\index{viewAllBookings@{viewAllBookings}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{viewAllBookings()}{viewAllBookings()}}
+{\footnotesize\ttfamily \label{class_booking_menu_a4b1fecdaa03ee6fb820e10288c017b78} 
+void Booking\+Menu\+::view\+All\+Bookings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Display all bookings in the system. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_booking_menu_8cpp_source}{Booking\+Menu.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_menu_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_booking_menu_8h_source_l00029}{\+\_\+booking\+View}}, \mbox{\hyperlink{_booking_menu_8h_source_l00025}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_booking_menu_8h_source_l00028}{\+\_\+trip\+Service}}, and \mbox{\hyperlink{_booking_menu_8h_source_l00027}{\+\_\+user\+Service}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_menu_a4b1fecdaa03ee6fb820e10288c017b78_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_booking_menu_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_booking_menu_a0bcf58daaf2b71679f495adfee9ee6dd}\index{BookingMenu@{BookingMenu}!\_bookingService@{\_bookingService}}
+\index{\_bookingService@{\_bookingService}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_bookingService}{\_bookingService}}
+{\footnotesize\ttfamily \label{class_booking_menu_a0bcf58daaf2b71679f495adfee9ee6dd} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_service}{Booking\+Service}}$>$ Booking\+Menu\+::\+\_\+booking\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00026}{26}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+\Hypertarget{class_booking_menu_acf1b1b2f21ff620ddb4b59695ea6a15f}\index{BookingMenu@{BookingMenu}!\_bookingView@{\_bookingView}}
+\index{\_bookingView@{\_bookingView}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_bookingView}{\_bookingView}}
+{\footnotesize\ttfamily \label{class_booking_menu_acf1b1b2f21ff620ddb4b59695ea6a15f} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_view}{Booking\+View}}$>$ Booking\+Menu\+::\+\_\+booking\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00029}{29}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+\Hypertarget{class_booking_menu_ae1b16906906d623e3c489c93c9a2d4f7}\index{BookingMenu@{BookingMenu}!\_inputHandler@{\_inputHandler}}
+\index{\_inputHandler@{\_inputHandler}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_inputHandler}{\_inputHandler}}
+{\footnotesize\ttfamily \label{class_booking_menu_ae1b16906906d623e3c489c93c9a2d4f7} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_input_handler}{Input\+Handler}}$>$ Booking\+Menu\+::\+\_\+input\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00024}{24}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{show()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}.
+
+\Hypertarget{class_booking_menu_a8075839420a172b8dd94ee492ec60c82}\index{BookingMenu@{BookingMenu}!\_menuOptions@{\_menuOptions}}
+\index{\_menuOptions@{\_menuOptions}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_menuOptions}{\_menuOptions}}
+{\footnotesize\ttfamily \label{class_booking_menu_a8075839420a172b8dd94ee492ec60c82} 
+std\+::vector$<$std\+::string$>$ Booking\+Menu\+::\+\_\+menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}View\ All\ Bookings"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Find\ Booking"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Create\ New\ Booking"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Update\ Booking\ Status"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Cancel\ Booking"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Return\ to\ Main\ Menu"{}}\}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00030}{30}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{show()}}.
+
+\Hypertarget{class_booking_menu_a38cd5cdb72b39b6a4af9d3464c52a442}\index{BookingMenu@{BookingMenu}!\_outputFormatter@{\_outputFormatter}}
+\index{\_outputFormatter@{\_outputFormatter}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_outputFormatter}{\_outputFormatter}}
+{\footnotesize\ttfamily \label{class_booking_menu_a38cd5cdb72b39b6a4af9d3464c52a442} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_output_formatter}{Output\+Formatter}}$>$ Booking\+Menu\+::\+\_\+output\+Formatter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00025}{25}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00088}{find\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00031}{process\+Menu\+Choice()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00023}{show()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+\Hypertarget{class_booking_menu_abb7034fc0a05ab6a187eca505d191563}\index{BookingMenu@{BookingMenu}!\_tripService@{\_tripService}}
+\index{\_tripService@{\_tripService}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_tripService}{\_tripService}}
+{\footnotesize\ttfamily \label{class_booking_menu_abb7034fc0a05ab6a187eca505d191563} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_trip_service}{Trip\+Service}}$>$ Booking\+Menu\+::\+\_\+trip\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00028}{28}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+\Hypertarget{class_booking_menu_ae7ebe5e9a02300ce9c8ef777dba43a2f}\index{BookingMenu@{BookingMenu}!\_userService@{\_userService}}
+\index{\_userService@{\_userService}!BookingMenu@{BookingMenu}}
+\doxysubsubsection{\texorpdfstring{\_userService}{\_userService}}
+{\footnotesize\ttfamily \label{class_booking_menu_ae7ebe5e9a02300ce9c8ef777dba43a2f} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_user_service}{User\+Service}}$>$ Booking\+Menu\+::\+\_\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_booking_menu_8h_source_l00027}{27}} of file \mbox{\hyperlink{_booking_menu_8h_source}{Booking\+Menu.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_menu_8cpp_source_l00008}{Booking\+Menu()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00398}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00243}{create\+Booking()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00121}{find\+Booking\+By\+Id()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00203}{find\+Bookings\+By\+Trip()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00163}{find\+Bookings\+By\+User()}}, \mbox{\hyperlink{_booking_menu_8cpp_source_l00325}{update\+Booking\+Status()}}, and \mbox{\hyperlink{_booking_menu_8cpp_source_l00062}{view\+All\+Bookings()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/presentation/menu/\mbox{\hyperlink{_booking_menu_8h}{Booking\+Menu.\+h}}\item 
+Travel\+Agency/source/src/presentation/menu/\mbox{\hyperlink{_booking_menu_8cpp}{Booking\+Menu.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="TripRepository::getAll" name="TripRepository::getAll">
+<area shape="rect" id="Node000001" title="Retrieve all trips from storage." alt="" coords="5,13,153,40"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a87b22ef05feeceed224d0a3f92ec1e7b" title="Convert a CSV line to a Trip object." alt="" coords="201,5,369,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,24,185,24,185,29,153,29"/>
+</map>

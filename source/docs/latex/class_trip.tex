@@ -1,0 +1,682 @@
+\doxysection{Trip Class Reference}
+\hypertarget{class_trip}{}\label{class_trip}\index{Trip@{Trip}}
+
+
+Represents a travel trip offered by the agency.  
+
+
+
+
+{\ttfamily \#include $<$Trip.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trip_afeacd2fbffcb76e5931fce72a9b279e7}{Trip}} (int id, const std\+::string \&name, double cost, int available\+Seats, const std\+::string \&start\+Date, const std\+::string \&end\+Date)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new trip. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trip_a8252498c2f6bc3fa1ee5b5741bf11817}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the trip ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_afcd1ecc0f4d443d7780c0e03df12e9cb}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the trip name. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_trip_aae8a752399f67ae8285c95fc48787cf4}{get\+Cost}} () const
+\begin{DoxyCompactList}\small\item\em Get the trip cost. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trip_af15a099b0a9d1d63fee6191253896c27}{get\+Available\+Seats}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of available seats. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_a2e89ab3f6311199106c9aa904988f6cb}{get\+Start\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Get the trip start date. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_a1bffa42e3ad67ff372a4db983054e33b}{get\+End\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Get the trip end date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_afbfe09c30b018bd36b0eafba5d317327}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the trip ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_a858c7d5bd80bc698b0d3e5e7447c6764}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the trip name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_ad0309a14d064ee9b13277a19b89e7468}{set\+Cost}} (double cost)
+\begin{DoxyCompactList}\small\item\em Set the trip cost. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_a298ab4aaeb483479ff7570c71c042cd9}{set\+Available\+Seats}} (int available\+Seats)
+\begin{DoxyCompactList}\small\item\em Set the number of available seats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_a94eb75c5c0bbcb521d27d50988dbdd7c}{set\+Start\+Date}} (const std\+::string \&start\+Date)
+\begin{DoxyCompactList}\small\item\em Set the trip start date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_ae017594fe67c5c4381feaa8251889499}{set\+End\+Date}} (const std\+::string \&end\+Date)
+\begin{DoxyCompactList}\small\item\em Set the trip end date. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_ae6eb1426be713a4a71313219e2a8499f}{operator==}} (const \mbox{\hyperlink{class_trip}{Trip}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for comparing \doxylink{class_trip}{Trip} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_trip_aafa343b847318f1bbfafe3ec732f4faf}{\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em Unique identifier for the trip. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_a88959774aef0b7664cd4a633000f9e45}{\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Name or description of the trip. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_trip_a12459569fa8f327db51c162307e641fc}{\+\_\+cost}}
+\begin{DoxyCompactList}\small\item\em Cost per person for the trip. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trip_a85ec20870383517be5fdf37a14c999c2}{\+\_\+available\+Seats}}
+\begin{DoxyCompactList}\small\item\em Number of seats still available for booking. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_ad5d3bb611b6c4e494eb64f8456fa88ec}{\+\_\+start\+Date}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_trip}{Trip} start date in YYYY-\/\+MM-\/\+DD format. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trip_aaf63bedb5feedd4ea3edb3280bd7dda7}{\+\_\+end\+Date}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_trip}{Trip} end date in YYYY-\/\+MM-\/\+DD format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a travel trip offered by the agency. 
+
+The \doxylink{class_trip}{Trip} class stores information about travel trips available for booking, including details like cost, available seats, and travel dates. 
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00013}{13}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_trip_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_trip_afeacd2fbffcb76e5931fce72a9b279e7}\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{Trip()}{Trip()}}
+{\footnotesize\ttfamily \label{class_trip_afeacd2fbffcb76e5931fce72a9b279e7} 
+Trip\+::\+Trip (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{const std\+::string \&}]{name}{, }\item[{double}]{cost}{, }\item[{int}]{available\+Seats}{, }\item[{const std\+::string \&}]{start\+Date}{, }\item[{const std\+::string \&}]{end\+Date}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a new trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier for the trip \\
+\hline
+{\em name} & Name or description of the trip \\
+\hline
+{\em cost} & Cost per person \\
+\hline
+{\em available\+Seats} & Number of seats available for booking \\
+\hline
+{\em start\+Date} & \doxylink{class_trip}{Trip} start date in YYYY-\/\+MM-\/\+DD format \\
+\hline
+{\em end\+Date} & \doxylink{class_trip}{Trip} end date in YYYY-\/\+MM-\/\+DD format \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00019}{\+\_\+available\+Seats}}, \mbox{\hyperlink{_trip_8h_source_l00018}{\+\_\+cost}}, \mbox{\hyperlink{_trip_8h_source_l00021}{\+\_\+end\+Date}}, \mbox{\hyperlink{_trip_8h_source_l00016}{\+\_\+id}}, \mbox{\hyperlink{_trip_8h_source_l00017}{\+\_\+name}}, and \mbox{\hyperlink{_trip_8h_source_l00020}{\+\_\+start\+Date}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_trip_afeacd2fbffcb76e5931fce72a9b279e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_trip_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trip_af15a099b0a9d1d63fee6191253896c27}\index{Trip@{Trip}!getAvailableSeats@{getAvailableSeats}}
+\index{getAvailableSeats@{getAvailableSeats}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getAvailableSeats()}{getAvailableSeats()}}
+{\footnotesize\ttfamily \label{class_trip_af15a099b0a9d1d63fee6191253896c27} 
+int Trip\+::get\+Available\+Seats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the number of available seats. 
+
+\begin{DoxyReturn}{Returns}
+The number of seats still available for booking 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00019}{\+\_\+available\+Seats}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00086}{Booking\+Service\+::cancel\+Booking()}}, \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{Booking\+Service\+::create\+Booking()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00123}{Trip\+Service\+::update\+Available\+Seats()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_af15a099b0a9d1d63fee6191253896c27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_aae8a752399f67ae8285c95fc48787cf4}\index{Trip@{Trip}!getCost@{getCost}}
+\index{getCost@{getCost}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily \label{class_trip_aae8a752399f67ae8285c95fc48787cf4} 
+double Trip\+::get\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the trip cost. 
+
+\begin{DoxyReturn}{Returns}
+The cost per person 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00018}{\+\_\+cost}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00058}{Trip\+Service\+::search\+Trips\+By\+Criteria()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_aae8a752399f67ae8285c95fc48787cf4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a1bffa42e3ad67ff372a4db983054e33b}\index{Trip@{Trip}!getEndDate@{getEndDate}}
+\index{getEndDate@{getEndDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getEndDate()}{getEndDate()}}
+{\footnotesize\ttfamily \label{class_trip_a1bffa42e3ad67ff372a4db983054e33b} 
+std\+::string Trip\+::get\+End\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the trip end date. 
+
+\begin{DoxyReturn}{Returns}
+The end date in YYYY-\/\+MM-\/\+DD format 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00021}{\+\_\+end\+Date}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00058}{Trip\+Service\+::search\+Trips\+By\+Criteria()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a1bffa42e3ad67ff372a4db983054e33b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a8252498c2f6bc3fa1ee5b5741bf11817}\index{Trip@{Trip}!getId@{getId}}
+\index{getId@{getId}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_trip_a8252498c2f6bc3fa1ee5b5741bf11817} 
+int Trip\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the trip ID. 
+
+\begin{DoxyReturn}{Returns}
+The unique identifier for the trip 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00016}{\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00334}{Output\+Formatter\+::display\+Booking()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_repository_8cpp_source_l00039}{Trip\+Repository\+::get\+By\+Id()}}, and \mbox{\hyperlink{_trip_repository_8cpp_source_l00155}{Trip\+Repository\+::update()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a8252498c2f6bc3fa1ee5b5741bf11817_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_afcd1ecc0f4d443d7780c0e03df12e9cb}\index{Trip@{Trip}!getName@{getName}}
+\index{getName@{getName}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_trip_afcd1ecc0f4d443d7780c0e03df12e9cb} 
+std\+::string Trip\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the trip name. 
+
+\begin{DoxyReturn}{Returns}
+The name or description of the trip 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00017}{\+\_\+name}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00334}{Output\+Formatter\+::display\+Booking()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_repository_8cpp_source_l00080}{Trip\+Repository\+::find\+By\+Name()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_afcd1ecc0f4d443d7780c0e03df12e9cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a2e89ab3f6311199106c9aa904988f6cb}\index{Trip@{Trip}!getStartDate@{getStartDate}}
+\index{getStartDate@{getStartDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getStartDate()}{getStartDate()}}
+{\footnotesize\ttfamily \label{class_trip_a2e89ab3f6311199106c9aa904988f6cb} 
+std\+::string Trip\+::get\+Start\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the trip start date. 
+
+\begin{DoxyReturn}{Returns}
+The start date in YYYY-\/\+MM-\/\+DD format 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00020}{\+\_\+start\+Date}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00272}{Trip\+Repository\+::convert\+Trip\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00250}{Output\+Formatter\+::display\+Trip()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00058}{Trip\+Service\+::search\+Trips\+By\+Criteria()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a2e89ab3f6311199106c9aa904988f6cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_ae6eb1426be713a4a71313219e2a8499f}\index{Trip@{Trip}!operator==@{operator==}}
+\index{operator==@{operator==}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_trip_ae6eb1426be713a4a71313219e2a8499f} 
+bool Trip\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for comparing \doxylink{class_trip}{Trip} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_trip}{Trip} object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all fields are equal, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00019}{\+\_\+available\+Seats}}, \mbox{\hyperlink{_trip_8h_source_l00018}{\+\_\+cost}}, \mbox{\hyperlink{_trip_8h_source_l00021}{\+\_\+end\+Date}}, \mbox{\hyperlink{_trip_8h_source_l00016}{\+\_\+id}}, \mbox{\hyperlink{_trip_8h_source_l00017}{\+\_\+name}}, \mbox{\hyperlink{_trip_8h_source_l00020}{\+\_\+start\+Date}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_trip_ae6eb1426be713a4a71313219e2a8499f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a298ab4aaeb483479ff7570c71c042cd9}\index{Trip@{Trip}!setAvailableSeats@{setAvailableSeats}}
+\index{setAvailableSeats@{setAvailableSeats}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setAvailableSeats()}{setAvailableSeats()}}
+{\footnotesize\ttfamily \label{class_trip_a298ab4aaeb483479ff7570c71c042cd9} 
+void Trip\+::set\+Available\+Seats (\begin{DoxyParamCaption}\item[{int}]{available\+Seats}{}\end{DoxyParamCaption})}
+
+
+
+Set the number of available seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+Seats} & The new number of available seats \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00019}{\+\_\+available\+Seats}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00086}{Booking\+Service\+::cancel\+Booking()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{Booking\+Service\+::create\+Booking()}}, \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00123}{Trip\+Service\+::update\+Available\+Seats()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a298ab4aaeb483479ff7570c71c042cd9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_ad0309a14d064ee9b13277a19b89e7468}\index{Trip@{Trip}!setCost@{setCost}}
+\index{setCost@{setCost}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setCost()}{setCost()}}
+{\footnotesize\ttfamily \label{class_trip_ad0309a14d064ee9b13277a19b89e7468} 
+void Trip\+::set\+Cost (\begin{DoxyParamCaption}\item[{double}]{cost}{}\end{DoxyParamCaption})}
+
+
+
+Set the trip cost. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & The new cost per person \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00018}{\+\_\+cost}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_ad0309a14d064ee9b13277a19b89e7468_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_ae017594fe67c5c4381feaa8251889499}\index{Trip@{Trip}!setEndDate@{setEndDate}}
+\index{setEndDate@{setEndDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setEndDate()}{setEndDate()}}
+{\footnotesize\ttfamily \label{class_trip_ae017594fe67c5c4381feaa8251889499} 
+void Trip\+::set\+End\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{end\+Date}{}\end{DoxyParamCaption})}
+
+
+
+Set the trip end date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Date} & The new end date in YYYY-\/\+MM-\/\+DD format \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00021}{\+\_\+end\+Date}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_ae017594fe67c5c4381feaa8251889499_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_afbfe09c30b018bd36b0eafba5d317327}\index{Trip@{Trip}!setId@{setId}}
+\index{setId@{setId}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_trip_afbfe09c30b018bd36b0eafba5d317327} 
+void Trip\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Set the trip ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The new ID for the trip \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00016}{\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_repository_8cpp_source_l00132}{Trip\+Repository\+::add()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_trip_afbfe09c30b018bd36b0eafba5d317327_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a858c7d5bd80bc698b0d3e5e7447c6764}\index{Trip@{Trip}!setName@{setName}}
+\index{setName@{setName}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_trip_a858c7d5bd80bc698b0d3e5e7447c6764} 
+void Trip\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Set the trip name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name or description for the trip \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00017}{\+\_\+name}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a858c7d5bd80bc698b0d3e5e7447c6764_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_a94eb75c5c0bbcb521d27d50988dbdd7c}\index{Trip@{Trip}!setStartDate@{setStartDate}}
+\index{setStartDate@{setStartDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{setStartDate()}{setStartDate()}}
+{\footnotesize\ttfamily \label{class_trip_a94eb75c5c0bbcb521d27d50988dbdd7c} 
+void Trip\+::set\+Start\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{start\+Date}{}\end{DoxyParamCaption})}
+
+
+
+Set the trip start date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & The new start date in YYYY-\/\+MM-\/\+DD format \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_trip_8cpp_source}{Trip.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_8h_source_l00020}{\+\_\+start\+Date}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_menu_8cpp_source_l00209}{Trip\+Menu\+::edit\+Trip()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_a94eb75c5c0bbcb521d27d50988dbdd7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_trip_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_trip_a85ec20870383517be5fdf37a14c999c2}\index{Trip@{Trip}!\_availableSeats@{\_availableSeats}}
+\index{\_availableSeats@{\_availableSeats}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_availableSeats}{\_availableSeats}}
+{\footnotesize\ttfamily \label{class_trip_a85ec20870383517be5fdf37a14c999c2} 
+int Trip\+::\+\_\+available\+Seats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of seats still available for booking. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00019}{19}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00027}{get\+Available\+Seats()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00057}{set\+Available\+Seats()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+\Hypertarget{class_trip_a12459569fa8f327db51c162307e641fc}\index{Trip@{Trip}!\_cost@{\_cost}}
+\index{\_cost@{\_cost}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_cost}{\_cost}}
+{\footnotesize\ttfamily \label{class_trip_a12459569fa8f327db51c162307e641fc} 
+double Trip\+::\+\_\+cost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cost per person for the trip. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00018}{18}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00022}{get\+Cost()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00052}{set\+Cost()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+\Hypertarget{class_trip_aaf63bedb5feedd4ea3edb3280bd7dda7}\index{Trip@{Trip}!\_endDate@{\_endDate}}
+\index{\_endDate@{\_endDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_endDate}{\_endDate}}
+{\footnotesize\ttfamily \label{class_trip_aaf63bedb5feedd4ea3edb3280bd7dda7} 
+std\+::string Trip\+::\+\_\+end\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{class_trip}{Trip} end date in YYYY-\/\+MM-\/\+DD format. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00021}{21}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00037}{get\+End\+Date()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00067}{set\+End\+Date()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+\Hypertarget{class_trip_aafa343b847318f1bbfafe3ec732f4faf}\index{Trip@{Trip}!\_id@{\_id}}
+\index{\_id@{\_id}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{class_trip_aafa343b847318f1bbfafe3ec732f4faf} 
+int Trip\+::\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Unique identifier for the trip. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00016}{16}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00012}{get\+Id()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00042}{set\+Id()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+\Hypertarget{class_trip_a88959774aef0b7664cd4a633000f9e45}\index{Trip@{Trip}!\_name@{\_name}}
+\index{\_name@{\_name}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily \label{class_trip_a88959774aef0b7664cd4a633000f9e45} 
+std\+::string Trip\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name or description of the trip. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00017}{17}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00017}{get\+Name()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00047}{set\+Name()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+\Hypertarget{class_trip_ad5d3bb611b6c4e494eb64f8456fa88ec}\index{Trip@{Trip}!\_startDate@{\_startDate}}
+\index{\_startDate@{\_startDate}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{\_startDate}{\_startDate}}
+{\footnotesize\ttfamily \label{class_trip_ad5d3bb611b6c4e494eb64f8456fa88ec} 
+std\+::string Trip\+::\+\_\+start\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{class_trip}{Trip} start date in YYYY-\/\+MM-\/\+DD format. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_8h_source_l00020}{20}} of file \mbox{\hyperlink{_trip_8h_source}{Trip.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_8cpp_source_l00032}{get\+Start\+Date()}}, \mbox{\hyperlink{_trip_8cpp_source_l00072}{operator==()}}, \mbox{\hyperlink{_trip_8cpp_source_l00062}{set\+Start\+Date()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00004}{Trip()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/business/models/\mbox{\hyperlink{_trip_8h}{Trip.\+h}}\item 
+Travel\+Agency/source/src/business/models/\mbox{\hyperlink{_trip_8cpp}{Trip.\+cpp}}\end{DoxyCompactItemize}

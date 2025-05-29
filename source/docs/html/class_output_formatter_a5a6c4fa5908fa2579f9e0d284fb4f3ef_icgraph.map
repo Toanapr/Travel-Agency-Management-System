@@ -1,0 +1,25 @@
+<map id="OutputFormatter::drawLine" name="OutputFormatter::drawLine">
+<area shape="rect" id="Node000001" title="Draw a horizontal line on the console (simple version)" alt="" coords="493,224,669,251"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="265,5,430,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,212,514,142,481,103,443,69,413,51,416,46,447,65,485,99,519,138,567,209"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#adacdf44c145f9c9d8ee7a63177630f77" title="Display multiple bookings&#39; details to the console." alt="" coords="21,65,187,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="555,214,507,171,476,150,444,133,379,112,311,98,245,91,187,88,187,83,246,85,312,93,380,106,446,128,479,146,510,167,559,210"/>
+<area shape="rect" id="Node000004" href="$class_output_formatter.html#a36f21c242078c1bc10a0d244e9da51f0" title="Display a menu with options to the console." alt="" coords="5,133,203,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="548,217,501,188,444,164,383,151,320,143,203,142,203,136,320,138,384,145,446,159,503,183,551,212"/>
+<area shape="rect" id="Node000005" href="$class_output_formatter.html#a270a6b986549a8d46184396f7345cef7" title="Display a trip&#39;s details to the console." alt="" coords="254,325,442,352"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="543,261,446,309,396,327,395,322,444,304,541,256"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#a4d9ddd2b1c770e10ca6d01e3e3223e7e" title="Display multiple trips&#39; details to the console." alt="" coords="21,187,187,229"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="477,234,187,216,187,210,478,228"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e" title="Display a user&#39;s details to the console." alt="" coords="251,376,444,403"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="562,264,513,316,481,343,446,366,419,378,417,373,444,362,478,339,509,312,558,261"/>
+<area shape="rect" id="Node000008" href="$class_output_formatter.html#ac9139d4c280ed4e9025475eb9aa15d33" title="Display multiple users&#39; details to the console." alt="" coords="21,257,187,300"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="478,249,187,274,187,269,477,244"/>
+<area shape="rect" id="Node000009" href="$class_output_formatter.html#ad153113fb4b28fb9398ad31685d72c9e" title="Draw a header with title on the console with color." alt="" coords="251,427,445,453"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="569,265,550,300,522,341,488,382,446,417,424,428,421,424,444,412,484,378,518,338,545,297,565,263"/>
+<area shape="rect" id="Node000010" href="$class_output_formatter.html#a1f045a1f1d05138b7bf817053902a2c7" title="Draw a header with title on the console (simple version)" alt="" coords="251,173,445,200"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="501,223,412,203,413,198,502,218"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="303,169,202,124,169,111,170,106,204,119,305,164"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="247,173,189,163,190,158,247,168"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="236,199,187,203,187,198,235,194"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="297,209,164,259,162,254,295,204"/>
+</map>

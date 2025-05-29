@@ -1,0 +1,32 @@
+\doxysection{IUser\+Repository.\+h}
+\hypertarget{_i_user_repository_8h_source}{}\label{_i_user_repository_8h_source}\index{TravelAgency/source/src/business/interfaces/IUserRepository.h@{TravelAgency/source/src/business/interfaces/IUserRepository.h}}
+\mbox{\hyperlink{_i_user_repository_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ IUSER\_REPOSITORY\_H}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ IUSER\_REPOSITORY\_H}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_8h}{../models/User.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00016}\mbox{\hyperlink{class_i_user_repository}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_user_repository}{IUserRepository}}}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00018}00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00022}\mbox{\hyperlink{class_i_user_repository_a70a8f49bc2d422efc8cad0a61affd0aa}{00022}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_i_user_repository_a70a8f49bc2d422efc8cad0a61affd0aa}{\string~IUserRepository}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00028}\mbox{\hyperlink{class_i_user_repository_a48ff91b4e5beaf115d133b5af5cf4f0a}{00028}}\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<User>\ \mbox{\hyperlink{class_i_user_repository_a48ff91b4e5beaf115d133b5af5cf4f0a}{getAll}}()\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00035}\mbox{\hyperlink{class_i_user_repository_a9b1738f999a6758d21391edc0618f658}{00035}}\ \ \ \ \ \textcolor{keyword}{virtual}\ std::optional<User>\ \mbox{\hyperlink{class_i_user_repository_a9b1738f999a6758d21391edc0618f658}{getById}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00042}\mbox{\hyperlink{class_i_user_repository_ac939415b873a61fe5388c52d1536c9d9}{00042}}\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<User>\ \mbox{\hyperlink{class_i_user_repository_ac939415b873a61fe5388c52d1536c9d9}{findByName}}(\textcolor{keyword}{const}\ std::string\ \&name)\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00049}\mbox{\hyperlink{class_i_user_repository_a5b50dc7a94ca7896f32f3177ce8b9856}{00049}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_user_repository_a5b50dc7a94ca7896f32f3177ce8b9856}{add}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_user}{User}}\ \&user)\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00056}\mbox{\hyperlink{class_i_user_repository_aee83d6ea73dabc2b9cf27431addc9a86}{00056}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_user_repository_aee83d6ea73dabc2b9cf27431addc9a86}{update}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_user}{User}}\ \&user)\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00063}\mbox{\hyperlink{class_i_user_repository_a11d97a38c4f3bc937c2a9aee551cfdfd}{00063}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_user_repository_a11d97a38c4f3bc937c2a9aee551cfdfd}{remove}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00064}00064\ \};}
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_i_user_repository_8h_source_l00066}00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IUSER\_REPOSITORY\_H}}
+
+\end{DoxyCode}

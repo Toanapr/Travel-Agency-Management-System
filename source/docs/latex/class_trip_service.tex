@@ -1,0 +1,432 @@
+\doxysection{Trip\+Service Class Reference}
+\hypertarget{class_trip_service}{}\label{class_trip_service}\index{TripService@{TripService}}
+
+
+Service class for trip-\/related business logic.  
+
+
+
+
+{\ttfamily \#include $<$Trip\+Service.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trip_service_a83a94bab58453e1c02bcab8020bdbd73}{Trip\+Service}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$ trip\+Repository, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ booking\+Service=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_trip_service}{Trip\+Service}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \mbox{\hyperlink{class_trip_service_ae72163cf28100df555f6b166ce458a3f}{get\+All\+Trips}} ()
+\begin{DoxyCompactList}\small\item\em Get all trips in the system. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \mbox{\hyperlink{class_trip_service_a2a8205bd5ef3b72593deeb9093b2350c}{get\+Trip\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Find a trip by its ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \mbox{\hyperlink{class_trip_service_aa4cf58a8cae1d26fa752b44fa3e30239}{find\+Trips\+By\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Search for trips by name (partial match) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_service_a6520a92b190fc508ffca5e27040ad14f}{add\+Trip}} (const \mbox{\hyperlink{class_trip}{Trip}} \&trip)
+\begin{DoxyCompactList}\small\item\em Add a new trip to the system. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_service_a76cc3dfafb6fcef2e04c3d46b798109a}{update\+Trip}} (const \mbox{\hyperlink{class_trip}{Trip}} \&trip)
+\begin{DoxyCompactList}\small\item\em Update an existing trip\textquotesingle{}s information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_service_abdae1154ed7ee45bf33f92309ffd2bd0}{delete\+Trip}} (int id)
+\begin{DoxyCompactList}\small\item\em Delete a trip from the system. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_service_afb683c3cd175c95153a4b9fbeae14561}{has\+Trip\+Bookings}} (int trip\+Id)
+\begin{DoxyCompactList}\small\item\em Check if a trip has any associated bookings. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \mbox{\hyperlink{class_trip_service_a48fba03bcfd658dff54e488fbf69e0c6}{search\+Trips\+By\+Criteria}} (const std\+::string \&destination, double max\+Price, const std\+::string \&start\+Date, const std\+::string \&end\+Date)
+\begin{DoxyCompactList}\small\item\em Search for trips based on multiple criteria. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_trip_service_aad87510582945224c353555d8fd83d92}{is\+Available}} (int trip\+Id, int requested\+Seats)
+\begin{DoxyCompactList}\small\item\em Check if a trip has enough available seats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_service_a4954762025610fb65520bc54c78b82fc}{update\+Available\+Seats}} (int trip\+Id, int booked\+Seats)
+\begin{DoxyCompactList}\small\item\em Update the number of available seats for a trip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$ \mbox{\hyperlink{class_trip_service_a7dd0de1094a7c973d672297f2af14903}{\+\_\+trip\+Repository}}
+\begin{DoxyCompactList}\small\item\em Repository for trip data access. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ \mbox{\hyperlink{class_trip_service_a7e138cc4db7724cb055c997802a733c5}{\+\_\+booking\+Service}}
+\begin{DoxyCompactList}\small\item\em Service for booking operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Service class for trip-\/related business logic. 
+
+This class handles all business logic related to trips, including trip management, searching, and availability checking. It acts as an intermediary between the presentation layer and the data access layer. 
+
+Definition at line \mbox{\hyperlink{_trip_service_8h_source_l00022}{22}} of file \mbox{\hyperlink{_trip_service_8h_source}{Trip\+Service.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_trip_service_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_trip_service_a83a94bab58453e1c02bcab8020bdbd73}\index{TripService@{TripService}!TripService@{TripService}}
+\index{TripService@{TripService}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{TripService()}{TripService()}}
+{\footnotesize\ttfamily \label{class_trip_service_a83a94bab58453e1c02bcab8020bdbd73} 
+Trip\+Service\+::\+Trip\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$}]{trip\+Repository}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$}]{booking\+Service}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_trip_service}{Trip\+Service}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Repository} & Repository implementation for trip data access \\
+\hline
+{\em booking\+Service} & Service for booking operations \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00026}{\+\_\+booking\+Service}}, and \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_trip_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trip_service_a6520a92b190fc508ffca5e27040ad14f}\index{TripService@{TripService}!addTrip@{addTrip}}
+\index{addTrip@{addTrip}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{addTrip()}{addTrip()}}
+{\footnotesize\ttfamily \label{class_trip_service_a6520a92b190fc508ffca5e27040ad14f} 
+bool Trip\+Service\+::add\+Trip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{trip}{}\end{DoxyParamCaption})}
+
+
+
+Add a new trip to the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip} & The trip object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfully added, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+\Hypertarget{class_trip_service_abdae1154ed7ee45bf33f92309ffd2bd0}\index{TripService@{TripService}!deleteTrip@{deleteTrip}}
+\index{deleteTrip@{deleteTrip}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{deleteTrip()}{deleteTrip()}}
+{\footnotesize\ttfamily \label{class_trip_service_abdae1154ed7ee45bf33f92309ffd2bd0} 
+bool Trip\+Service\+::delete\+Trip (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Delete a trip from the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the trip to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfully deleted, false otherwise Returns false if the trip is referenced in any bookings 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00026}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00047}{has\+Trip\+Bookings()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_service_abdae1154ed7ee45bf33f92309ffd2bd0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_service_aa4cf58a8cae1d26fa752b44fa3e30239}\index{TripService@{TripService}!findTripsByName@{findTripsByName}}
+\index{findTripsByName@{findTripsByName}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{findTripsByName()}{findTripsByName()}}
+{\footnotesize\ttfamily \label{class_trip_service_aa4cf58a8cae1d26fa752b44fa3e30239} 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ Trip\+Service\+::find\+Trips\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Search for trips by name (partial match) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name or partial name to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of trips whose names match the search criteria 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+\Hypertarget{class_trip_service_ae72163cf28100df555f6b166ce458a3f}\index{TripService@{TripService}!getAllTrips@{getAllTrips}}
+\index{getAllTrips@{getAllTrips}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{getAllTrips()}{getAllTrips()}}
+{\footnotesize\ttfamily \label{class_trip_service_ae72163cf28100df555f6b166ce458a3f} 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ Trip\+Service\+::get\+All\+Trips (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get all trips in the system. 
+
+\begin{DoxyReturn}{Returns}
+Vector of all \doxylink{class_trip}{Trip} objects 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+\Hypertarget{class_trip_service_a2a8205bd5ef3b72593deeb9093b2350c}\index{TripService@{TripService}!getTripById@{getTripById}}
+\index{getTripById@{getTripById}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{getTripById()}{getTripById()}}
+{\footnotesize\ttfamily \label{class_trip_service_a2a8205bd5ef3b72593deeb9093b2350c} 
+std\+::optional$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ Trip\+Service\+::get\+Trip\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Find a trip by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the trip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional containing the trip if found, empty otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+\Hypertarget{class_trip_service_afb683c3cd175c95153a4b9fbeae14561}\index{TripService@{TripService}!hasTripBookings@{hasTripBookings}}
+\index{hasTripBookings@{hasTripBookings}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{hasTripBookings()}{hasTripBookings()}}
+{\footnotesize\ttfamily \label{class_trip_service_afb683c3cd175c95153a4b9fbeae14561} 
+bool Trip\+Service\+::has\+Trip\+Bookings (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Check if a trip has any associated bookings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if bookings exist for this trip, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00026}{\+\_\+booking\+Service}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_service_8cpp_source_l00036}{delete\+Trip()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_service_afb683c3cd175c95153a4b9fbeae14561_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_service_aad87510582945224c353555d8fd83d92}\index{TripService@{TripService}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily \label{class_trip_service_aad87510582945224c353555d8fd83d92} 
+bool Trip\+Service\+::is\+Available (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{, }\item[{int}]{requested\+Seats}{}\end{DoxyParamCaption})}
+
+
+
+Check if a trip has enough available seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+{\em requested\+Seats} & Number of seats needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if enough seats are available, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+\Hypertarget{class_trip_service_a48fba03bcfd658dff54e488fbf69e0c6}\index{TripService@{TripService}!searchTripsByCriteria@{searchTripsByCriteria}}
+\index{searchTripsByCriteria@{searchTripsByCriteria}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{searchTripsByCriteria()}{searchTripsByCriteria()}}
+{\footnotesize\ttfamily \label{class_trip_service_a48fba03bcfd658dff54e488fbf69e0c6} 
+std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ Trip\+Service\+::search\+Trips\+By\+Criteria (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{destination}{, }\item[{double}]{max\+Price}{, }\item[{const std\+::string \&}]{start\+Date}{, }\item[{const std\+::string \&}]{end\+Date}{}\end{DoxyParamCaption})}
+
+
+
+Search for trips based on multiple criteria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & Destination name (partial match) \\
+\hline
+{\em max\+Price} & Maximum price per person \\
+\hline
+{\em start\+Date} & Earliest start date (YYYY-\/\+MM-\/\+DD format) \\
+\hline
+{\em end\+Date} & Latest end date (YYYY-\/\+MM-\/\+DD format) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of trips that match the search criteria 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}, \mbox{\hyperlink{_trip_8cpp_source_l00022}{Trip\+::get\+Cost()}}, \mbox{\hyperlink{_trip_8cpp_source_l00037}{Trip\+::get\+End\+Date()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00032}{Trip\+::get\+Start\+Date()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_trip_service_a48fba03bcfd658dff54e488fbf69e0c6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_service_a4954762025610fb65520bc54c78b82fc}\index{TripService@{TripService}!updateAvailableSeats@{updateAvailableSeats}}
+\index{updateAvailableSeats@{updateAvailableSeats}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{updateAvailableSeats()}{updateAvailableSeats()}}
+{\footnotesize\ttfamily \label{class_trip_service_a4954762025610fb65520bc54c78b82fc} 
+void Trip\+Service\+::update\+Available\+Seats (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{, }\item[{int}]{booked\+Seats}{}\end{DoxyParamCaption})}
+
+
+
+Update the number of available seats for a trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+{\em booked\+Seats} & Number of seats to be booked (reduces available seats) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00123}{123}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}, \mbox{\hyperlink{_trip_8cpp_source_l00027}{Trip\+::get\+Available\+Seats()}}, and \mbox{\hyperlink{_trip_8cpp_source_l00057}{Trip\+::set\+Available\+Seats()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trip_service_a4954762025610fb65520bc54c78b82fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trip_service_a76cc3dfafb6fcef2e04c3d46b798109a}\index{TripService@{TripService}!updateTrip@{updateTrip}}
+\index{updateTrip@{updateTrip}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{updateTrip()}{updateTrip()}}
+{\footnotesize\ttfamily \label{class_trip_service_a76cc3dfafb6fcef2e04c3d46b798109a} 
+bool Trip\+Service\+::update\+Trip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{trip}{}\end{DoxyParamCaption})}
+
+
+
+Update an existing trip\textquotesingle{}s information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip} & The trip object with updated information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfully updated, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_trip_service_8cpp_source}{Trip\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_service_8h_source_l00025}{\+\_\+trip\+Repository}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_trip_service_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_trip_service_a7e138cc4db7724cb055c997802a733c5}\index{TripService@{TripService}!\_bookingService@{\_bookingService}}
+\index{\_bookingService@{\_bookingService}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{\_bookingService}{\_bookingService}}
+{\footnotesize\ttfamily \label{class_trip_service_a7e138cc4db7724cb055c997802a733c5} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_service}{Booking\+Service}}$>$ Trip\+Service\+::\+\_\+booking\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Service for booking operations. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8h_source_l00026}{26}} of file \mbox{\hyperlink{_trip_service_8h_source}{Trip\+Service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_service_8cpp_source_l00036}{delete\+Trip()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00047}{has\+Trip\+Bookings()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00006}{Trip\+Service()}}.
+
+\Hypertarget{class_trip_service_a7dd0de1094a7c973d672297f2af14903}\index{TripService@{TripService}!\_tripRepository@{\_tripRepository}}
+\index{\_tripRepository@{\_tripRepository}!TripService@{TripService}}
+\doxysubsubsection{\texorpdfstring{\_tripRepository}{\_tripRepository}}
+{\footnotesize\ttfamily \label{class_trip_service_a7dd0de1094a7c973d672297f2af14903} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}}$>$ Trip\+Service\+::\+\_\+trip\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Repository for trip data access. 
+
+
+
+Definition at line \mbox{\hyperlink{_trip_service_8h_source_l00025}{25}} of file \mbox{\hyperlink{_trip_service_8h_source}{Trip\+Service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_service_8cpp_source_l00026}{add\+Trip()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00036}{delete\+Trip()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00021}{find\+Trips\+By\+Name()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00011}{get\+All\+Trips()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00016}{get\+Trip\+By\+Id()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00111}{is\+Available()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00058}{search\+Trips\+By\+Criteria()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00006}{Trip\+Service()}}, \mbox{\hyperlink{_trip_service_8cpp_source_l00123}{update\+Available\+Seats()}}, and \mbox{\hyperlink{_trip_service_8cpp_source_l00031}{update\+Trip()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/business/services/\mbox{\hyperlink{_trip_service_8h}{Trip\+Service.\+h}}\item 
+Travel\+Agency/source/src/business/services/\mbox{\hyperlink{_trip_service_8cpp}{Trip\+Service.\+cpp}}\end{DoxyCompactItemize}

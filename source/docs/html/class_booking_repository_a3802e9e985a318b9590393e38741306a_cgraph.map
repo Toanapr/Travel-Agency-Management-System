@@ -1,0 +1,7 @@
+<map id="BookingRepository::findByUserId" name="BookingRepository::findByUserId">
+<area shape="rect" id="Node000001" title="Find all bookings for a specific user." alt="" coords="5,27,145,69"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="203,5,336,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,35,187,28,188,34,146,40"/>
+<area shape="rect" id="Node000003" href="$class_booking_repository.html#aba4019c53b2a9ab99a7b68c427ab0276" title="Convert a CSV line to a Booking object." alt="" coords="193,56,347,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,56,178,61,177,66,145,61"/>
+</map>

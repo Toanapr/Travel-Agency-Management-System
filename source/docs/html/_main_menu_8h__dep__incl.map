@@ -1,0 +1,14 @@
+<map id="TravelAgency/source/src/presentation/menu/MainMenu.h" name="TravelAgency/source/src/presentation/menu/MainMenu.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,249,64"/>
+<area shape="rect" id="Node000002" href="$_main_menu_8cpp.html" title=" " alt="" coords="5,112,160,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,78,109,113,105,110,136,74"/>
+<area shape="rect" id="Node000003" href="$_menu_handler_8h.html" title=" " alt="" coords="184,112,338,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,74,239,110,235,113,204,78"/>
+<area shape="rect" id="Node000004" href="$_application_8cpp.html" title=" " alt="" coords="134,325,279,368"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="207,183,191,200,180,220,174,247,177,275,186,301,196,324,192,326,181,303,172,276,169,246,175,218,187,197,203,179"/>
+<area shape="rect" id="Node000005" href="$_application_8h.html" title=" " alt="" coords="189,227,333,269"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="264,186,264,227,258,227,258,186"/>
+<area shape="rect" id="Node000006" href="$_menu_handler_8cpp.html" title=" " alt="" coords="357,219,512,277"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="323,177,389,216,386,221,320,181"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="244,284,220,326,216,324,240,282"/>
+</map>

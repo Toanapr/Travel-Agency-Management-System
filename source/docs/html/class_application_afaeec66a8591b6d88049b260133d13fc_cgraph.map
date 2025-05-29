@@ -1,0 +1,5 @@
+<map id="Application::Application" name="Application::Application">
+<area shape="rect" id="Node000001" title="Delete copy constructor to enforce Singleton pattern." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000002" href="$class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8" title="Private constructor to enforce the Singleton pattern." alt="" coords="211,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
+</map>

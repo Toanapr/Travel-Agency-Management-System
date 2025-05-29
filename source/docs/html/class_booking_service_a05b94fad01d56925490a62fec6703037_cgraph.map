@@ -1,0 +1,5 @@
+<map id="BookingService::updateBookingStatus" name="BookingService::updateBookingStatus">
+<area shape="rect" id="Node000001" title="Update the status of an existing booking." alt="" coords="5,5,212,48"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#abb9a713b88b194e46f493db5c3d70119" title="Set the booking status." alt="" coords="260,13,392,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,24,244,24,244,29,212,29"/>
+</map>

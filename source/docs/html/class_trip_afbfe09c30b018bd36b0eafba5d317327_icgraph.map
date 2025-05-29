@@ -1,0 +1,5 @@
+<map id="Trip::setId" name="Trip::setId">
+<area shape="rect" id="Node000001" title="Set the trip ID." alt="" coords="189,5,269,32"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+</map>

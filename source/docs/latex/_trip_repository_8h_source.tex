@@ -1,0 +1,47 @@
+\doxysection{Trip\+Repository.\+h}
+\hypertarget{_trip_repository_8h_source}{}\label{_trip_repository_8h_source}\index{TravelAgency/source/src/data/repositories/TripRepository.h@{TravelAgency/source/src/data/repositories/TripRepository.h}}
+\mbox{\hyperlink{_trip_repository_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ TRIP\_REPOSITORY\_H}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ TRIP\_REPOSITORY\_H}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_trip_repository_8h}{../../business/interfaces/ITripRepository.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_8h}{../../business/models/Trip.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_database_connection_8h}{../database/DatabaseConnection.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00020}\mbox{\hyperlink{class_trip_repository}{00020}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_trip_repository_a11e3dc4117c24d8706f76506d2ef7cd4}{TripRepository}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_trip_repository}{ITripRepository}}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00022}00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00023}\mbox{\hyperlink{class_trip_repository_ac11d10f6c719a7076211203d29a253d1}{00023}}\ \ \ \ \ std::shared\_ptr<DatabaseConnection>\ \mbox{\hyperlink{class_trip_repository_ac11d10f6c719a7076211203d29a253d1}{\_dbConnection}};\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00024}\mbox{\hyperlink{class_trip_repository_ad83b069efee25e672b4b8de9067171cb}{00024}}\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_trip_repository_ad83b069efee25e672b4b8de9067171cb}{\_filename}}\ =\ \textcolor{stringliteral}{"{}trips.csv"{}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{class_trip}{Trip}}\ \mbox{\hyperlink{class_trip_repository_a87b22ef05feeceed224d0a3f92ec1e7b}{parseTripFromCsv}}(\textcolor{keyword}{const}\ std::string\ \&line);}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00038}00038\ \ \ \ \ std::string\ \mbox{\hyperlink{class_trip_repository_a7ea328edbca928f10e45e44725ae0e77}{convertTripToCsv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_trip}{Trip}}\ \&trip);}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_trip_repository_ac62a77faffca78eb55b8c97ad8ab8066}{getNextId}}();}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00046}00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{class_trip_repository_a11e3dc4117c24d8706f76506d2ef7cd4}{TripRepository}}(std::shared\_ptr<DatabaseConnection>\ dbConnection);}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ ITripRepository\ implementation}}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00058}00058\ \ \ \ \ std::vector<Trip>\ \mbox{\hyperlink{class_trip_repository_ae25b1b5288a754371d1e8b58d0038f9b}{getAll}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00065}00065\ \ \ \ \ std::optional<Trip>\ \mbox{\hyperlink{class_trip_repository_a745153592045914cc20595bd15947f40}{getById}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00072}00072\ \ \ \ \ std::vector<Trip>\ \mbox{\hyperlink{class_trip_repository_af581cf819a42e9bbd5901dc94269e816}{findByName}}(\textcolor{keyword}{const}\ std::string\ \&name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_trip_repository_a7a71e9df74fd202bdfa9991c746224e4}{add}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_trip}{Trip}}\ \&trip)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_trip_repository_aa3df897116b55f6ce8155c1d9a5a5e47}{update}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_trip}{Trip}}\ \&trip)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00093}00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_trip_repository_adf68a56fd9707eb1932aa8923c49b4c5}{remove}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00094}00094\ \};}
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_trip_repository_8h_source_l00096}00096\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TRIP\_REPOSITORY\_H}}
+
+\end{DoxyCode}

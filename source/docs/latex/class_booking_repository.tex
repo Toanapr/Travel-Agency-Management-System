@@ -1,0 +1,554 @@
+\doxysection{Booking\+Repository Class Reference}
+\hypertarget{class_booking_repository}{}\label{class_booking_repository}\index{BookingRepository@{BookingRepository}}
+
+
+Implementation of \doxylink{class_i_booking_repository}{IBooking\+Repository} for CSV file storage.  
+
+
+
+
+{\ttfamily \#include $<$Booking\+Repository.\+h$>$}
+
+
+
+Inheritance diagram for Booking\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_booking_repository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Booking\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_booking_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_booking_repository_a51b1dfb879a6f3ba5380b221c5828118}{Booking\+Repository}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ db\+Connection)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_booking_repository}{Booking\+Repository}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302}{get\+All}} () override
+\begin{DoxyCompactList}\small\item\em Retrieve all bookings from storage. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_repository_ab1f0c0c57e1daf569b9dd45ee6c8dd66}{get\+By\+Id}} (int id) override
+\begin{DoxyCompactList}\small\item\em Find a booking by its ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_repository_a3802e9e985a318b9590393e38741306a}{find\+By\+User\+Id}} (int user\+Id) override
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific user. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_repository_ae6282b0979ec73e21d51355c9c5e9d8a}{find\+By\+Trip\+Id}} (int trip\+Id) override
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific trip. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_repository_aa4bf49cdf6b533b1dede777cda76ea53}{add}} (const \mbox{\hyperlink{class_booking}{Booking}} \&booking) override
+\begin{DoxyCompactList}\small\item\em Add a new booking to storage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_repository_ae4a018cf7d476ded313b55d360a384b1}{update}} (const \mbox{\hyperlink{class_booking}{Booking}} \&booking) override
+\begin{DoxyCompactList}\small\item\em Update an existing booking in storage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_repository_a9c034f14250d48a6e2fcbe7cf1945b02}{remove}} (int id) override
+\begin{DoxyCompactList}\small\item\em Remove a booking from storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_booking_repository}{IBooking\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_booking_repository_ac58e3cc3eb2223802cee86cebe1836a4}{\texorpdfstring{$\sim$}{\string~}\+IBooking\+Repository}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_booking}{Booking}} \mbox{\hyperlink{class_booking_repository_aba4019c53b2a9ab99a7b68c427ab0276}{parse\+Booking\+From\+Csv}} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em Convert a CSV line to a \doxylink{class_booking}{Booking} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_booking_repository_a0fa53dbb9eac76bed63622e16254e240}{convert\+Booking\+To\+Csv}} (const \mbox{\hyperlink{class_booking}{Booking}} \&booking)
+\begin{DoxyCompactList}\small\item\em Convert a \doxylink{class_booking}{Booking} object to CSV format. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_booking_repository_ae8e9bdee1e59206f40ba67e71d88c93d}{get\+Next\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Generate the next available ID for a new booking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ \mbox{\hyperlink{class_booking_repository_a35ac8c1c45ae3907cacfcd6d3ae7c0cc}{\+\_\+db\+Connection}}
+\begin{DoxyCompactList}\small\item\em Database connection for file access. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{class_booking_repository_a5967fc3c12f232b1003eab81def4ded5}{\+\_\+filename}} = "{}bookings.\+csv"{}
+\begin{DoxyCompactList}\small\item\em Name of the CSV file for booking data storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \doxylink{class_i_booking_repository}{IBooking\+Repository} for CSV file storage. 
+
+This class provides an implementation of the \doxylink{class_i_booking_repository}{IBooking\+Repository} interface that uses CSV files for persistent storage of booking data. It handles all CRUD operations for \doxylink{class_booking}{Booking} objects, translating between object and CSV formats. 
+
+Definition at line \mbox{\hyperlink{_booking_repository_8h_source_l00020}{20}} of file \mbox{\hyperlink{_booking_repository_8h_source}{Booking\+Repository.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_booking_repository_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_booking_repository_a51b1dfb879a6f3ba5380b221c5828118}\index{BookingRepository@{BookingRepository}!BookingRepository@{BookingRepository}}
+\index{BookingRepository@{BookingRepository}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{BookingRepository()}{BookingRepository()}}
+{\footnotesize\ttfamily \label{class_booking_repository_a51b1dfb879a6f3ba5380b221c5828118} 
+Booking\+Repository\+::\+Booking\+Repository (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$}]{db\+Connection}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_booking_repository}{Booking\+Repository}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Connection} & Shared pointer to \doxylink{class_database_connection}{Database\+Connection} for file operations \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_booking_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_booking_repository_aa4bf49cdf6b533b1dede777cda76ea53}\index{BookingRepository@{BookingRepository}!add@{add}}
+\index{add@{add}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_booking_repository_aa4bf49cdf6b533b1dede777cda76ea53} 
+bool Booking\+Repository\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_booking}{Booking}} \&}]{booking}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a new booking to storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_a66f3665e2dcad99ca5c13ab04908ad2d}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00303}{convert\+Booking\+To\+Csv()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00259}{get\+Next\+Id()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00047}{Booking\+::set\+Id()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_aa4bf49cdf6b533b1dede777cda76ea53_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_a0fa53dbb9eac76bed63622e16254e240}\index{BookingRepository@{BookingRepository}!convertBookingToCsv@{convertBookingToCsv}}
+\index{convertBookingToCsv@{convertBookingToCsv}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{convertBookingToCsv()}{convertBookingToCsv()}}
+{\footnotesize\ttfamily \label{class_booking_repository_a0fa53dbb9eac76bed63622e16254e240} 
+std\+::string Booking\+Repository\+::convert\+Booking\+To\+Csv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_booking}{Booking}} \&}]{booking}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert a \doxylink{class_booking}{Booking} object to CSV format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking} & \doxylink{class_booking}{Booking} object to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSV-\/formatted string representing the booking 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00303}{303}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_8cpp_source_l00027}{Booking\+::get\+Booking\+Date()}}, \mbox{\hyperlink{_booking_8cpp_source_l00012}{Booking\+::get\+Id()}}, \mbox{\hyperlink{_booking_8cpp_source_l00032}{Booking\+::get\+Number\+Of\+People()}}, \mbox{\hyperlink{_booking_8cpp_source_l00042}{Booking\+::get\+Status()}}, \mbox{\hyperlink{_booking_8cpp_source_l00037}{Booking\+::get\+Total\+Cost()}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00017}{Booking\+::get\+User\+Id()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00160}{add()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00224}{remove()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00183}{update()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_a0fa53dbb9eac76bed63622e16254e240_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_booking_repository_a0fa53dbb9eac76bed63622e16254e240_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_ae6282b0979ec73e21d51355c9c5e9d8a}\index{BookingRepository@{BookingRepository}!findByTripId@{findByTripId}}
+\index{findByTripId@{findByTripId}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{findByTripId()}{findByTripId()}}
+{\footnotesize\ttfamily \label{class_booking_repository_ae6282b0979ec73e21d51355c9c5e9d8a} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Repository\+::find\+By\+Trip\+Id (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Find all bookings for a specific trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings for the specified trip 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_aed09eccf08873ed5c87c054eb8ad1e2b}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00280}{parse\+Booking\+From\+Csv()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_booking_repository_ae6282b0979ec73e21d51355c9c5e9d8a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_a3802e9e985a318b9590393e38741306a}\index{BookingRepository@{BookingRepository}!findByUserId@{findByUserId}}
+\index{findByUserId@{findByUserId}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{findByUserId()}{findByUserId()}}
+{\footnotesize\ttfamily \label{class_booking_repository_a3802e9e985a318b9590393e38741306a} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Repository\+::find\+By\+User\+Id (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Find all bookings for a specific user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The unique identifier of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings made by the specified user 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_a50cb23eb3d65c4863bb0de0618955e90}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_8cpp_source_l00017}{Booking\+::get\+User\+Id()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00280}{parse\+Booking\+From\+Csv()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_booking_repository_a3802e9e985a318b9590393e38741306a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302}\index{BookingRepository@{BookingRepository}!getAll@{getAll}}
+\index{getAll@{getAll}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily \label{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Repository\+::get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieve all bookings from storage. 
+
+\begin{DoxyReturn}{Returns}
+Vector of all \doxylink{class_booking}{Booking} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_a554d29314f67b9383408db8f0d7186f9}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00280}{parse\+Booking\+From\+Csv()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00259}{get\+Next\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00224}{remove()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00183}{update()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_ab1f0c0c57e1daf569b9dd45ee6c8dd66}\index{BookingRepository@{BookingRepository}!getById@{getById}}
+\index{getById@{getById}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \label{class_booking_repository_ab1f0c0c57e1daf569b9dd45ee6c8dd66} 
+std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Repository\+::get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Find a booking by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the booking to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional containing the booking if found, empty otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_af899920907c73d7686752be493ad292b}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_8cpp_source_l00012}{Booking\+::get\+Id()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00280}{parse\+Booking\+From\+Csv()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_booking_repository_ab1f0c0c57e1daf569b9dd45ee6c8dd66_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_ae8e9bdee1e59206f40ba67e71d88c93d}\index{BookingRepository@{BookingRepository}!getNextId@{getNextId}}
+\index{getNextId@{getNextId}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{getNextId()}{getNextId()}}
+{\footnotesize\ttfamily \label{class_booking_repository_ae8e9bdee1e59206f40ba67e71d88c93d} 
+int Booking\+Repository\+::get\+Next\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate the next available ID for a new booking. 
+
+\begin{DoxyReturn}{Returns}
+Next available unique identifier 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00259}{259}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00160}{add()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_ae8e9bdee1e59206f40ba67e71d88c93d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_booking_repository_ae8e9bdee1e59206f40ba67e71d88c93d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_aba4019c53b2a9ab99a7b68c427ab0276}\index{BookingRepository@{BookingRepository}!parseBookingFromCsv@{parseBookingFromCsv}}
+\index{parseBookingFromCsv@{parseBookingFromCsv}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{parseBookingFromCsv()}{parseBookingFromCsv()}}
+{\footnotesize\ttfamily \label{class_booking_repository_aba4019c53b2a9ab99a7b68c427ab0276} 
+\mbox{\hyperlink{class_booking}{Booking}} Booking\+Repository\+::parse\+Booking\+From\+Csv (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert a CSV line to a \doxylink{class_booking}{Booking} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & CSV-\/formatted string containing booking data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_booking}{Booking} object created from the CSV data 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00120}{find\+By\+Trip\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00080}{find\+By\+User\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00039}{get\+By\+Id()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_aba4019c53b2a9ab99a7b68c427ab0276_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_a9c034f14250d48a6e2fcbe7cf1945b02}\index{BookingRepository@{BookingRepository}!remove@{remove}}
+\index{remove@{remove}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_booking_repository_a9c034f14250d48a6e2fcbe7cf1945b02} 
+bool Booking\+Repository\+::remove (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove a booking from storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the booking to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_aaba63a6795e69077beb5bba1caeec260}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00224}{224}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00303}{convert\+Booking\+To\+Csv()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_a9c034f14250d48a6e2fcbe7cf1945b02_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_repository_ae4a018cf7d476ded313b55d360a384b1}\index{BookingRepository@{BookingRepository}!update@{update}}
+\index{update@{update}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_booking_repository_ae4a018cf7d476ded313b55d360a384b1} 
+bool Booking\+Repository\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_booking}{Booking}} \&}]{booking}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update an existing booking in storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking object with updated information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_booking_repository_af7ab8f31b3973456ad3eb77b671f0d31}{IBooking\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8cpp_source_l00183}{183}} of file \mbox{\hyperlink{_booking_repository_8cpp_source}{Booking\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_booking_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00303}{convert\+Booking\+To\+Csv()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00012}{Booking\+::get\+Id()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_repository_ae4a018cf7d476ded313b55d360a384b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_booking_repository_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_booking_repository_a35ac8c1c45ae3907cacfcd6d3ae7c0cc}\index{BookingRepository@{BookingRepository}!\_dbConnection@{\_dbConnection}}
+\index{\_dbConnection@{\_dbConnection}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{\_dbConnection}{\_dbConnection}}
+{\footnotesize\ttfamily \label{class_booking_repository_a35ac8c1c45ae3907cacfcd6d3ae7c0cc} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_database_connection}{Database\+Connection}}$>$ Booking\+Repository\+::\+\_\+db\+Connection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Database connection for file access. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8h_source_l00023}{23}} of file \mbox{\hyperlink{_booking_repository_8h_source}{Booking\+Repository.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00160}{add()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00007}{Booking\+Repository()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00120}{find\+By\+Trip\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00080}{find\+By\+User\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00039}{get\+By\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00224}{remove()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00183}{update()}}.
+
+\Hypertarget{class_booking_repository_a5967fc3c12f232b1003eab81def4ded5}\index{BookingRepository@{BookingRepository}!\_filename@{\_filename}}
+\index{\_filename@{\_filename}!BookingRepository@{BookingRepository}}
+\doxysubsubsection{\texorpdfstring{\_filename}{\_filename}}
+{\footnotesize\ttfamily \label{class_booking_repository_a5967fc3c12f232b1003eab81def4ded5} 
+const std\+::string Booking\+Repository\+::\+\_\+filename = "{}bookings.\+csv"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name of the CSV file for booking data storage. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_repository_8h_source_l00024}{24}} of file \mbox{\hyperlink{_booking_repository_8h_source}{Booking\+Repository.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_repository_8cpp_source_l00160}{add()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00120}{find\+By\+Trip\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00080}{find\+By\+User\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00012}{get\+All()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00039}{get\+By\+Id()}}, \mbox{\hyperlink{_booking_repository_8cpp_source_l00224}{remove()}}, and \mbox{\hyperlink{_booking_repository_8cpp_source_l00183}{update()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/data/repositories/\mbox{\hyperlink{_booking_repository_8h}{Booking\+Repository.\+h}}\item 
+Travel\+Agency/source/src/data/repositories/\mbox{\hyperlink{_booking_repository_8cpp}{Booking\+Repository.\+cpp}}\end{DoxyCompactItemize}

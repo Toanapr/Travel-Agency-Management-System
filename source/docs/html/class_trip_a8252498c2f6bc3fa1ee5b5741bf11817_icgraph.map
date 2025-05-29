@@ -1,0 +1,18 @@
+<map id="Trip::getId" name="Trip::getId">
+<area shape="rect" id="Node000001" title="Get the trip ID." alt="" coords="446,171,526,197"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7ea328edbca928f10e45e44725ae0e77" title="Convert a Trip object to CSV format." alt="" coords="215,45,394,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,162,431,135,397,109,363,91,365,86,399,104,434,131,464,158"/>
+<area shape="rect" id="Node000005" href="$class_trip_repository.html#aa3df897116b55f6ce8155c1d9a5a5e47" title="Update an existing trip in storage." alt="" coords="7,108,161,135"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="440,167,397,153,336,141,273,133,161,125,161,120,274,128,337,136,399,148,441,162"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="222,163,387,205"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="430,187,388,187,388,181,430,181"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a270a6b986549a8d46184396f7345cef7" title="Display a trip&#39;s details to the console." alt="" coords="211,229,398,256"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="438,206,399,220,361,231,359,226,397,215,436,201"/>
+<area shape="rect" id="Node000008" href="$class_trip_repository.html#a745153592045914cc20595bd15947f40" title="Find a trip by its ID." alt="" coords="225,280,384,307"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="467,211,437,242,399,270,373,282,371,277,397,266,434,238,463,207"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="16,5,152,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,47,148,35,149,30,200,41"/>
+<area shape="rect" id="Node000004" href="$class_trip_repository.html#adf68a56fd9707eb1932aa8923c49b4c5" title="Remove a trip from storage." alt="" coords="5,56,163,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,71,163,71,163,66,199,65"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,95,141,110,140,105,201,90"/>
+</map>

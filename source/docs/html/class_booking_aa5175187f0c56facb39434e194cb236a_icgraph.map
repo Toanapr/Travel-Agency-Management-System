@@ -1,0 +1,5 @@
+<map id="Booking::Booking" name="Booking::Booking">
+<area shape="rect" id="Node000001" title="Constructor for creating a new booking." alt="" coords="193,5,316,32"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a630d02f3c137392bfeaffa8e905d8921" title="Equality operator for comparing Booking objects." alt="" coords="5,5,145,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,21,145,21,145,16,177,16"/>
+</map>

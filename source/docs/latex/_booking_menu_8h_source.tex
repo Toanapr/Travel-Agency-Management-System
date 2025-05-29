@@ -1,0 +1,65 @@
+\doxysection{Booking\+Menu.\+h}
+\hypertarget{_booking_menu_8h_source}{}\label{_booking_menu_8h_source}\index{TravelAgency/source/src/presentation/menu/BookingMenu.h@{TravelAgency/source/src/presentation/menu/BookingMenu.h}}
+\mbox{\hyperlink{_booking_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ BOOKING\_MENU\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ BOOKING\_MENU\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_handler_8h}{../console/InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_formatter_8h}{../console/OutputFormatter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_service_8h}{../../business/services/BookingService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_service_8h}{../../business/services/UserService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_service_8h}{../../business/services/TripService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_view_8h}{../view/BookingView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00021}\mbox{\hyperlink{class_booking_menu}{00021}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_booking_menu_a27afc15b73fbd6170619569742ee0c6e}{BookingMenu}}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00023}00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00024}\mbox{\hyperlink{class_booking_menu_ae1b16906906d623e3c489c93c9a2d4f7}{00024}}\ \ \ \ \ std::shared\_ptr<InputHandler>\ \mbox{\hyperlink{class_booking_menu_ae1b16906906d623e3c489c93c9a2d4f7}{\_inputHandler}};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00025}\mbox{\hyperlink{class_booking_menu_a38cd5cdb72b39b6a4af9d3464c52a442}{00025}}\ \ \ \ \ std::shared\_ptr<OutputFormatter>\ \mbox{\hyperlink{class_booking_menu_a38cd5cdb72b39b6a4af9d3464c52a442}{\_outputFormatter}};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00026}\mbox{\hyperlink{class_booking_menu_a0bcf58daaf2b71679f495adfee9ee6dd}{00026}}\ \ \ \ \ std::shared\_ptr<BookingService>\ \mbox{\hyperlink{class_booking_menu_a0bcf58daaf2b71679f495adfee9ee6dd}{\_bookingService}};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00027}\mbox{\hyperlink{class_booking_menu_ae7ebe5e9a02300ce9c8ef777dba43a2f}{00027}}\ \ \ \ \ std::shared\_ptr<UserService>\ \mbox{\hyperlink{class_booking_menu_ae7ebe5e9a02300ce9c8ef777dba43a2f}{\_userService}};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00028}\mbox{\hyperlink{class_booking_menu_abb7034fc0a05ab6a187eca505d191563}{00028}}\ \ \ \ \ std::shared\_ptr<TripService>\ \mbox{\hyperlink{class_booking_menu_abb7034fc0a05ab6a187eca505d191563}{\_tripService}};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00029}\mbox{\hyperlink{class_booking_menu_acf1b1b2f21ff620ddb4b59695ea6a15f}{00029}}\ \ \ \ \ std::shared\_ptr<BookingView>\ \mbox{\hyperlink{class_booking_menu_acf1b1b2f21ff620ddb4b59695ea6a15f}{\_bookingView}};\ \ \ \ \textcolor{comment}{//\ Menu\ options}}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00030}\mbox{\hyperlink{class_booking_menu_a8075839420a172b8dd94ee492ec60c82}{00030}}\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_booking_menu_a8075839420a172b8dd94ee492ec60c82}{\_menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}View\ All\ Bookings"{}},}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Find\ Booking"{}},}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Create\ New\ Booking"{}},}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Update\ Booking\ Status"{}},}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Cancel\ Booking"{}},}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Return\ to\ Main\ Menu"{}}\};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a3734d6231c6e11e916a4fd4213a268aa}{processMenuChoice}}(\textcolor{keywordtype}{int}\ choice);}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00047}00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a4b1fecdaa03ee6fb820e10288c017b78}{viewAllBookings}}()\ \textcolor{keyword}{const};\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_ab159e77e9b6f13fd5f9d71d050fdd882}{findBooking}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00055}00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a89d0c9819a84b67ddf00acbce5d8f015}{findBookingById}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a0dc734a9635d02b4aefe381de3827415}{findBookingsByUser}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00065}00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a3d273ea8c71b3c3bf6c7f05a1dbdf17d}{findBookingsByTrip}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a9afd7cd29eaffacb5675fb4a5417be8d}{createBooking}}();}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a3257bb783762c61dc90403eb4d8a672a}{updateBookingStatus}}();}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_ae29c927fd3960f8d065d5b418b3c8b31}{cancelBooking}}();}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00082}00082\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00092}00092\ \ \ \ \ \mbox{\hyperlink{class_booking_menu_a27afc15b73fbd6170619569742ee0c6e}{BookingMenu}}(std::shared\_ptr<InputHandler>\ inputHandler,}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<OutputFormatter>\ outputFormatter,}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<BookingService>\ bookingService,}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<UserService>\ userService,}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<TripService>\ tripService,}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<BookingView>\ bookingView);}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00102}00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_menu_a9f1be00a218e3c9037e6c893fd52eaa6}{show}}();}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00103}00103\ \};}
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_booking_menu_8h_source_l00105}00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOOKING\_MENU\_H}}
+
+\end{DoxyCode}

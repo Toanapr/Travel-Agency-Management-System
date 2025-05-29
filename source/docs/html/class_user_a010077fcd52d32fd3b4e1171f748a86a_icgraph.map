@@ -1,0 +1,25 @@
+<map id="User::getId" name="User::getId">
+<area shape="rect" id="Node000001" title="Get the user&#39;s ID." alt="" coords="661,153,748,179"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a52c72247448def6d127af3cdf34c13ef" title="Convert a User object to CSV format." alt="" coords="421,6,612,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="685,141,654,101,612,63,592,52,595,47,615,58,658,97,689,138"/>
+<area shape="rect" id="Node000005" href="$class_user_repository.html#a5d7e55cecb098c1fb7cc86c2d266de46" title="Update an existing user in storage." alt="" coords="204,123,363,150"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="645,165,363,145,364,139,646,159"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="434,174,599,217"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="646,178,600,185,599,180,645,172"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e" title="Display a user&#39;s details to the console." alt="" coords="420,241,613,267"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="677,191,648,212,614,231,584,243,582,238,612,226,645,208,674,187"/>
+<area shape="rect" id="Node000008" href="$class_user_repository.html#a197d8fa753b7b8fffd5053bb99cd5ab6" title="Retrieve all users from storage." alt="" coords="440,73,593,99"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="665,147,612,120,564,102,566,97,614,115,668,142"/>
+<area shape="rect" id="Node000010" href="$class_user_repository.html#a5dec9d8d512d677395415ecb358cab9e" title="Find a user by their ID." alt="" coords="434,291,599,318"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="691,195,660,239,639,262,615,281,592,293,589,288,612,277,635,258,656,236,686,192"/>
+<area shape="rect" id="Node000003" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="5,22,147,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,15,303,9,195,13,131,24,130,19,194,7,303,4,406,10"/>
+<area shape="rect" id="Node000004" href="$class_user_repository.html#a09c11ddad0f11c08521e241d15d838a5" title="Remove a user from storage." alt="" coords="202,22,365,49"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,34,365,35,365,30,406,28"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="429,58,422,63,407,75,398,88,389,101,373,113,349,125,347,120,371,109,385,97,394,85,403,72,418,58,426,54"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="436,71,348,52,349,47,437,66"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="437,106,349,125,348,120,436,101"/>
+<area shape="rect" id="Node000009" href="$class_user_repository.html#a7e0e2307333756f568d18df3f65cbab4" title="Generate the next available ID for a new user." alt="" coords="195,73,372,99"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="425,89,372,89,372,83,425,83"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="210,71,133,52,134,47,211,66"/>
+</map>

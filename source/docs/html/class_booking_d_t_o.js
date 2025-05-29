@@ -1,0 +1,26 @@
+var class_booking_d_t_o =
+[
+    [ "BookingDTO", "class_booking_d_t_o.html#ad7a78fd21c01b0dd0d420b5cd42179b5", null ],
+    [ "BookingDTO", "class_booking_d_t_o.html#af5773a93a1e769ca5ca5ce96cf3caf79", null ],
+    [ "getBookingDate", "class_booking_d_t_o.html#a4f297bc32d4a7e5fe34d4a151e1c3cda", null ],
+    [ "getId", "class_booking_d_t_o.html#ace6b1fda50e388b36f75e3636cd90065", null ],
+    [ "getNumberOfPersons", "class_booking_d_t_o.html#a4acfb6ed53b4aa80b04dace4a9b86835", null ],
+    [ "getStatus", "class_booking_d_t_o.html#aa57fe7abfb066538c5b93c790f33f7ce", null ],
+    [ "getTotalPrice", "class_booking_d_t_o.html#a0276b164b6da1f68f75f589a544cd8c9", null ],
+    [ "getTripId", "class_booking_d_t_o.html#a8f457f149d2a34786604d6c16ca333dd", null ],
+    [ "getUserId", "class_booking_d_t_o.html#a90ce250144052a3717a3c4aa578e4eab", null ],
+    [ "setBookingDate", "class_booking_d_t_o.html#ace214c325c382c5fbed461fb33502fb0", null ],
+    [ "setId", "class_booking_d_t_o.html#ada3dc84462c00338d2b0a0977518948f", null ],
+    [ "setNumberOfPersons", "class_booking_d_t_o.html#a55bb12f0c54e424072bb821de08d65ff", null ],
+    [ "setStatus", "class_booking_d_t_o.html#ad60adb6d87d99462dd224247bcba184c", null ],
+    [ "setTotalPrice", "class_booking_d_t_o.html#a720f9321ee9f7ef56cf9a6c7479ab6e7", null ],
+    [ "setTripId", "class_booking_d_t_o.html#ac529fb0418f6be54765569e341b5c199", null ],
+    [ "setUserId", "class_booking_d_t_o.html#a265e74ebb1472cae0907be0f530f333d", null ],
+    [ "_bookingDate", "class_booking_d_t_o.html#ad9dee8df10cc1f81223843ab41dc22ed", null ],
+    [ "_id", "class_booking_d_t_o.html#a9612247addfe41c611a3855f221a963b", null ],
+    [ "_numberOfPersons", "class_booking_d_t_o.html#ac7324c6d22da96c5ffb0698690daea44", null ],
+    [ "_status", "class_booking_d_t_o.html#a9bb09cbe414712d57d082e4da816a8ca", null ],
+    [ "_totalPrice", "class_booking_d_t_o.html#a13e36029425cedc987dd5b0709355869", null ],
+    [ "_tripId", "class_booking_d_t_o.html#a9e72f7b48f486e186f6c4c207a8d1534", null ],
+    [ "_userId", "class_booking_d_t_o.html#ac03e6cf2bf9725cc29198f5c4674b9b2", null ]
+];

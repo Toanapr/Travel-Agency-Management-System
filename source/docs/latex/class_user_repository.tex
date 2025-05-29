@@ -1,0 +1,514 @@
+\doxysection{User\+Repository Class Reference}
+\hypertarget{class_user_repository}{}\label{class_user_repository}\index{UserRepository@{UserRepository}}
+
+
+Implementation of \doxylink{class_i_user_repository}{IUser\+Repository} for CSV file storage.  
+
+
+
+
+{\ttfamily \#include $<$User\+Repository.\+h$>$}
+
+
+
+Inheritance diagram for User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_user_repository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_user_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_repository_ae013fbfe2cfaf9d9bcc5e843704c960c}{User\+Repository}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ db\+Connection)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_user_repository}{User\+Repository}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_user_repository_a197d8fa753b7b8fffd5053bb99cd5ab6}{get\+All}} () override
+\begin{DoxyCompactList}\small\item\em Retrieve all users from storage. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_user_repository_a5dec9d8d512d677395415ecb358cab9e}{get\+By\+Id}} (int id) override
+\begin{DoxyCompactList}\small\item\em Find a user by their ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ \mbox{\hyperlink{class_user_repository_a6d16a7568dfca423a285a9974a874431}{find\+By\+Name}} (const std\+::string \&name) override
+\begin{DoxyCompactList}\small\item\em Find users by name (partial match) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_repository_a1801068866d3f7b0b0f60cb22ebc2ea1}{add}} (const \mbox{\hyperlink{class_user}{User}} \&user) override
+\begin{DoxyCompactList}\small\item\em Add a new user to storage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_repository_a5d7e55cecb098c1fb7cc86c2d266de46}{update}} (const \mbox{\hyperlink{class_user}{User}} \&user) override
+\begin{DoxyCompactList}\small\item\em Update an existing user in storage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_repository_a09c11ddad0f11c08521e241d15d838a5}{remove}} (int id) override
+\begin{DoxyCompactList}\small\item\em Remove a user from storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_user_repository}{IUser\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_user_repository_a70a8f49bc2d422efc8cad0a61affd0aa}{\texorpdfstring{$\sim$}{\string~}\+IUser\+Repository}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_user_repository_ae9f1e6f7deae63a13032170d9108ae79}{parse\+User\+From\+Csv}} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em Convert a CSV line to a \doxylink{class_user}{User} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_repository_a52c72247448def6d127af3cdf34c13ef}{convert\+User\+To\+Csv}} (const \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Convert a \doxylink{class_user}{User} object to CSV format. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_repository_a7e0e2307333756f568d18df3f65cbab4}{get\+Next\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Generate the next available ID for a new user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ \mbox{\hyperlink{class_user_repository_a1d9ec97b35de244e946a0920614dd8bb}{\+\_\+db\+Connection}}
+\begin{DoxyCompactList}\small\item\em Database connection for file access. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{class_user_repository_a6610c1dc8afed77a85b81fbde237f821}{\+\_\+filename}} = "{}users.\+csv"{}
+\begin{DoxyCompactList}\small\item\em Name of the CSV file for user data storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \doxylink{class_i_user_repository}{IUser\+Repository} for CSV file storage. 
+
+This class provides an implementation of the \doxylink{class_i_user_repository}{IUser\+Repository} interface that uses CSV files for persistent storage of user data. It handles all CRUD operations for \doxylink{class_user}{User} objects, translating between object and CSV formats. 
+
+Definition at line \mbox{\hyperlink{_user_repository_8h_source_l00020}{20}} of file \mbox{\hyperlink{_user_repository_8h_source}{User\+Repository.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_user_repository_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_repository_ae013fbfe2cfaf9d9bcc5e843704c960c}\index{UserRepository@{UserRepository}!UserRepository@{UserRepository}}
+\index{UserRepository@{UserRepository}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{UserRepository()}{UserRepository()}}
+{\footnotesize\ttfamily \label{class_user_repository_ae013fbfe2cfaf9d9bcc5e843704c960c} 
+User\+Repository\+::\+User\+Repository (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$}]{db\+Connection}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_user_repository}{User\+Repository}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Connection} & Shared pointer to \doxylink{class_database_connection}{Database\+Connection} for file operations \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_user_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_repository_a1801068866d3f7b0b0f60cb22ebc2ea1}\index{UserRepository@{UserRepository}!add@{add}}
+\index{add@{add}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_user_repository_a1801068866d3f7b0b0f60cb22ebc2ea1} 
+bool User\+Repository\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a new user to storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_a5b50dc7a94ca7896f32f3177ce8b9856}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{136}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00280}{get\+Next\+Id()}}, and \mbox{\hyperlink{_user_8cpp_source_l00036}{User\+::set\+Id()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a1801068866d3f7b0b0f60cb22ebc2ea1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a52c72247448def6d127af3cdf34c13ef}\index{UserRepository@{UserRepository}!convertUserToCsv@{convertUserToCsv}}
+\index{convertUserToCsv@{convertUserToCsv}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{convertUserToCsv()}{convertUserToCsv()}}
+{\footnotesize\ttfamily \label{class_user_repository_a52c72247448def6d127af3cdf34c13ef} 
+std\+::string User\+Repository\+::convert\+User\+To\+Csv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert a \doxylink{class_user}{User} object to CSV format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \doxylink{class_user}{User} object to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSV-\/formatted string representing the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{271}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8cpp_source_l00021}{User\+::get\+Address()}}, \mbox{\hyperlink{_user_8cpp_source_l00031}{User\+::get\+Email()}}, \mbox{\hyperlink{_user_8cpp_source_l00011}{User\+::get\+Id()}}, \mbox{\hyperlink{_user_8cpp_source_l00016}{User\+::get\+Name()}}, and \mbox{\hyperlink{_user_8cpp_source_l00026}{User\+::get\+Phone()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{add()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00200}{remove()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{update()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a52c72247448def6d127af3cdf34c13ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a52c72247448def6d127af3cdf34c13ef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a6d16a7568dfca423a285a9974a874431}\index{UserRepository@{UserRepository}!findByName@{findByName}}
+\index{findByName@{findByName}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{findByName()}{findByName()}}
+{\footnotesize\ttfamily \label{class_user_repository_a6d16a7568dfca423a285a9974a874431} 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ User\+Repository\+::find\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Find users by name (partial match) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name or part of the name to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of users whose names match the search criteria 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_ac939415b873a61fe5388c52d1536c9d9}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_8cpp_source_l00016}{User\+::get\+Name()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00235}{parse\+User\+From\+Csv()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a6d16a7568dfca423a285a9974a874431_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a197d8fa753b7b8fffd5053bb99cd5ab6}\index{UserRepository@{UserRepository}!getAll@{getAll}}
+\index{getAll@{getAll}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily \label{class_user_repository_a197d8fa753b7b8fffd5053bb99cd5ab6} 
+std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $>$ User\+Repository\+::get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieve all users from storage. 
+
+\begin{DoxyReturn}{Returns}
+Vector of all \doxylink{class_user}{User} objects 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_a48ff91b4e5beaf115d133b5af5cf4f0a}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_8cpp_source_l00011}{User\+::get\+Id()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00235}{parse\+User\+From\+Csv()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00280}{get\+Next\+Id()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00200}{remove()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{update()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a197d8fa753b7b8fffd5053bb99cd5ab6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a197d8fa753b7b8fffd5053bb99cd5ab6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a5dec9d8d512d677395415ecb358cab9e}\index{UserRepository@{UserRepository}!getById@{getById}}
+\index{getById@{getById}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \label{class_user_repository_a5dec9d8d512d677395415ecb358cab9e} 
+std\+::optional$<$ \mbox{\hyperlink{class_user}{User}} $>$ User\+Repository\+::get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Find a user by their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the user to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional containing the user if found, empty otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_a9b1738f999a6758d21391edc0618f658}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_8cpp_source_l00011}{User\+::get\+Id()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00235}{parse\+User\+From\+Csv()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a5dec9d8d512d677395415ecb358cab9e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a7e0e2307333756f568d18df3f65cbab4}\index{UserRepository@{UserRepository}!getNextId@{getNextId}}
+\index{getNextId@{getNextId}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{getNextId()}{getNextId()}}
+{\footnotesize\ttfamily \label{class_user_repository_a7e0e2307333756f568d18df3f65cbab4} 
+int User\+Repository\+::get\+Next\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate the next available ID for a new user. 
+
+\begin{DoxyReturn}{Returns}
+Next available unique identifier 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{add()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a7e0e2307333756f568d18df3f65cbab4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a7e0e2307333756f568d18df3f65cbab4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_ae9f1e6f7deae63a13032170d9108ae79}\index{UserRepository@{UserRepository}!parseUserFromCsv@{parseUserFromCsv}}
+\index{parseUserFromCsv@{parseUserFromCsv}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{parseUserFromCsv()}{parseUserFromCsv()}}
+{\footnotesize\ttfamily \label{class_user_repository_ae9f1e6f7deae63a13032170d9108ae79} 
+\mbox{\hyperlink{class_user}{User}} User\+Repository\+::parse\+User\+From\+Csv (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert a CSV line to a \doxylink{class_user}{User} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & CSV-\/formatted string containing user data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_user}{User} object created from the CSV data 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00235}{235}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00084}{find\+By\+Name()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00043}{get\+By\+Id()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_ae9f1e6f7deae63a13032170d9108ae79_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a09c11ddad0f11c08521e241d15d838a5}\index{UserRepository@{UserRepository}!remove@{remove}}
+\index{remove@{remove}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_user_repository_a09c11ddad0f11c08521e241d15d838a5} 
+bool User\+Repository\+::remove (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove a user from storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the user to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_a11d97a38c4f3bc937c2a9aee551cfdfd}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00200}{200}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{convert\+User\+To\+Csv()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a09c11ddad0f11c08521e241d15d838a5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_repository_a5d7e55cecb098c1fb7cc86c2d266de46}\index{UserRepository@{UserRepository}!update@{update}}
+\index{update@{update}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_user_repository_a5d7e55cecb098c1fb7cc86c2d266de46} 
+bool User\+Repository\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{user}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update an existing user in storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user object with updated information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_user_repository_aee83d6ea73dabc2b9cf27431addc9a86}{IUser\+Repository}}.
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{159}} of file \mbox{\hyperlink{_user_repository_8cpp_source}{User\+Repository.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_repository_8h_source_l00023}{\+\_\+db\+Connection}}, \mbox{\hyperlink{_user_repository_8h_source_l00024}{\+\_\+filename}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}, and \mbox{\hyperlink{_user_8cpp_source_l00011}{User\+::get\+Id()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_repository_a5d7e55cecb098c1fb7cc86c2d266de46_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_user_repository_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_user_repository_a1d9ec97b35de244e946a0920614dd8bb}\index{UserRepository@{UserRepository}!\_dbConnection@{\_dbConnection}}
+\index{\_dbConnection@{\_dbConnection}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{\_dbConnection}{\_dbConnection}}
+{\footnotesize\ttfamily \label{class_user_repository_a1d9ec97b35de244e946a0920614dd8bb} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_database_connection}{Database\+Connection}}$>$ User\+Repository\+::\+\_\+db\+Connection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Database connection for file access. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8h_source_l00023}{23}} of file \mbox{\hyperlink{_user_repository_8h_source}{User\+Repository.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{add()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00084}{find\+By\+Name()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00043}{get\+By\+Id()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00200}{remove()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{update()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00007}{User\+Repository()}}.
+
+\Hypertarget{class_user_repository_a6610c1dc8afed77a85b81fbde237f821}\index{UserRepository@{UserRepository}!\_filename@{\_filename}}
+\index{\_filename@{\_filename}!UserRepository@{UserRepository}}
+\doxysubsubsection{\texorpdfstring{\_filename}{\_filename}}
+{\footnotesize\ttfamily \label{class_user_repository_a6610c1dc8afed77a85b81fbde237f821} 
+const std\+::string User\+Repository\+::\+\_\+filename = "{}users.\+csv"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name of the CSV file for user data storage. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8h_source_l00024}{24}} of file \mbox{\hyperlink{_user_repository_8h_source}{User\+Repository.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{add()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00084}{find\+By\+Name()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{get\+All()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00043}{get\+By\+Id()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00200}{remove()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{update()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/data/repositories/\mbox{\hyperlink{_user_repository_8h}{User\+Repository.\+h}}\item 
+Travel\+Agency/source/src/data/repositories/\mbox{\hyperlink{_user_repository_8cpp}{User\+Repository.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="MenuHandler::initializeComponents" name="MenuHandler::initializeComponents">
+<area shape="rect" id="Node000001" title="Initialize all menu components." alt="" coords="237,5,464,32"/>
+<area shape="rect" id="Node000002" href="$class_menu_handler.html#a405a971ea4723c22ef880466c9bf8a6c" title="Constructor that initializes the MenuHandler with service dependencies." alt="" coords="5,5,189,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,21,189,21,189,16,221,16"/>
+</map>

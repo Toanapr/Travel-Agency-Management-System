@@ -1,0 +1,223 @@
+\doxysection{IBooking\+Repository Interface Reference}
+\hypertarget{class_i_booking_repository}{}\label{class_i_booking_repository}\index{IBookingRepository@{IBookingRepository}}
+
+
+Interface for booking data persistence operations.  
+
+
+
+
+{\ttfamily \#include $<$IBooking\+Repository.\+h$>$}
+
+
+
+Inheritance diagram for IBooking\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_i_booking_repository__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_i_booking_repository_ac58e3cc3eb2223802cee86cebe1836a4}{\texorpdfstring{$\sim$}{\string~}\+IBooking\+Repository}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_i_booking_repository_a554d29314f67b9383408db8f0d7186f9}{get\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieve all bookings from the data store. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_i_booking_repository_af899920907c73d7686752be493ad292b}{get\+By\+Id}} (int id)=0
+\begin{DoxyCompactList}\small\item\em Find a booking by its ID. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_i_booking_repository_a50cb23eb3d65c4863bb0de0618955e90}{find\+By\+User\+Id}} (int user\+Id)=0
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific user. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_i_booking_repository_aed09eccf08873ed5c87c054eb8ad1e2b}{find\+By\+Trip\+Id}} (int trip\+Id)=0
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific trip. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_booking_repository_a66f3665e2dcad99ca5c13ab04908ad2d}{add}} (const \mbox{\hyperlink{class_booking}{Booking}} \&booking)=0
+\begin{DoxyCompactList}\small\item\em Add a new booking to the data store. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_booking_repository_af7ab8f31b3973456ad3eb77b671f0d31}{update}} (const \mbox{\hyperlink{class_booking}{Booking}} \&booking)=0
+\begin{DoxyCompactList}\small\item\em Update an existing booking in the data store. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_booking_repository_aaba63a6795e69077beb5bba1caeec260}{remove}} (int id)=0
+\begin{DoxyCompactList}\small\item\em Remove a booking from the data store. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for booking data persistence operations. 
+
+This interface defines the contract for classes that handle the persistence of \doxylink{class_booking}{Booking} objects in the data store. It follows the Repository pattern to abstract data access logic. 
+
+Definition at line \mbox{\hyperlink{_i_booking_repository_8h_source_l00016}{16}} of file \mbox{\hyperlink{_i_booking_repository_8h_source}{IBooking\+Repository.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_i_booking_repository_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_booking_repository_ac58e3cc3eb2223802cee86cebe1836a4}\index{IBookingRepository@{IBookingRepository}!````~IBookingRepository@{\texorpdfstring{$\sim$}{\string~}IBookingRepository}}
+\index{````~IBookingRepository@{\texorpdfstring{$\sim$}{\string~}IBookingRepository}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IBookingRepository()}{\string~IBookingRepository()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_ac58e3cc3eb2223802cee86cebe1836a4} 
+virtual IBooking\+Repository\+::\texorpdfstring{$\sim$}{\string~}\+IBooking\+Repository (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_i_booking_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_booking_repository_a66f3665e2dcad99ca5c13ab04908ad2d}\index{IBookingRepository@{IBookingRepository}!add@{add}}
+\index{add@{add}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_a66f3665e2dcad99ca5c13ab04908ad2d} 
+virtual bool IBooking\+Repository\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_booking}{Booking}} \&}]{booking}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a new booking to the data store. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_aa4bf49cdf6b533b1dede777cda76ea53}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_aed09eccf08873ed5c87c054eb8ad1e2b}\index{IBookingRepository@{IBookingRepository}!findByTripId@{findByTripId}}
+\index{findByTripId@{findByTripId}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{findByTripId()}{findByTripId()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_aed09eccf08873ed5c87c054eb8ad1e2b} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ IBooking\+Repository\+::find\+By\+Trip\+Id (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Find all bookings for a specific trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings for the specified trip 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_ae6282b0979ec73e21d51355c9c5e9d8a}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_a50cb23eb3d65c4863bb0de0618955e90}\index{IBookingRepository@{IBookingRepository}!findByUserId@{findByUserId}}
+\index{findByUserId@{findByUserId}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{findByUserId()}{findByUserId()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_a50cb23eb3d65c4863bb0de0618955e90} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ IBooking\+Repository\+::find\+By\+User\+Id (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Find all bookings for a specific user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The unique identifier of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings made by the specified user 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_a3802e9e985a318b9590393e38741306a}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_a554d29314f67b9383408db8f0d7186f9}\index{IBookingRepository@{IBookingRepository}!getAll@{getAll}}
+\index{getAll@{getAll}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_a554d29314f67b9383408db8f0d7186f9} 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ IBooking\+Repository\+::get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieve all bookings from the data store. 
+
+\begin{DoxyReturn}{Returns}
+Vector containing all bookings 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_a0ebb169d923d4db782b0dbe8be3cb302}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_af899920907c73d7686752be493ad292b}\index{IBookingRepository@{IBookingRepository}!getById@{getById}}
+\index{getById@{getById}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{getById()}{getById()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_af899920907c73d7686752be493ad292b} 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ IBooking\+Repository\+::get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Find a booking by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the booking to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional containing the booking if found, empty otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_ab1f0c0c57e1daf569b9dd45ee6c8dd66}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_aaba63a6795e69077beb5bba1caeec260}\index{IBookingRepository@{IBookingRepository}!remove@{remove}}
+\index{remove@{remove}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_aaba63a6795e69077beb5bba1caeec260} 
+virtual bool IBooking\+Repository\+::remove (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a booking from the data store. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the booking to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_a9c034f14250d48a6e2fcbe7cf1945b02}{Booking\+Repository}}.
+
+\Hypertarget{class_i_booking_repository_af7ab8f31b3973456ad3eb77b671f0d31}\index{IBookingRepository@{IBookingRepository}!update@{update}}
+\index{update@{update}!IBookingRepository@{IBookingRepository}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_i_booking_repository_af7ab8f31b3973456ad3eb77b671f0d31} 
+virtual bool IBooking\+Repository\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_booking}{Booking}} \&}]{booking}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update an existing booking in the data store. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking object with updated information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation was successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_booking_repository_ae4a018cf7d476ded313b55d360a384b1}{Booking\+Repository}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/business/interfaces/\mbox{\hyperlink{_i_booking_repository_8h}{IBooking\+Repository.\+h}}\end{DoxyCompactItemize}

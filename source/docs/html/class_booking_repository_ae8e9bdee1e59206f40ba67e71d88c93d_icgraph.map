@@ -1,0 +1,5 @@
+<map id="BookingRepository::getNextId" name="BookingRepository::getNextId">
+<area shape="rect" id="Node000001" title="Generate the next available ID for a new booking." alt="" coords="214,5,353,48"/>
+<area shape="rect" id="Node000002" href="$class_booking_repository.html#aa4bf49cdf6b533b1dede777cda76ea53" title="Add a new booking to storage." alt="" coords="5,13,166,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,29,166,29,166,24,198,24"/>
+</map>

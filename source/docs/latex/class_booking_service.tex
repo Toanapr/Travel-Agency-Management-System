@@ -1,0 +1,445 @@
+\doxysection{Booking\+Service Class Reference}
+\hypertarget{class_booking_service}{}\label{class_booking_service}\index{BookingService@{BookingService}}
+
+
+Service class for booking-\/related business logic.  
+
+
+
+
+{\ttfamily \#include $<$Booking\+Service.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_booking_service_ac70d8f9b1808ee5e7ca6f699881c8f96}{Booking\+Service}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_booking_repository}{IBooking\+Repository}} $>$ booking\+Repository, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_user_repository}{IUser\+Repository}} $>$ user\+Repository, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$ trip\+Repository)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_booking_service}{Booking\+Service}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_service_af98eea177aca9da04c3c3de494504e8f}{get\+All\+Bookings}} ()
+\begin{DoxyCompactList}\small\item\em Get all bookings in the system. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_service_a5ad0d5e2f1e1c519386c494755c09b7b}{get\+Booking\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Find a booking by its ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_service_a2ca664e765485e7921ff6e03988b506d}{find\+Bookings\+By\+User\+Id}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific user. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ \mbox{\hyperlink{class_booking_service_ad4e46a35a882e3d1bc1682aa323ef6b3}{find\+Bookings\+By\+Trip\+Id}} (int trip\+Id)
+\begin{DoxyCompactList}\small\item\em Find all bookings for a specific trip. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_service_a4a7653c1474cc029707a8b3d7f3da5f5}{create\+Booking}} (int user\+Id, int trip\+Id, const std\+::string \&booking\+Date, int number\+Of\+People)
+\begin{DoxyCompactList}\small\item\em Create a new booking. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_service_a05b94fad01d56925490a62fec6703037}{update\+Booking\+Status}} (int booking\+Id, const std\+::string \&status)
+\begin{DoxyCompactList}\small\item\em Update the status of an existing booking. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_service_a746c4d2ae89abc0c3a5718eb769eb658}{cancel\+Booking}} (int booking\+Id)
+\begin{DoxyCompactList}\small\item\em Cancel an existing booking. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_booking_service_a32dd43a3c18bfe96077aeb9b09780f18}{calculate\+Total\+Cost}} (int trip\+Id, int number\+Of\+People)
+\begin{DoxyCompactList}\small\item\em Calculate the total cost for a booking. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_booking_service_a201f831a4648b3f4e2e381f0aa729c17}{validate\+Booking}} (int user\+Id, int trip\+Id, int number\+Of\+People)
+\begin{DoxyCompactList}\small\item\em Validate a booking request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_booking_repository}{IBooking\+Repository}} $>$ \mbox{\hyperlink{class_booking_service_a21065851815e666710449792ba5a8b92}{\+\_\+booking\+Repository}}
+\begin{DoxyCompactList}\small\item\em Repository for booking data access. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_user_repository}{IUser\+Repository}} $>$ \mbox{\hyperlink{class_booking_service_a2383d8e3dce3a8b6b62ffdbbe357363f}{\+\_\+user\+Repository}}
+\begin{DoxyCompactList}\small\item\em Repository for user data access. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$ \mbox{\hyperlink{class_booking_service_a7940e086376447cbc36fcf95574005db}{\+\_\+trip\+Repository}}
+\begin{DoxyCompactList}\small\item\em Repository for trip data access. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Service class for booking-\/related business logic. 
+
+This class handles all business logic related to bookings, including creating, updating, and canceling bookings. It acts as an intermediary between the presentation layer and the data access layer. 
+
+Definition at line \mbox{\hyperlink{_booking_service_8h_source_l00023}{23}} of file \mbox{\hyperlink{_booking_service_8h_source}{Booking\+Service.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_booking_service_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_booking_service_ac70d8f9b1808ee5e7ca6f699881c8f96}\index{BookingService@{BookingService}!BookingService@{BookingService}}
+\index{BookingService@{BookingService}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{BookingService()}{BookingService()}}
+{\footnotesize\ttfamily \label{class_booking_service_ac70d8f9b1808ee5e7ca6f699881c8f96} 
+Booking\+Service\+::\+Booking\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_booking_repository}{IBooking\+Repository}} $>$}]{booking\+Repository}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_user_repository}{IUser\+Repository}} $>$}]{user\+Repository}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}} $>$}]{trip\+Repository}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_booking_service}{Booking\+Service}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking\+Repository} & Repository implementation for booking data access \\
+\hline
+{\em user\+Repository} & Repository implementation for user data access \\
+\hline
+{\em trip\+Repository} & Repository implementation for trip data access \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}, \mbox{\hyperlink{_booking_service_8h_source_l00028}{\+\_\+trip\+Repository}}, and \mbox{\hyperlink{_booking_service_8h_source_l00027}{\+\_\+user\+Repository}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_booking_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_booking_service_a32dd43a3c18bfe96077aeb9b09780f18}\index{BookingService@{BookingService}!calculateTotalCost@{calculateTotalCost}}
+\index{calculateTotalCost@{calculateTotalCost}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{calculateTotalCost()}{calculateTotalCost()}}
+{\footnotesize\ttfamily \label{class_booking_service_a32dd43a3c18bfe96077aeb9b09780f18} 
+double Booking\+Service\+::calculate\+Total\+Cost (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{, }\item[{int}]{number\+Of\+People}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the total cost for a booking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+{\em number\+Of\+People} & The number of people in the booking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total cost (trip cost \texorpdfstring{$\ast$}{*} number of people) 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00028}{\+\_\+trip\+Repository}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{create\+Booking()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_service_a32dd43a3c18bfe96077aeb9b09780f18_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_service_a746c4d2ae89abc0c3a5718eb769eb658}\index{BookingService@{BookingService}!cancelBooking@{cancelBooking}}
+\index{cancelBooking@{cancelBooking}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{cancelBooking()}{cancelBooking()}}
+{\footnotesize\ttfamily \label{class_booking_service_a746c4d2ae89abc0c3a5718eb769eb658} 
+bool Booking\+Service\+::cancel\+Booking (\begin{DoxyParamCaption}\item[{int}]{booking\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Cancel an existing booking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking\+Id} & The unique identifier of the booking to cancel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the booking was successfully cancelled, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}, \mbox{\hyperlink{_booking_service_8h_source_l00028}{\+\_\+trip\+Repository}}, \mbox{\hyperlink{_trip_8cpp_source_l00027}{Trip\+::get\+Available\+Seats()}}, \mbox{\hyperlink{_booking_8cpp_source_l00032}{Booking\+::get\+Number\+Of\+People()}}, \mbox{\hyperlink{_booking_8cpp_source_l00042}{Booking\+::get\+Status()}}, \mbox{\hyperlink{_booking_8cpp_source_l00022}{Booking\+::get\+Trip\+Id()}}, \mbox{\hyperlink{_trip_8cpp_source_l00057}{Trip\+::set\+Available\+Seats()}}, and \mbox{\hyperlink{_booking_8cpp_source_l00077}{Booking\+::set\+Status()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_service_a746c4d2ae89abc0c3a5718eb769eb658_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_service_a4a7653c1474cc029707a8b3d7f3da5f5}\index{BookingService@{BookingService}!createBooking@{createBooking}}
+\index{createBooking@{createBooking}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{createBooking()}{createBooking()}}
+{\footnotesize\ttfamily \label{class_booking_service_a4a7653c1474cc029707a8b3d7f3da5f5} 
+bool Booking\+Service\+::create\+Booking (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{, }\item[{int}]{trip\+Id}{, }\item[{const std\+::string \&}]{booking\+Date}{, }\item[{int}]{number\+Of\+People}{}\end{DoxyParamCaption})}
+
+
+
+Create a new booking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The unique identifier of the user making the booking \\
+\hline
+{\em trip\+Id} & The unique identifier of the trip being booked \\
+\hline
+{\em booking\+Date} & The date of the booking in YYYY-\/\+MM-\/\+DD format \\
+\hline
+{\em number\+Of\+People} & The number of people included in this booking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the booking was successfully created, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}, \mbox{\hyperlink{_booking_service_8h_source_l00028}{\+\_\+trip\+Repository}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00111}{calculate\+Total\+Cost()}}, \mbox{\hyperlink{_trip_8cpp_source_l00027}{Trip\+::get\+Available\+Seats()}}, \mbox{\hyperlink{_trip_8cpp_source_l00057}{Trip\+::set\+Available\+Seats()}}, and \mbox{\hyperlink{_booking_service_8cpp_source_l00122}{validate\+Booking()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_service_a4a7653c1474cc029707a8b3d7f3da5f5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_service_ad4e46a35a882e3d1bc1682aa323ef6b3}\index{BookingService@{BookingService}!findBookingsByTripId@{findBookingsByTripId}}
+\index{findBookingsByTripId@{findBookingsByTripId}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{findBookingsByTripId()}{findBookingsByTripId()}}
+{\footnotesize\ttfamily \label{class_booking_service_ad4e46a35a882e3d1bc1682aa323ef6b3} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Service\+::find\+Bookings\+By\+Trip\+Id (\begin{DoxyParamCaption}\item[{int}]{trip\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Find all bookings for a specific trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings for the specified trip 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}.
+
+\Hypertarget{class_booking_service_a2ca664e765485e7921ff6e03988b506d}\index{BookingService@{BookingService}!findBookingsByUserId@{findBookingsByUserId}}
+\index{findBookingsByUserId@{findBookingsByUserId}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{findBookingsByUserId()}{findBookingsByUserId()}}
+{\footnotesize\ttfamily \label{class_booking_service_a2ca664e765485e7921ff6e03988b506d} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Service\+::find\+Bookings\+By\+User\+Id (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Find all bookings for a specific user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The unique identifier of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of bookings made by the specified user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}.
+
+\Hypertarget{class_booking_service_af98eea177aca9da04c3c3de494504e8f}\index{BookingService@{BookingService}!getAllBookings@{getAllBookings}}
+\index{getAllBookings@{getAllBookings}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{getAllBookings()}{getAllBookings()}}
+{\footnotesize\ttfamily \label{class_booking_service_af98eea177aca9da04c3c3de494504e8f} 
+std\+::vector$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Service\+::get\+All\+Bookings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get all bookings in the system. 
+
+\begin{DoxyReturn}{Returns}
+Vector of all \doxylink{class_booking}{Booking} objects 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}.
+
+\Hypertarget{class_booking_service_a5ad0d5e2f1e1c519386c494755c09b7b}\index{BookingService@{BookingService}!getBookingById@{getBookingById}}
+\index{getBookingById@{getBookingById}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{getBookingById()}{getBookingById()}}
+{\footnotesize\ttfamily \label{class_booking_service_a5ad0d5e2f1e1c519386c494755c09b7b} 
+std\+::optional$<$ \mbox{\hyperlink{class_booking}{Booking}} $>$ Booking\+Service\+::get\+Booking\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Find a booking by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the booking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional containing the booking if found, empty otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}.
+
+\Hypertarget{class_booking_service_a05b94fad01d56925490a62fec6703037}\index{BookingService@{BookingService}!updateBookingStatus@{updateBookingStatus}}
+\index{updateBookingStatus@{updateBookingStatus}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{updateBookingStatus()}{updateBookingStatus()}}
+{\footnotesize\ttfamily \label{class_booking_service_a05b94fad01d56925490a62fec6703037} 
+bool Booking\+Service\+::update\+Booking\+Status (\begin{DoxyParamCaption}\item[{int}]{booking\+Id}{, }\item[{const std\+::string \&}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Update the status of an existing booking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em booking\+Id} & The unique identifier of the booking \\
+\hline
+{\em status} & The new status for the booking (Confirmed, Pending, Cancelled) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the status was successfully updated, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00026}{\+\_\+booking\+Repository}}, and \mbox{\hyperlink{_booking_8cpp_source_l00077}{Booking\+::set\+Status()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_service_a05b94fad01d56925490a62fec6703037_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_booking_service_a201f831a4648b3f4e2e381f0aa729c17}\index{BookingService@{BookingService}!validateBooking@{validateBooking}}
+\index{validateBooking@{validateBooking}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{validateBooking()}{validateBooking()}}
+{\footnotesize\ttfamily \label{class_booking_service_a201f831a4648b3f4e2e381f0aa729c17} 
+bool Booking\+Service\+::validate\+Booking (\begin{DoxyParamCaption}\item[{int}]{user\+Id}{, }\item[{int}]{trip\+Id}{, }\item[{int}]{number\+Of\+People}{}\end{DoxyParamCaption})}
+
+
+
+Validate a booking request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The unique identifier of the user \\
+\hline
+{\em trip\+Id} & The unique identifier of the trip \\
+\hline
+{\em number\+Of\+People} & The number of people in the booking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the booking request is valid, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{_booking_service_8cpp_source}{Booking\+Service.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_booking_service_8h_source_l00028}{\+\_\+trip\+Repository}}, and \mbox{\hyperlink{_booking_service_8h_source_l00027}{\+\_\+user\+Repository}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{create\+Booking()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_booking_service_a201f831a4648b3f4e2e381f0aa729c17_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_booking_service_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_booking_service_a21065851815e666710449792ba5a8b92}\index{BookingService@{BookingService}!\_bookingRepository@{\_bookingRepository}}
+\index{\_bookingRepository@{\_bookingRepository}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{\_bookingRepository}{\_bookingRepository}}
+{\footnotesize\ttfamily \label{class_booking_service_a21065851815e666710449792ba5a8b92} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_i_booking_repository}{IBooking\+Repository}}$>$ Booking\+Service\+::\+\_\+booking\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Repository for booking data access. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8h_source_l00026}{26}} of file \mbox{\hyperlink{_booking_service_8h_source}{Booking\+Service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00006}{Booking\+Service()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00086}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{create\+Booking()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00030}{find\+Bookings\+By\+Trip\+Id()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00025}{find\+Bookings\+By\+User\+Id()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00015}{get\+All\+Bookings()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00020}{get\+Booking\+By\+Id()}}, and \mbox{\hyperlink{_booking_service_8cpp_source_l00072}{update\+Booking\+Status()}}.
+
+\Hypertarget{class_booking_service_a7940e086376447cbc36fcf95574005db}\index{BookingService@{BookingService}!\_tripRepository@{\_tripRepository}}
+\index{\_tripRepository@{\_tripRepository}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{\_tripRepository}{\_tripRepository}}
+{\footnotesize\ttfamily \label{class_booking_service_a7940e086376447cbc36fcf95574005db} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_i_trip_repository}{ITrip\+Repository}}$>$ Booking\+Service\+::\+\_\+trip\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Repository for trip data access. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8h_source_l00028}{28}} of file \mbox{\hyperlink{_booking_service_8h_source}{Booking\+Service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00006}{Booking\+Service()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00111}{calculate\+Total\+Cost()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00086}{cancel\+Booking()}}, \mbox{\hyperlink{_booking_service_8cpp_source_l00035}{create\+Booking()}}, and \mbox{\hyperlink{_booking_service_8cpp_source_l00122}{validate\+Booking()}}.
+
+\Hypertarget{class_booking_service_a2383d8e3dce3a8b6b62ffdbbe357363f}\index{BookingService@{BookingService}!\_userRepository@{\_userRepository}}
+\index{\_userRepository@{\_userRepository}!BookingService@{BookingService}}
+\doxysubsubsection{\texorpdfstring{\_userRepository}{\_userRepository}}
+{\footnotesize\ttfamily \label{class_booking_service_a2383d8e3dce3a8b6b62ffdbbe357363f} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_i_user_repository}{IUser\+Repository}}$>$ Booking\+Service\+::\+\_\+user\+Repository\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Repository for user data access. 
+
+
+
+Definition at line \mbox{\hyperlink{_booking_service_8h_source_l00027}{27}} of file \mbox{\hyperlink{_booking_service_8h_source}{Booking\+Service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_booking_service_8cpp_source_l00006}{Booking\+Service()}}, and \mbox{\hyperlink{_booking_service_8cpp_source_l00122}{validate\+Booking()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/business/services/\mbox{\hyperlink{_booking_service_8h}{Booking\+Service.\+h}}\item 
+Travel\+Agency/source/src/business/services/\mbox{\hyperlink{_booking_service_8cpp}{Booking\+Service.\+cpp}}\end{DoxyCompactItemize}

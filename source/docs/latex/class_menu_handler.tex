@@ -1,0 +1,331 @@
+\doxysection{Menu\+Handler Class Reference}
+\hypertarget{class_menu_handler}{}\label{class_menu_handler}\index{MenuHandler@{MenuHandler}}
+
+
+Manages the creation and coordination of all menu components.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Handler.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_handler_a405a971ea4723c22ef880466c9bf8a6c}{Menu\+Handler}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$ user\+Service, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$ trip\+Service, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ booking\+Service)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \doxylink{class_menu_handler}{Menu\+Handler} with service dependencies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_handler_a03f969a55420e8da7cba76e0b586c6b9}{start}} ()
+\begin{DoxyCompactList}\small\item\em Start the menu system by displaying the main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_handler_a7f7486a14fcabd813430b5a9ac5a7ef2}{initialize\+Components}} ()
+\begin{DoxyCompactList}\small\item\em Initialize all menu components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_input_handler}{Input\+Handler}} $>$ \mbox{\hyperlink{class_menu_handler_a680f39946d89453da60edc64035aa4c4}{\+\_\+input\+Handler}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$ \mbox{\hyperlink{class_menu_handler_ae824b4d3764d7962e01e86d26c8403bc}{\+\_\+output\+Formatter}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_view}{User\+View}} $>$ \mbox{\hyperlink{class_menu_handler_a018f84ebb76e0ba249eda59178ce466d}{\+\_\+user\+View}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_view}{Trip\+View}} $>$ \mbox{\hyperlink{class_menu_handler_a5528eaa396fb7e80c4de9fd90c501c7c}{\+\_\+trip\+View}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_view}{Booking\+View}} $>$ \mbox{\hyperlink{class_menu_handler_ab17c0464228d428cfa8491b2bee5b037}{\+\_\+booking\+View}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_menu}{User\+Menu}} $>$ \mbox{\hyperlink{class_menu_handler_a82b56c871520700f219ea00c3eab0f60}{\+\_\+user\+Menu}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_menu}{Trip\+Menu}} $>$ \mbox{\hyperlink{class_menu_handler_a9957161da786002e43670e68992ca9d0}{\+\_\+trip\+Menu}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_menu}{Booking\+Menu}} $>$ \mbox{\hyperlink{class_menu_handler_a7faba6d45b7d348811b53da49f0c9f58}{\+\_\+booking\+Menu}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_main_menu}{Main\+Menu}} $>$ \mbox{\hyperlink{class_menu_handler_a3d1e92c461ff98e5874024fac52d518b}{\+\_\+main\+Menu}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$ \mbox{\hyperlink{class_menu_handler_af7c9826b579f51439185966c0f1f07a8}{\+\_\+user\+Service}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$ \mbox{\hyperlink{class_menu_handler_abd1e5380d133351c177a22be70ee5592}{\+\_\+trip\+Service}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$ \mbox{\hyperlink{class_menu_handler_a52d95d102209447fbf5301fa18347f98}{\+\_\+booking\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the creation and coordination of all menu components. 
+
+This class serves as a facade for the menu system, initializing all components and providing access to the main menu. It follows the Facade design pattern to simplify the interface to the complex menu subsystem. 
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00026}{26}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_menu_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_menu_handler_a405a971ea4723c22ef880466c9bf8a6c}\index{MenuHandler@{MenuHandler}!MenuHandler@{MenuHandler}}
+\index{MenuHandler@{MenuHandler}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{MenuHandler()}{MenuHandler()}}
+{\footnotesize\ttfamily \label{class_menu_handler_a405a971ea4723c22ef880466c9bf8a6c} 
+Menu\+Handler\+::\+Menu\+Handler (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_user_service}{User\+Service}} $>$}]{user\+Service}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_trip_service}{Trip\+Service}} $>$}]{trip\+Service}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_booking_service}{Booking\+Service}} $>$}]{booking\+Service}{}\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \doxylink{class_menu_handler}{Menu\+Handler} with service dependencies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Service} & Shared pointer to the \doxylink{class_user_service}{User\+Service} \\
+\hline
+{\em trip\+Service} & Shared pointer to the \doxylink{class_trip_service}{Trip\+Service} \\
+\hline
+{\em booking\+Service} & Shared pointer to the \doxylink{class_booking_service}{Booking\+Service} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_menu_handler_8cpp_source}{Menu\+Handler.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_menu_handler_8h_source_l00047}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_menu_handler_8h_source_l00046}{\+\_\+trip\+Service}}, \mbox{\hyperlink{_menu_handler_8h_source_l00045}{\+\_\+user\+Service}}, and \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_menu_handler_a405a971ea4723c22ef880466c9bf8a6c_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_menu_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_handler_a7f7486a14fcabd813430b5a9ac5a7ef2}\index{MenuHandler@{MenuHandler}!initializeComponents@{initializeComponents}}
+\index{initializeComponents@{initializeComponents}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{initializeComponents()}{initializeComponents()}}
+{\footnotesize\ttfamily \label{class_menu_handler_a7f7486a14fcabd813430b5a9ac5a7ef2} 
+void Menu\+Handler\+::initialize\+Components (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialize all menu components. 
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_menu_handler_8cpp_source}{Menu\+Handler.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_menu_handler_8h_source_l00041}{\+\_\+booking\+Menu}}, \mbox{\hyperlink{_menu_handler_8h_source_l00047}{\+\_\+booking\+Service}}, \mbox{\hyperlink{_menu_handler_8h_source_l00036}{\+\_\+booking\+View}}, \mbox{\hyperlink{_menu_handler_8h_source_l00030}{\+\_\+input\+Handler}}, \mbox{\hyperlink{_menu_handler_8h_source_l00042}{\+\_\+main\+Menu}}, \mbox{\hyperlink{_menu_handler_8h_source_l00031}{\+\_\+output\+Formatter}}, \mbox{\hyperlink{_menu_handler_8h_source_l00040}{\+\_\+trip\+Menu}}, \mbox{\hyperlink{_menu_handler_8h_source_l00046}{\+\_\+trip\+Service}}, \mbox{\hyperlink{_menu_handler_8h_source_l00035}{\+\_\+trip\+View}}, \mbox{\hyperlink{_menu_handler_8h_source_l00039}{\+\_\+user\+Menu}}, \mbox{\hyperlink{_menu_handler_8h_source_l00045}{\+\_\+user\+Service}}, and \mbox{\hyperlink{_menu_handler_8h_source_l00034}{\+\_\+user\+View}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00003}{Menu\+Handler()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_menu_handler_a7f7486a14fcabd813430b5a9ac5a7ef2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_handler_a03f969a55420e8da7cba76e0b586c6b9}\index{MenuHandler@{MenuHandler}!start@{start}}
+\index{start@{start}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_menu_handler_a03f969a55420e8da7cba76e0b586c6b9} 
+void Menu\+Handler\+::start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Start the menu system by displaying the main menu. 
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{_menu_handler_8cpp_source}{Menu\+Handler.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_menu_handler_8h_source_l00042}{\+\_\+main\+Menu}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_menu_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_menu_handler_a7faba6d45b7d348811b53da49f0c9f58}\index{MenuHandler@{MenuHandler}!\_bookingMenu@{\_bookingMenu}}
+\index{\_bookingMenu@{\_bookingMenu}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_bookingMenu}{\_bookingMenu}}
+{\footnotesize\ttfamily \label{class_menu_handler_a7faba6d45b7d348811b53da49f0c9f58} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_menu}{Booking\+Menu}}$>$ Menu\+Handler\+::\+\_\+booking\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00041}{41}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_a52d95d102209447fbf5301fa18347f98}\index{MenuHandler@{MenuHandler}!\_bookingService@{\_bookingService}}
+\index{\_bookingService@{\_bookingService}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_bookingService}{\_bookingService}}
+{\footnotesize\ttfamily \label{class_menu_handler_a52d95d102209447fbf5301fa18347f98} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_service}{Booking\+Service}}$>$ Menu\+Handler\+::\+\_\+booking\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00047}{47}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}, and \mbox{\hyperlink{_menu_handler_8cpp_source_l00003}{Menu\+Handler()}}.
+
+\Hypertarget{class_menu_handler_ab17c0464228d428cfa8491b2bee5b037}\index{MenuHandler@{MenuHandler}!\_bookingView@{\_bookingView}}
+\index{\_bookingView@{\_bookingView}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_bookingView}{\_bookingView}}
+{\footnotesize\ttfamily \label{class_menu_handler_ab17c0464228d428cfa8491b2bee5b037} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_booking_view}{Booking\+View}}$>$ Menu\+Handler\+::\+\_\+booking\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00036}{36}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_a680f39946d89453da60edc64035aa4c4}\index{MenuHandler@{MenuHandler}!\_inputHandler@{\_inputHandler}}
+\index{\_inputHandler@{\_inputHandler}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_inputHandler}{\_inputHandler}}
+{\footnotesize\ttfamily \label{class_menu_handler_a680f39946d89453da60edc64035aa4c4} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_input_handler}{Input\+Handler}}$>$ Menu\+Handler\+::\+\_\+input\+Handler\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00030}{30}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_a3d1e92c461ff98e5874024fac52d518b}\index{MenuHandler@{MenuHandler}!\_mainMenu@{\_mainMenu}}
+\index{\_mainMenu@{\_mainMenu}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_mainMenu}{\_mainMenu}}
+{\footnotesize\ttfamily \label{class_menu_handler_a3d1e92c461ff98e5874024fac52d518b} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_main_menu}{Main\+Menu}}$>$ Menu\+Handler\+::\+\_\+main\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00042}{42}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}, and \mbox{\hyperlink{_menu_handler_8cpp_source_l00037}{start()}}.
+
+\Hypertarget{class_menu_handler_ae824b4d3764d7962e01e86d26c8403bc}\index{MenuHandler@{MenuHandler}!\_outputFormatter@{\_outputFormatter}}
+\index{\_outputFormatter@{\_outputFormatter}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_outputFormatter}{\_outputFormatter}}
+{\footnotesize\ttfamily \label{class_menu_handler_ae824b4d3764d7962e01e86d26c8403bc} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_output_formatter}{Output\+Formatter}}$>$ Menu\+Handler\+::\+\_\+output\+Formatter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00031}{31}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_a9957161da786002e43670e68992ca9d0}\index{MenuHandler@{MenuHandler}!\_tripMenu@{\_tripMenu}}
+\index{\_tripMenu@{\_tripMenu}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_tripMenu}{\_tripMenu}}
+{\footnotesize\ttfamily \label{class_menu_handler_a9957161da786002e43670e68992ca9d0} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_trip_menu}{Trip\+Menu}}$>$ Menu\+Handler\+::\+\_\+trip\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00040}{40}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_abd1e5380d133351c177a22be70ee5592}\index{MenuHandler@{MenuHandler}!\_tripService@{\_tripService}}
+\index{\_tripService@{\_tripService}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_tripService}{\_tripService}}
+{\footnotesize\ttfamily \label{class_menu_handler_abd1e5380d133351c177a22be70ee5592} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_trip_service}{Trip\+Service}}$>$ Menu\+Handler\+::\+\_\+trip\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00046}{46}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}, and \mbox{\hyperlink{_menu_handler_8cpp_source_l00003}{Menu\+Handler()}}.
+
+\Hypertarget{class_menu_handler_a5528eaa396fb7e80c4de9fd90c501c7c}\index{MenuHandler@{MenuHandler}!\_tripView@{\_tripView}}
+\index{\_tripView@{\_tripView}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_tripView}{\_tripView}}
+{\footnotesize\ttfamily \label{class_menu_handler_a5528eaa396fb7e80c4de9fd90c501c7c} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_trip_view}{Trip\+View}}$>$ Menu\+Handler\+::\+\_\+trip\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00035}{35}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_a82b56c871520700f219ea00c3eab0f60}\index{MenuHandler@{MenuHandler}!\_userMenu@{\_userMenu}}
+\index{\_userMenu@{\_userMenu}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_userMenu}{\_userMenu}}
+{\footnotesize\ttfamily \label{class_menu_handler_a82b56c871520700f219ea00c3eab0f60} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_user_menu}{User\+Menu}}$>$ Menu\+Handler\+::\+\_\+user\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00039}{39}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+\Hypertarget{class_menu_handler_af7c9826b579f51439185966c0f1f07a8}\index{MenuHandler@{MenuHandler}!\_userService@{\_userService}}
+\index{\_userService@{\_userService}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_userService}{\_userService}}
+{\footnotesize\ttfamily \label{class_menu_handler_af7c9826b579f51439185966c0f1f07a8} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_user_service}{User\+Service}}$>$ Menu\+Handler\+::\+\_\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00045}{45}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}, and \mbox{\hyperlink{_menu_handler_8cpp_source_l00003}{Menu\+Handler()}}.
+
+\Hypertarget{class_menu_handler_a018f84ebb76e0ba249eda59178ce466d}\index{MenuHandler@{MenuHandler}!\_userView@{\_userView}}
+\index{\_userView@{\_userView}!MenuHandler@{MenuHandler}}
+\doxysubsubsection{\texorpdfstring{\_userView}{\_userView}}
+{\footnotesize\ttfamily \label{class_menu_handler_a018f84ebb76e0ba249eda59178ce466d} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_user_view}{User\+View}}$>$ Menu\+Handler\+::\+\_\+user\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_handler_8h_source_l00034}{34}} of file \mbox{\hyperlink{_menu_handler_8h_source}{Menu\+Handler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_handler_8cpp_source_l00015}{initialize\+Components()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/presentation/menu/\mbox{\hyperlink{_menu_handler_8h}{Menu\+Handler.\+h}}\item 
+Travel\+Agency/source/src/presentation/menu/\mbox{\hyperlink{_menu_handler_8cpp}{Menu\+Handler.\+cpp}}\end{DoxyCompactItemize}

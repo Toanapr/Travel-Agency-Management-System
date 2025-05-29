@@ -1,0 +1,9 @@
+<map id="MainMenu::run" name="MainMenu::run">
+<area shape="rect" id="Node000001" title="Run the main menu loop until exit." alt="" coords="5,43,113,69"/>
+<area shape="rect" id="Node000002" href="$class_main_menu.html#a352af7dea2ba5ab3a6b6691222c339a3" title="Display the welcome message when application starts." alt="" coords="161,5,345,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,45,145,40,145,46,113,51"/>
+<area shape="rect" id="Node000003" href="$class_main_menu.html#acaf88050b5924f0292a08e8e43465b65" title="Display the main menu and process user input." alt="" coords="193,72,313,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,61,178,71,177,77,113,67"/>
+<area shape="rect" id="Node000004" href="$class_main_menu.html#aea8511716df4f0d14ee77367a385a602" title="Process the user&#39;s menu selection." alt="" coords="393,72,601,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,83,377,83,377,88,313,88"/>
+</map>

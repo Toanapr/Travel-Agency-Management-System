@@ -1,0 +1,9 @@
+<map id="BookingRepository::convertBookingToCsv" name="BookingRepository::convertBookingToCsv">
+<area shape="rect" id="Node000001" title="Convert a Booking object to CSV format." alt="" coords="214,56,363,99"/>
+<area shape="rect" id="Node000002" href="$class_booking_repository.html#aa4bf49cdf6b533b1dede777cda76ea53" title="Add a new booking to storage." alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,54,134,35,135,30,199,49"/>
+<area shape="rect" id="Node000003" href="$class_booking_repository.html#a9c034f14250d48a6e2fcbe7cf1945b02" title="Remove a booking from storage." alt="" coords="16,56,155,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,80,155,80,155,75,198,75"/>
+<area shape="rect" id="Node000004" href="$class_booking_repository.html#ae4a018cf7d476ded313b55d360a384b1" title="Update an existing booking in storage." alt="" coords="16,123,155,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,106,154,125,152,119,206,101"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="OutputFormatter::displayWarningMessage" name="OutputFormatter::displayWarningMessage">
+<area shape="rect" id="Node000001" title="Display a warning message to the console." alt="" coords="219,72,384,115"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#adacdf44c145f9c9d8ee7a63177630f77" title="Display multiple bookings&#39; details to the console." alt="" coords="5,5,171,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,69,158,51,160,46,217,64"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#a4d9ddd2b1c770e10ca6d01e3e3223e7e" title="Display multiple trips&#39; details to the console." alt="" coords="5,72,171,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,96,171,96,171,91,203,91"/>
+<area shape="rect" id="Node000004" href="$class_output_formatter.html#ac9139d4c280ed4e9025475eb9aa15d33" title="Display multiple users&#39; details to the console." alt="" coords="5,139,171,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,122,160,141,158,135,216,117"/>
+</map>

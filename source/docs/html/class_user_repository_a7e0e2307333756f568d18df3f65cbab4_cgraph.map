@@ -1,0 +1,9 @@
+<map id="UserRepository::getNextId" name="UserRepository::getNextId">
+<area shape="rect" id="Node000001" title="Generate the next available ID for a new user." alt="" coords="5,35,183,61"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a197d8fa753b7b8fffd5053bb99cd5ab6" title="Retrieve all users from storage." alt="" coords="231,35,384,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,45,215,45,215,51,183,51"/>
+<area shape="rect" id="Node000003" href="$class_user.html#a010077fcd52d32fd3b4e1171f748a86a" title="Get the user&#39;s ID." alt="" coords="479,5,565,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,35,463,24,464,29,385,40"/>
+<area shape="rect" id="Node000004" href="$class_user_repository.html#ae9f1e6f7deae63a13032170d9108ae79" title="Convert a CSV line to a User object." alt="" coords="432,56,612,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="385,56,417,60,416,66,384,61"/>
+</map>

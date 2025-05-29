@@ -1,0 +1,36 @@
+<map id="OutputFormatter::setColor" name="OutputFormatter::setColor">
+<area shape="rect" id="Node000001" title="Set console text color." alt="" coords="464,416,637,443"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#ab710195e5943bc0f88c0c4f98a568868" title="Center text on the console with color." alt="" coords="237,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="546,401,538,329,518,233,501,182,478,132,450,86,414,46,396,34,399,30,418,42,454,83,483,130,506,180,523,231,543,328,551,400"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="235,56,400,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="542,401,529,343,505,268,467,189,443,152,414,119,389,101,392,97,418,115,447,149,472,186,510,266,534,342,547,400"/>
+<area shape="rect" id="Node000004" href="$class_output_formatter.html#adacdf44c145f9c9d8ee7a63177630f77" title="Display multiple bookings&#39; details to the console." alt="" coords="5,120,171,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="541,401,527,351,502,290,465,229,442,202,414,180,387,163,357,151,293,136,229,131,171,133,171,128,229,126,294,131,358,146,389,159,418,175,445,198,470,226,507,288,532,350,546,400"/>
+<area shape="rect" id="Node000005" href="$class_output_formatter.html#ad44b554b13f1e1bc08de4c1e4466494c" title="Display an error message to the console." alt="" coords="235,341,400,384"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="486,414,394,387,395,382,487,409"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#af21d7300186be07e3074b194909f5a6b" title="Display an information message to the console." alt="" coords="235,408,400,451"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="448,432,400,432,400,427,448,427"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a36f21c242078c1bc10a0d244e9da51f0" title="Display a menu with options to the console." alt="" coords="219,475,416,501"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="481,450,374,477,373,472,479,444"/>
+<area shape="rect" id="Node000008" href="$class_output_formatter.html#aece2ddf01e2b6d3e6f80edca1585003f" title="Display a standard message to the console with color." alt="" coords="235,525,400,568"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="520,454,472,485,417,516,390,527,388,522,415,511,470,481,517,450"/>
+<area shape="rect" id="Node000009" href="$class_output_formatter.html#a5c87f1f4a9f1c04064bf591307cfad02" title="Display a progress indicator on the console." alt="" coords="235,592,400,635"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="534,457,487,520,454,553,417,582,397,594,394,589,415,578,450,549,483,516,530,454"/>
+<area shape="rect" id="Node000010" href="$class_output_formatter.html#a4d4b85ec5a8cbf78bdf25225aa0dd256" title="Display a success message to the console." alt="" coords="235,659,400,701"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="542,459,524,501,497,551,462,604,418,649,400,660,397,656,414,645,458,600,493,549,519,498,537,457"/>
+<area shape="rect" id="Node000011" href="$class_output_formatter.html#a270a6b986549a8d46184396f7345cef7" title="Display a trip&#39;s details to the console." alt="" coords="224,725,411,752"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="547,458,533,513,509,583,471,654,447,687,418,715,399,727,396,722,414,711,443,683,467,651,504,581,528,512,542,457"/>
+<area shape="rect" id="Node000012" href="$class_output_formatter.html#a4d9ddd2b1c770e10ca6d01e3e3223e7e" title="Display multiple trips&#39; details to the console." alt="" coords="5,191,171,233"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="539,402,524,358,499,305,462,254,440,232,415,214,386,201,355,192,291,183,228,185,171,194,171,188,228,180,292,178,357,187,388,196,417,210,444,228,467,250,503,302,529,356,544,400"/>
+<area shape="rect" id="Node000013" href="$class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e" title="Display a user&#39;s details to the console." alt="" coords="221,776,414,803"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="549,459,538,522,516,605,499,649,477,692,450,731,418,766,400,778,397,773,414,762,446,728,473,689,494,647,511,604,533,521,544,458"/>
+<area shape="rect" id="Node000014" href="$class_output_formatter.html#ac9139d4c280ed4e9025475eb9aa15d33" title="Display multiple users&#39; details to the console." alt="" coords="5,265,171,308"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="523,407,476,367,446,348,415,332,353,312,289,299,227,292,171,289,171,283,227,286,290,294,355,307,417,327,449,343,479,363,527,403"/>
+<area shape="rect" id="Node000015" href="$class_output_formatter.html#a7ed264df868ea395ad7e0a33994fef3f" title="Display a warning message to the console." alt="" coords="235,224,400,267"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="529,405,481,347,449,315,415,288,382,269,384,265,417,283,453,311,485,343,533,402"/>
+<area shape="rect" id="Node000016" href="$class_output_formatter.html#a509561a19b1206046eed562306cba22c" title="Draw a horizontal line on the console with color." alt="" coords="229,827,406,853"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="551,459,543,531,523,627,506,679,483,729,454,776,418,817,401,828,398,824,414,813,450,773,478,726,501,677,518,626,538,530,546,458"/>
+<area shape="poly" id="edge15_Node000015_Node000004" title=" " alt="" coords="254,220,136,166,138,161,256,215"/>
+<area shape="poly" id="edge16_Node000015_Node000012" title=" " alt="" coords="219,234,171,227,171,221,219,228"/>
+<area shape="poly" id="edge17_Node000015_Node000014" title=" " alt="" coords="220,266,172,274,171,269,219,260"/>
+</map>

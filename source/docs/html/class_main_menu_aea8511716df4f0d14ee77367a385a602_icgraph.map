@@ -1,0 +1,7 @@
+<map id="MainMenu::processMenuChoice" name="MainMenu::processMenuChoice">
+<area shape="rect" id="Node000001" title="Process the user&#39;s menu selection." alt="" coords="329,5,537,32"/>
+<area shape="rect" id="Node000002" href="$class_main_menu.html#acaf88050b5924f0292a08e8e43465b65" title="Display the main menu and process user input." alt="" coords="161,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,21,281,21,281,16,314,16"/>
+<area shape="rect" id="Node000003" href="$class_main_menu.html#a9f36fb3b373293658efafc6cdab41004" title="Run the main menu loop until exit." alt="" coords="5,5,113,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,21,113,21,113,16,145,16"/>
+</map>

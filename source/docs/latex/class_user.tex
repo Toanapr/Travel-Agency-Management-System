@@ -1,0 +1,588 @@
+\doxysection{User Class Reference}
+\hypertarget{class_user}{}\label{class_user}\index{User@{User}}
+
+
+Represents a user in the travel agency system.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_a32a102d17de354c025e251fc96005733}{User}} (int id, const std\+::string \&name, const std\+::string \&address, const std\+::string \&phone, const std\+::string \&email)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a010077fcd52d32fd3b4e1171f748a86a}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a446a64e63adafbc2e1428532275ad6a1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_af45fe69fc61f83248b5542415fd60f62}{get\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Get the user\textquotesingle{}s address. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_aa6b3271fff710eee0b406cc270fe7071}{get\+Phone}} () const
+\begin{DoxyCompactList}\small\item\em Get the user\textquotesingle{}s phone number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a68c520e78268ba63c97ff04b6fb210a1}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Get the user\textquotesingle{}s email. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a792a213160c4fccf098fa6a8d8d8f01e}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_abe087f191699f9d61bdc94d041e4fada}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_ab2ec9076949f983ec832ebecf86e020d}{set\+Address}} (const std\+::string \&address)
+\begin{DoxyCompactList}\small\item\em Set the user\textquotesingle{}s address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_aef641637cf02a9f7ed13090a03bed720}{set\+Phone}} (const std\+::string \&phone)
+\begin{DoxyCompactList}\small\item\em Set the user\textquotesingle{}s phone number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a11a1d37fde91df2330f69c3c24de056b}{set\+Email}} (const std\+::string \&email)
+\begin{DoxyCompactList}\small\item\em Set the user\textquotesingle{}s email. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_ae6b5bfa0555fde48560fd1f2a37dd4e0}{operator==}} (const \mbox{\hyperlink{class_user}{User}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for comparing \doxylink{class_user}{User} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_user_a129f8d1f975e63da367fd36bbd785eac}{\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em Unique identifier for the user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a3c0fa0714d7bea218be318cf0472a3c8}{\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em Full name of the user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a18032d3724b1fb6bccc870be93ad9404}{\+\_\+address}}
+\begin{DoxyCompactList}\small\item\em Postal address of the user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_aa7bffae5827823ee683d5241637af437}{\+\_\+phone}}
+\begin{DoxyCompactList}\small\item\em Contact phone number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_user_a2c23f073eaad1b392a17abd40d0888ff}{\+\_\+email}}
+\begin{DoxyCompactList}\small\item\em Email address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a user in the travel agency system. 
+
+The \doxylink{class_user}{User} class stores information about customers that use the travel agency services, including personal information and contact details. 
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00013}{13}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_user_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_a32a102d17de354c025e251fc96005733}\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily \label{class_user_a32a102d17de354c025e251fc96005733} 
+User\+::\+User (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{const std\+::string \&}]{name}{, }\item[{const std\+::string \&}]{address}{, }\item[{const std\+::string \&}]{phone}{, }\item[{const std\+::string \&}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a new user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier for the user \\
+\hline
+{\em name} & Full name of the user \\
+\hline
+{\em address} & Postal address of the user \\
+\hline
+{\em phone} & Contact phone number \\
+\hline
+{\em email} & Email address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00018}{\+\_\+address}}, \mbox{\hyperlink{_user_8h_source_l00020}{\+\_\+email}}, \mbox{\hyperlink{_user_8h_source_l00016}{\+\_\+id}}, \mbox{\hyperlink{_user_8h_source_l00017}{\+\_\+name}}, and \mbox{\hyperlink{_user_8h_source_l00019}{\+\_\+phone}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_user_a32a102d17de354c025e251fc96005733_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_user_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_af45fe69fc61f83248b5542415fd60f62}\index{User@{User}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily \label{class_user_af45fe69fc61f83248b5542415fd60f62} 
+std\+::string User\+::get\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the user\textquotesingle{}s address. 
+
+\begin{DoxyReturn}{Returns}
+The postal address of the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00018}{\+\_\+address}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{User\+Repository\+::convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00173}{Output\+Formatter\+::display\+User()}}, and \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_af45fe69fc61f83248b5542415fd60f62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_a68c520e78268ba63c97ff04b6fb210a1}\index{User@{User}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily \label{class_user_a68c520e78268ba63c97ff04b6fb210a1} 
+std\+::string User\+::get\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the user\textquotesingle{}s email. 
+
+\begin{DoxyReturn}{Returns}
+The email address 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00020}{\+\_\+email}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{User\+Repository\+::convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00173}{Output\+Formatter\+::display\+User()}}, and \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_a68c520e78268ba63c97ff04b6fb210a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_a010077fcd52d32fd3b4e1171f748a86a}\index{User@{User}!getId@{getId}}
+\index{getId@{getId}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_user_a010077fcd52d32fd3b4e1171f748a86a} 
+int User\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the user\textquotesingle{}s ID. 
+
+\begin{DoxyReturn}{Returns}
+The unique identifier for the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00016}{\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{User\+Repository\+::convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00334}{Output\+Formatter\+::display\+Booking()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00173}{Output\+Formatter\+::display\+User()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00012}{User\+Repository\+::get\+All()}}, \mbox{\hyperlink{_user_repository_8cpp_source_l00043}{User\+Repository\+::get\+By\+Id()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00159}{User\+Repository\+::update()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_a010077fcd52d32fd3b4e1171f748a86a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_a446a64e63adafbc2e1428532275ad6a1}\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_user_a446a64e63adafbc2e1428532275ad6a1} 
+std\+::string User\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the user\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The full name of the user 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00017}{\+\_\+name}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{User\+Repository\+::convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00334}{Output\+Formatter\+::display\+Booking()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00173}{Output\+Formatter\+::display\+User()}}, \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}, and \mbox{\hyperlink{_user_repository_8cpp_source_l00084}{User\+Repository\+::find\+By\+Name()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_a446a64e63adafbc2e1428532275ad6a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_aa6b3271fff710eee0b406cc270fe7071}\index{User@{User}!getPhone@{getPhone}}
+\index{getPhone@{getPhone}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getPhone()}{getPhone()}}
+{\footnotesize\ttfamily \label{class_user_aa6b3271fff710eee0b406cc270fe7071} 
+std\+::string User\+::get\+Phone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the user\textquotesingle{}s phone number. 
+
+\begin{DoxyReturn}{Returns}
+The contact phone number 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00019}{\+\_\+phone}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00271}{User\+Repository\+::convert\+User\+To\+Csv()}}, \mbox{\hyperlink{_output_formatter_8cpp_source_l00173}{Output\+Formatter\+::display\+User()}}, and \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_aa6b3271fff710eee0b406cc270fe7071_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_ae6b5bfa0555fde48560fd1f2a37dd4e0}\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_user_ae6b5bfa0555fde48560fd1f2a37dd4e0} 
+bool User\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for comparing \doxylink{class_user}{User} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_user}{User} object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all fields are equal, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00018}{\+\_\+address}}, \mbox{\hyperlink{_user_8h_source_l00020}{\+\_\+email}}, \mbox{\hyperlink{_user_8h_source_l00016}{\+\_\+id}}, \mbox{\hyperlink{_user_8h_source_l00017}{\+\_\+name}}, \mbox{\hyperlink{_user_8h_source_l00019}{\+\_\+phone}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_user_ae6b5bfa0555fde48560fd1f2a37dd4e0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_ab2ec9076949f983ec832ebecf86e020d}\index{User@{User}!setAddress@{setAddress}}
+\index{setAddress@{setAddress}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setAddress()}{setAddress()}}
+{\footnotesize\ttfamily \label{class_user_ab2ec9076949f983ec832ebecf86e020d} 
+void User\+::set\+Address (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Set the user\textquotesingle{}s address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The new address for the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00018}{\+\_\+address}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_ab2ec9076949f983ec832ebecf86e020d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_a11a1d37fde91df2330f69c3c24de056b}\index{User@{User}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily \label{class_user_a11a1d37fde91df2330f69c3c24de056b} 
+void User\+::set\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Set the user\textquotesingle{}s email. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The new email for the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00020}{\+\_\+email}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_a11a1d37fde91df2330f69c3c24de056b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_a792a213160c4fccf098fa6a8d8d8f01e}\index{User@{User}!setId@{setId}}
+\index{setId@{setId}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_user_a792a213160c4fccf098fa6a8d8d8f01e} 
+void User\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Set the user\textquotesingle{}s ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The new ID for the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00016}{\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_repository_8cpp_source_l00136}{User\+Repository\+::add()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_user_a792a213160c4fccf098fa6a8d8d8f01e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_abe087f191699f9d61bdc94d041e4fada}\index{User@{User}!setName@{setName}}
+\index{setName@{setName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_user_abe087f191699f9d61bdc94d041e4fada} 
+void User\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Set the user\textquotesingle{}s name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name for the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00017}{\+\_\+name}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_abe087f191699f9d61bdc94d041e4fada_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_aef641637cf02a9f7ed13090a03bed720}\index{User@{User}!setPhone@{setPhone}}
+\index{setPhone@{setPhone}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setPhone()}{setPhone()}}
+{\footnotesize\ttfamily \label{class_user_aef641637cf02a9f7ed13090a03bed720} 
+void User\+::set\+Phone (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{phone}{}\end{DoxyParamCaption})}
+
+
+
+Set the user\textquotesingle{}s phone number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phone} & The new phone number for the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_user_8h_source_l00019}{\+\_\+phone}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_menu_8cpp_source_l00167}{User\+Menu\+::edit\+User()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_aef641637cf02a9f7ed13090a03bed720_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_user_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_user_a18032d3724b1fb6bccc870be93ad9404}\index{User@{User}!\_address@{\_address}}
+\index{\_address@{\_address}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_address}{\_address}}
+{\footnotesize\ttfamily \label{class_user_a18032d3724b1fb6bccc870be93ad9404} 
+std\+::string User\+::\+\_\+address\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Postal address of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00018}{18}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00021}{get\+Address()}}, \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}, \mbox{\hyperlink{_user_8cpp_source_l00046}{set\+Address()}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+\Hypertarget{class_user_a2c23f073eaad1b392a17abd40d0888ff}\index{User@{User}!\_email@{\_email}}
+\index{\_email@{\_email}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_email}{\_email}}
+{\footnotesize\ttfamily \label{class_user_a2c23f073eaad1b392a17abd40d0888ff} 
+std\+::string User\+::\+\_\+email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Email address. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00020}{20}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00031}{get\+Email()}}, \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}, \mbox{\hyperlink{_user_8cpp_source_l00056}{set\+Email()}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+\Hypertarget{class_user_a129f8d1f975e63da367fd36bbd785eac}\index{User@{User}!\_id@{\_id}}
+\index{\_id@{\_id}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily \label{class_user_a129f8d1f975e63da367fd36bbd785eac} 
+int User\+::\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Unique identifier for the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00016}{16}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00011}{get\+Id()}}, \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}, \mbox{\hyperlink{_user_8cpp_source_l00036}{set\+Id()}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+\Hypertarget{class_user_a3c0fa0714d7bea218be318cf0472a3c8}\index{User@{User}!\_name@{\_name}}
+\index{\_name@{\_name}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily \label{class_user_a3c0fa0714d7bea218be318cf0472a3c8} 
+std\+::string User\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Full name of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00017}{17}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00016}{get\+Name()}}, \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}, \mbox{\hyperlink{_user_8cpp_source_l00041}{set\+Name()}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+\Hypertarget{class_user_aa7bffae5827823ee683d5241637af437}\index{User@{User}!\_phone@{\_phone}}
+\index{\_phone@{\_phone}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\_phone}{\_phone}}
+{\footnotesize\ttfamily \label{class_user_aa7bffae5827823ee683d5241637af437} 
+std\+::string User\+::\+\_\+phone\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contact phone number. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00019}{19}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_user_8cpp_source_l00026}{get\+Phone()}}, \mbox{\hyperlink{_user_8cpp_source_l00061}{operator==()}}, \mbox{\hyperlink{_user_8cpp_source_l00051}{set\+Phone()}}, and \mbox{\hyperlink{_user_8cpp_source_l00004}{User()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/business/models/\mbox{\hyperlink{_user_8h}{User.\+h}}\item 
+Travel\+Agency/source/src/business/models/\mbox{\hyperlink{_user_8cpp}{User.\+cpp}}\end{DoxyCompactItemize}

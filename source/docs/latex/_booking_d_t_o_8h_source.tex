@@ -1,0 +1,58 @@
+\doxysection{Booking\+DTO.\+h}
+\hypertarget{_booking_d_t_o_8h_source}{}\label{_booking_d_t_o_8h_source}\index{TravelAgency/source/src/data/dto/BookingDTO.h@{TravelAgency/source/src/data/dto/BookingDTO.h}}
+\mbox{\hyperlink{_booking_d_t_o_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ BOOKING\_DTO\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ BOOKING\_DTO\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00014}\mbox{\hyperlink{class_booking_d_t_o}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_booking_d_t_o_ad7a78fd21c01b0dd0d420b5cd42179b5}{BookingDTO}}}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00016}00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00017}\mbox{\hyperlink{class_booking_d_t_o_a9612247addfe41c611a3855f221a963b}{00017}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_a9612247addfe41c611a3855f221a963b}{\_id}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00018}\mbox{\hyperlink{class_booking_d_t_o_ac03e6cf2bf9725cc29198f5c4674b9b2}{00018}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_ac03e6cf2bf9725cc29198f5c4674b9b2}{\_userId}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00019}\mbox{\hyperlink{class_booking_d_t_o_a9e72f7b48f486e186f6c4c207a8d1534}{00019}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_a9e72f7b48f486e186f6c4c207a8d1534}{\_tripId}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00020}\mbox{\hyperlink{class_booking_d_t_o_ad9dee8df10cc1f81223843ab41dc22ed}{00020}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_booking_d_t_o_ad9dee8df10cc1f81223843ab41dc22ed}{\_bookingDate}};\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00021}\mbox{\hyperlink{class_booking_d_t_o_ac7324c6d22da96c5ffb0698690daea44}{00021}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_ac7324c6d22da96c5ffb0698690daea44}{\_numberOfPersons}};\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00022}\mbox{\hyperlink{class_booking_d_t_o_a13e36029425cedc987dd5b0709355869}{00022}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_booking_d_t_o_a13e36029425cedc987dd5b0709355869}{\_totalPrice}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00023}\mbox{\hyperlink{class_booking_d_t_o_a9bb09cbe414712d57d082e4da816a8ca}{00023}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_booking_d_t_o_a9bb09cbe414712d57d082e4da816a8ca}{\_status}};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00025}00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_booking_d_t_o_ad7a78fd21c01b0dd0d420b5cd42179b5}{BookingDTO}}();}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{class_booking_d_t_o_ad7a78fd21c01b0dd0d420b5cd42179b5}{BookingDTO}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ userId,\ \textcolor{keywordtype}{int}\ tripId,\ \textcolor{keyword}{const}\ std::string\ \&bookingDate,}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numberOfPersons,\ \textcolor{keywordtype}{double}\ totalPrice,\ \textcolor{keyword}{const}\ std::string\ \&status);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_ace6b1fda50e388b36f75e3636cd90065}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_a90ce250144052a3717a3c4aa578e4eab}{getUserId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_a8f457f149d2a34786604d6c16ca333dd}{getTripId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00066}00066\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_booking_d_t_o_a4f297bc32d4a7e5fe34d4a151e1c3cda}{getBookingDate}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00072}00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_booking_d_t_o_a4acfb6ed53b4aa80b04dace4a9b86835}{getNumberOfPersons}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_booking_d_t_o_a0276b164b6da1f68f75f589a544cd8c9}{getTotalPrice}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00084}00084\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_booking_d_t_o_aa57fe7abfb066538c5b93c790f33f7ce}{getStatus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00090}00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_ada3dc84462c00338d2b0a0977518948f}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00096}00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_a265e74ebb1472cae0907be0f530f333d}{setUserId}}(\textcolor{keywordtype}{int}\ userId);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00102}00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_ac529fb0418f6be54765569e341b5c199}{setTripId}}(\textcolor{keywordtype}{int}\ tripId);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00108}00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_ace214c325c382c5fbed461fb33502fb0}{setBookingDate}}(\textcolor{keyword}{const}\ std::string\ \&bookingDate);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00114}00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_a55bb12f0c54e424072bb821de08d65ff}{setNumberOfPersons}}(\textcolor{keywordtype}{int}\ numberOfPersons);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00120}00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_a720f9321ee9f7ef56cf9a6c7479ab6e7}{setTotalPrice}}(\textcolor{keywordtype}{double}\ totalPrice);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00126}00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_d_t_o_ad60adb6d87d99462dd224247bcba184c}{setStatus}}(\textcolor{keyword}{const}\ std::string\ \&status);}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00127}00127\ \};}
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_booking_d_t_o_8h_source_l00129}00129\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOOKING\_DTO\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,17 @@
+<map id="TripRepository::parseTripFromCsv" name="TripRepository::parseTripFromCsv">
+<area shape="rect" id="Node000001" title="Convert a CSV line to a Trip object." alt="" coords="642,48,811,91"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#af581cf819a42e9bbd5901dc94269e816" title="Find trips by name (partial match)" alt="" coords="408,5,594,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="627,50,563,35,564,30,628,44"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#ae25b1b5288a754371d1e8b58d0038f9b" title="Retrieve all trips from storage." alt="" coords="428,56,575,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="627,72,575,72,575,67,627,67"/>
+<area shape="rect" id="Node000008" href="$class_trip_repository.html#a745153592045914cc20595bd15947f40" title="Find a trip by its ID." alt="" coords="422,107,581,133"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="628,94,564,109,563,103,627,89"/>
+<area shape="rect" id="Node000004" href="$class_trip_repository.html#ac62a77faffca78eb55b8c97ad8ab8066" title="Generate the next available ID for a new trip." alt="" coords="189,5,360,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,55,337,35,338,30,424,49"/>
+<area shape="rect" id="Node000006" href="$class_trip_repository.html#adf68a56fd9707eb1932aa8923c49b4c5" title="Remove a trip from storage." alt="" coords="196,56,353,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="412,72,353,72,353,67,412,67"/>
+<area shape="rect" id="Node000007" href="$class_trip_repository.html#aa3df897116b55f6ce8155c1d9a5a5e47" title="Update an existing trip in storage." alt="" coords="198,107,351,133"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="424,89,338,109,337,103,423,84"/>
+<area shape="rect" id="Node000005" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+</map>

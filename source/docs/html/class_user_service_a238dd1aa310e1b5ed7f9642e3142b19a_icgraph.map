@@ -1,0 +1,5 @@
+<map id="UserService::hasUserBookings" name="UserService::hasUserBookings">
+<area shape="rect" id="Node000001" title="Check if a user has any associated bookings." alt="" coords="218,5,422,32"/>
+<area shape="rect" id="Node000002" href="$class_user_service.html#acdc71374a58e1861da27b83f4de33a26" title="Delete a user from the system." alt="" coords="5,5,170,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,170,21,170,16,202,16"/>
+</map>

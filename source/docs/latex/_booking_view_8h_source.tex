@@ -1,0 +1,32 @@
+\doxysection{Booking\+View.\+h}
+\hypertarget{_booking_view_8h_source}{}\label{_booking_view_8h_source}\index{TravelAgency/source/src/presentation/view/BookingView.h@{TravelAgency/source/src/presentation/view/BookingView.h}}
+\mbox{\hyperlink{_booking_view_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ BOOKING\_VIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ BOOKING\_VIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_8h}{../../business/models/Booking.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_8h}{../../business/models/User.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_8h}{../../business/models/Trip.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_formatter_8h}{../console/OutputFormatter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00018}\mbox{\hyperlink{class_booking_view}{00018}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_booking_view_a23bb5c7d26f9241df6f4f5013efb4995}{BookingView}}}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00020}00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00021}\mbox{\hyperlink{class_booking_view_a240f78304288df353395796aa333f6cf}{00021}}\ \ \ \ \ std::shared\_ptr<OutputFormatter>\ \mbox{\hyperlink{class_booking_view_a240f78304288df353395796aa333f6cf}{\_outputFormatter}};}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00023}00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00028}00028\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_booking_view_a23bb5c7d26f9241df6f4f5013efb4995}{BookingView}}(std::shared\_ptr<OutputFormatter>\ outputFormatter);}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_view_aa9357096141601f11ce1417e0dd04831}{displayBookingDetails}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_booking}{Booking}}\ \&booking,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_user}{User}}\ \&user,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_trip}{Trip}}\ \&trip)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_booking_view_a5382f9033f875d4845eb3e8d7c6e963c}{displayAllBookings}}(\textcolor{keyword}{const}\ std::vector<Booking>\ \&bookings,}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<User>\ \&users,}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Trip>\ \&trips)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00047}00047\ \};}
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_booking_view_8h_source_l00049}00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOOKING\_VIEW\_H}}
+
+\end{DoxyCode}

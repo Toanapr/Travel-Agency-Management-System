@@ -1,0 +1,138 @@
+\doxysection{Trip\+View Class Reference}
+\hypertarget{class_trip_view}{}\label{class_trip_view}\index{TripView@{TripView}}
+
+
+View class for displaying Trip-\/related information.  
+
+
+
+
+{\ttfamily \#include $<$Trip\+View.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trip_view_a0a3686f6fffdb402cd061c876f6d4952}{Trip\+View}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$ output\+Formatter)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_view_ac00f8a3c555c9c4d33c774d05657d3e8}{display\+Trip\+Details}} (const \mbox{\hyperlink{class_trip}{Trip}} \&trip) const
+\begin{DoxyCompactList}\small\item\em Display detailed information for a single trip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trip_view_a5fd3a29471c4e6db0d78c303360f10ce}{display\+All\+Trips}} (const std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \&trips) const
+\begin{DoxyCompactList}\small\item\em Display a list of trips in a tabular format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$ \mbox{\hyperlink{class_trip_view_a3eb31d8c3303f75934a8ebac919b5f94}{\+\_\+output\+Formatter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View class for displaying Trip-\/related information. 
+
+This class is responsible for presenting \doxylink{class_trip}{Trip} objects in various formats. It uses the \doxylink{class_output_formatter}{Output\+Formatter} to handle the actual display operations. 
+
+Definition at line \mbox{\hyperlink{_trip_view_8h_source_l00016}{16}} of file \mbox{\hyperlink{_trip_view_8h_source}{Trip\+View.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_trip_view_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_trip_view_a0a3686f6fffdb402cd061c876f6d4952}\index{TripView@{TripView}!TripView@{TripView}}
+\index{TripView@{TripView}!TripView@{TripView}}
+\doxysubsubsection{\texorpdfstring{TripView()}{TripView()}}
+{\footnotesize\ttfamily \label{class_trip_view_a0a3686f6fffdb402cd061c876f6d4952} 
+Trip\+View\+::\+Trip\+View (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_output_formatter}{Output\+Formatter}} $>$}]{output\+Formatter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Formatter} & Shared pointer to the \doxylink{class_output_formatter}{Output\+Formatter} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_view_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_trip_view_8cpp_source}{Trip\+View.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_view_8h_source_l00019}{\+\_\+output\+Formatter}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_trip_view_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trip_view_a5fd3a29471c4e6db0d78c303360f10ce}\index{TripView@{TripView}!displayAllTrips@{displayAllTrips}}
+\index{displayAllTrips@{displayAllTrips}!TripView@{TripView}}
+\doxysubsubsection{\texorpdfstring{displayAllTrips()}{displayAllTrips()}}
+{\footnotesize\ttfamily \label{class_trip_view_a5fd3a29471c4e6db0d78c303360f10ce} 
+void Trip\+View\+::display\+All\+Trips (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_trip}{Trip}} $>$ \&}]{trips}{}\end{DoxyParamCaption}) const}
+
+
+
+Display a list of trips in a tabular format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trips} & Vector of trips to display \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_view_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_trip_view_8cpp_source}{Trip\+View.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_view_8h_source_l00019}{\+\_\+output\+Formatter}}.
+
+\Hypertarget{class_trip_view_ac00f8a3c555c9c4d33c774d05657d3e8}\index{TripView@{TripView}!displayTripDetails@{displayTripDetails}}
+\index{displayTripDetails@{displayTripDetails}!TripView@{TripView}}
+\doxysubsubsection{\texorpdfstring{displayTripDetails()}{displayTripDetails()}}
+{\footnotesize\ttfamily \label{class_trip_view_ac00f8a3c555c9c4d33c774d05657d3e8} 
+void Trip\+View\+::display\+Trip\+Details (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{trip}{}\end{DoxyParamCaption}) const}
+
+
+
+Display detailed information for a single trip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip} & The trip to display \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_trip_view_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_trip_view_8cpp_source}{Trip\+View.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_trip_view_8h_source_l00019}{\+\_\+output\+Formatter}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_trip_view_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_trip_view_a3eb31d8c3303f75934a8ebac919b5f94}\index{TripView@{TripView}!\_outputFormatter@{\_outputFormatter}}
+\index{\_outputFormatter@{\_outputFormatter}!TripView@{TripView}}
+\doxysubsubsection{\texorpdfstring{\_outputFormatter}{\_outputFormatter}}
+{\footnotesize\ttfamily \label{class_trip_view_a3eb31d8c3303f75934a8ebac919b5f94} 
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_output_formatter}{Output\+Formatter}}$>$ Trip\+View\+::\+\_\+output\+Formatter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_trip_view_8h_source_l00019}{19}} of file \mbox{\hyperlink{_trip_view_8h_source}{Trip\+View.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_trip_view_8cpp_source_l00013}{display\+All\+Trips()}}, \mbox{\hyperlink{_trip_view_8cpp_source_l00008}{display\+Trip\+Details()}}, and \mbox{\hyperlink{_trip_view_8cpp_source_l00003}{Trip\+View()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/presentation/view/\mbox{\hyperlink{_trip_view_8h}{Trip\+View.\+h}}\item 
+Travel\+Agency/source/src/presentation/view/\mbox{\hyperlink{_trip_view_8cpp}{Trip\+View.\+cpp}}\end{DoxyCompactItemize}

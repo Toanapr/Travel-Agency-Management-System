@@ -1,0 +1,27 @@
+var class_output_formatter =
+[
+    [ "OutputFormatter", "class_output_formatter.html#a327ce9edf682b747ca2b443f42624bba", null ],
+    [ "center", "class_output_formatter.html#ab710195e5943bc0f88c0c4f98a568868", null ],
+    [ "center", "class_output_formatter.html#ad47d2df9bb2363f5ae5cdf55e5381274", null ],
+    [ "clearScreen", "class_output_formatter.html#a2acf1096df48119b4d9e32e76da60dbd", null ],
+    [ "displayBooking", "class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3", null ],
+    [ "displayBookings", "class_output_formatter.html#adacdf44c145f9c9d8ee7a63177630f77", null ],
+    [ "displayErrorMessage", "class_output_formatter.html#ad44b554b13f1e1bc08de4c1e4466494c", null ],
+    [ "displayInfoMessage", "class_output_formatter.html#af21d7300186be07e3074b194909f5a6b", null ],
+    [ "displayMenu", "class_output_formatter.html#a36f21c242078c1bc10a0d244e9da51f0", null ],
+    [ "displayMessage", "class_output_formatter.html#af0e3d07ee795f861a2f6e662c3c5c507", null ],
+    [ "displayMessage", "class_output_formatter.html#aece2ddf01e2b6d3e6f80edca1585003f", null ],
+    [ "displayProgress", "class_output_formatter.html#a5c87f1f4a9f1c04064bf591307cfad02", null ],
+    [ "displaySuccessMessage", "class_output_formatter.html#a4d4b85ec5a8cbf78bdf25225aa0dd256", null ],
+    [ "displayTrip", "class_output_formatter.html#a270a6b986549a8d46184396f7345cef7", null ],
+    [ "displayTrips", "class_output_formatter.html#a4d9ddd2b1c770e10ca6d01e3e3223e7e", null ],
+    [ "displayUser", "class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e", null ],
+    [ "displayUsers", "class_output_formatter.html#ac9139d4c280ed4e9025475eb9aa15d33", null ],
+    [ "displayWarningMessage", "class_output_formatter.html#a7ed264df868ea395ad7e0a33994fef3f", null ],
+    [ "drawHeader", "class_output_formatter.html#ad153113fb4b28fb9398ad31685d72c9e", null ],
+    [ "drawHeader", "class_output_formatter.html#a1f045a1f1d05138b7bf817053902a2c7", null ],
+    [ "drawLine", "class_output_formatter.html#a509561a19b1206046eed562306cba22c", null ],
+    [ "drawLine", "class_output_formatter.html#a5a6c4fa5908fa2579f9e0d284fb4f3ef", null ],
+    [ "resetColor", "class_output_formatter.html#a990575e816e049d1a4a188a04a2be83d", null ],
+    [ "setColor", "class_output_formatter.html#afa16c7275082edd5198940cd3cf5a140", null ]
+];

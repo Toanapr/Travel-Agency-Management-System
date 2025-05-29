@@ -1,0 +1,5 @@
+<map id="InputHandler::getMenuChoice" name="InputHandler::getMenuChoice">
+<area shape="rect" id="Node000001" title="Get a menu choice from the user." alt="" coords="5,5,200,32"/>
+<area shape="rect" id="Node000002" href="$class_input_handler.html#ad493d7dea1a6cca7c3807260f2155bb9" title="Get integer input from the user." alt="" coords="248,5,413,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,16,232,16,232,21,200,21"/>
+</map>

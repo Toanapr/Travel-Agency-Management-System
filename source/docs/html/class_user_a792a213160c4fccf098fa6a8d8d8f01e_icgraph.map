@@ -1,0 +1,5 @@
+<map id="User::setId" name="User::setId">
+<area shape="rect" id="Node000001" title="Set the user&#39;s ID." alt="" coords="195,5,281,32"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="5,5,147,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,21,147,21,147,16,179,16"/>
+</map>

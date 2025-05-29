@@ -1,0 +1,100 @@
+\doxysection{Trip\+DTO.\+cpp}
+\hypertarget{_trip_d_t_o_8cpp_source}{}\label{_trip_d_t_o_8cpp_source}\index{TravelAgency/source/src/data/dto/TripDTO.cpp@{TravelAgency/source/src/data/dto/TripDTO.cpp}}
+\mbox{\hyperlink{_trip_d_t_o_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_d_t_o_8h}{TripDTO.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00003}\mbox{\hyperlink{class_trip_d_t_o_ae97715b1e4720cc04de6b7856659d319}{00003}}\ \mbox{\hyperlink{class_trip_d_t_o_ae97715b1e4720cc04de6b7856659d319}{TripDTO::TripDTO}}()\ :\ \mbox{\hyperlink{class_trip_d_t_o_aceb6a7ee022e36323ec06e65eda3f0ab}{\_id}}(0),\ \mbox{\hyperlink{class_trip_d_t_o_ae8098e15e50bc32e024d370df3188481}{\_name}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{class_trip_d_t_o_ac0ed0f89eb719f438ddc31916c3bc6a4}{\_destination}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{class_trip_d_t_o_afef9102442ad8b873b67ef6926d4ca2b}{\_startDate}}(\textcolor{stringliteral}{"{}"{}}),}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00004}00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_aae0a12990c8384e30034eb7b1ddcfa9c}{\_endDate}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{class_trip_d_t_o_ae01ae610f3d2db6c7d8f8bbf02516a0e}{\_price}}(0.0),\ \mbox{\hyperlink{class_trip_d_t_o_a264f3003c027ce71a5305b33ca06aee2}{\_capacity}}(0),\ \mbox{\hyperlink{class_trip_d_t_o_a56b15e0f29c36ce696499c45a9528497}{\_description}}(\textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00006}00006\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00008}\mbox{\hyperlink{class_trip_d_t_o_a02ab558795416b889bae4683b779635d}{00008}}\ \mbox{\hyperlink{class_trip_d_t_o_ae97715b1e4720cc04de6b7856659d319}{TripDTO::TripDTO}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ std::string\ \&name,\ \textcolor{keyword}{const}\ std::string\ \&destination,}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00009}00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&startDate,\ \textcolor{keyword}{const}\ std::string\ \&endDate,}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00010}00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ price,\ \textcolor{keywordtype}{int}\ capacity,\ \textcolor{keyword}{const}\ std::string\ \&description)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00011}00011\ \ \ \ \ :\ \mbox{\hyperlink{class_trip_d_t_o_aceb6a7ee022e36323ec06e65eda3f0ab}{\_id}}(id),\ \mbox{\hyperlink{class_trip_d_t_o_ae8098e15e50bc32e024d370df3188481}{\_name}}(name),\ \mbox{\hyperlink{class_trip_d_t_o_ac0ed0f89eb719f438ddc31916c3bc6a4}{\_destination}}(destination),\ \mbox{\hyperlink{class_trip_d_t_o_afef9102442ad8b873b67ef6926d4ca2b}{\_startDate}}(startDate),}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00012}00012\ \ \ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_aae0a12990c8384e30034eb7b1ddcfa9c}{\_endDate}}(endDate),\ \mbox{\hyperlink{class_trip_d_t_o_ae01ae610f3d2db6c7d8f8bbf02516a0e}{\_price}}(price),\ \mbox{\hyperlink{class_trip_d_t_o_a264f3003c027ce71a5305b33ca06aee2}{\_capacity}}(capacity),\ \mbox{\hyperlink{class_trip_d_t_o_a56b15e0f29c36ce696499c45a9528497}{\_description}}(description)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00014}00014\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00016}\mbox{\hyperlink{class_trip_d_t_o_ad2317b5fb51dfbb55bcde732c54c8156}{00016}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_trip_d_t_o_ad2317b5fb51dfbb55bcde732c54c8156}{TripDTO::getId}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00017}00017\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_aceb6a7ee022e36323ec06e65eda3f0ab}{\_id}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00021}\mbox{\hyperlink{class_trip_d_t_o_aca49a4dca1298d808b9c4c672c439506}{00021}}\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_trip_d_t_o_aca49a4dca1298d808b9c4c672c439506}{TripDTO::getName}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00022}00022\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_ae8098e15e50bc32e024d370df3188481}{\_name}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00026}\mbox{\hyperlink{class_trip_d_t_o_a03381593e5a0e4503cd44c816d950f2b}{00026}}\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_trip_d_t_o_a03381593e5a0e4503cd44c816d950f2b}{TripDTO::getDestination}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00027}00027\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_ac0ed0f89eb719f438ddc31916c3bc6a4}{\_destination}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00031}\mbox{\hyperlink{class_trip_d_t_o_a146c6b2fe44046bc4d1fdaa27766e6fa}{00031}}\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_trip_d_t_o_a146c6b2fe44046bc4d1fdaa27766e6fa}{TripDTO::getStartDate}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00032}00032\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_afef9102442ad8b873b67ef6926d4ca2b}{\_startDate}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00036}\mbox{\hyperlink{class_trip_d_t_o_a1280ab8760ed4d4ea05bd02a5104ca48}{00036}}\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_trip_d_t_o_a1280ab8760ed4d4ea05bd02a5104ca48}{TripDTO::getEndDate}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00037}00037\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_aae0a12990c8384e30034eb7b1ddcfa9c}{\_endDate}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00041}\mbox{\hyperlink{class_trip_d_t_o_ae3f87f6196946afef7b20475b0d21734}{00041}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_trip_d_t_o_ae3f87f6196946afef7b20475b0d21734}{TripDTO::getPrice}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00042}00042\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_ae01ae610f3d2db6c7d8f8bbf02516a0e}{\_price}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00046}\mbox{\hyperlink{class_trip_d_t_o_adf072c3f123ff43cef1b984d490ce986}{00046}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_trip_d_t_o_adf072c3f123ff43cef1b984d490ce986}{TripDTO::getCapacity}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00047}00047\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_a264f3003c027ce71a5305b33ca06aee2}{\_capacity}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00051}\mbox{\hyperlink{class_trip_d_t_o_a32d054e277010d77b61778595297d23f}{00051}}\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_trip_d_t_o_a32d054e277010d77b61778595297d23f}{TripDTO::getDescription}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00052}00052\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_trip_d_t_o_a56b15e0f29c36ce696499c45a9528497}{\_description}};}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00056}\mbox{\hyperlink{class_trip_d_t_o_af720792421052f7eb342a26573916ec2}{00056}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_af720792421052f7eb342a26573916ec2}{TripDTO::setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00057}00057\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_aceb6a7ee022e36323ec06e65eda3f0ab}{\_id}}\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00061}\mbox{\hyperlink{class_trip_d_t_o_a3f845d88f01c46060a82afde11ea57e9}{00061}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_a3f845d88f01c46060a82afde11ea57e9}{TripDTO::setName}}(\textcolor{keyword}{const}\ std::string\ \&name)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00062}00062\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_ae8098e15e50bc32e024d370df3188481}{\_name}}\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00064}00064\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00066}\mbox{\hyperlink{class_trip_d_t_o_ae25088beb6436101081844299908bfac}{00066}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_ae25088beb6436101081844299908bfac}{TripDTO::setDestination}}(\textcolor{keyword}{const}\ std::string\ \&destination)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00067}00067\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_ac0ed0f89eb719f438ddc31916c3bc6a4}{\_destination}}\ =\ destination;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00069}00069\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00071}\mbox{\hyperlink{class_trip_d_t_o_a7c53d7e6ce532debe94b6c0374f4a0cf}{00071}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_a7c53d7e6ce532debe94b6c0374f4a0cf}{TripDTO::setStartDate}}(\textcolor{keyword}{const}\ std::string\ \&startDate)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00072}00072\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_afef9102442ad8b873b67ef6926d4ca2b}{\_startDate}}\ =\ startDate;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00074}00074\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00076}\mbox{\hyperlink{class_trip_d_t_o_a8d02d1d4358d065eb9ecebcf6defe53f}{00076}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_a8d02d1d4358d065eb9ecebcf6defe53f}{TripDTO::setEndDate}}(\textcolor{keyword}{const}\ std::string\ \&endDate)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_aae0a12990c8384e30034eb7b1ddcfa9c}{\_endDate}}\ =\ endDate;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00079}00079\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00081}\mbox{\hyperlink{class_trip_d_t_o_af9e654c553e38a7a1d17f0c55771d2c7}{00081}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_af9e654c553e38a7a1d17f0c55771d2c7}{TripDTO::setPrice}}(\textcolor{keywordtype}{double}\ price)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00082}00082\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_ae01ae610f3d2db6c7d8f8bbf02516a0e}{\_price}}\ =\ price;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00084}00084\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00086}\mbox{\hyperlink{class_trip_d_t_o_ae6e16482559393d8d48161fce09e4edc}{00086}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_ae6e16482559393d8d48161fce09e4edc}{TripDTO::setCapacity}}(\textcolor{keywordtype}{int}\ capacity)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00087}00087\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00088}00088\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_a264f3003c027ce71a5305b33ca06aee2}{\_capacity}}\ =\ capacity;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00089}00089\ \}}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00091}\mbox{\hyperlink{class_trip_d_t_o_ac97fc03579665386830cb4bdbf7ddf3d}{00091}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trip_d_t_o_ac97fc03579665386830cb4bdbf7ddf3d}{TripDTO::setDescription}}(\textcolor{keyword}{const}\ std::string\ \&description)}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00092}00092\ \{}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00093}00093\ \ \ \ \ \mbox{\hyperlink{class_trip_d_t_o_a56b15e0f29c36ce696499c45a9528497}{\_description}}\ =\ description;}
+\DoxyCodeLine{\Hypertarget{_trip_d_t_o_8cpp_source_l00094}00094\ \}}
+
+\end{DoxyCode}

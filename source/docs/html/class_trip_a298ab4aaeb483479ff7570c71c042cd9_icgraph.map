@@ -1,0 +1,16 @@
+<map id="Trip::setAvailableSeats" name="Trip::setAvailableSeats">
+<area shape="rect" id="Node000001" title="Set the number of available seats." alt="" coords="671,81,828,108"/>
+<area shape="rect" id="Node000002" href="$class_booking_service.html#a746c4d2ae89abc0c3a5718eb769eb658" title="Cancel an existing booking." alt="" coords="418,5,623,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="703,77,622,47,583,35,584,30,624,41,704,72"/>
+<area shape="rect" id="Node000003" href="$class_booking_service.html#a4a7653c1474cc029707a8b3d7f3da5f5" title="Create a new booking." alt="" coords="419,56,622,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="656,87,623,83,623,78,656,82"/>
+<area shape="rect" id="Node000004" href="$class_trip_menu.html#a5ff831e62784f549057229c10d3606c4" title="Edit an existing trip." alt="" coords="458,107,584,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="656,108,585,116,584,110,655,102"/>
+<area shape="rect" id="Node000007" href="$class_trip_service.html#a4954762025610fb65520bc54c78b82fc" title="Update the number of available seats for a trip." alt="" coords="427,157,614,200"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="703,117,624,148,592,159,590,154,622,143,701,112"/>
+<area shape="rect" id="Node000005" href="$class_trip_menu.html#af295149c42640ca0930b74390a002411" title="Process trip&#39;s menu choice." alt="" coords="168,107,370,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="442,123,370,123,370,117,442,117"/>
+<area shape="rect" id="Node000006" href="$class_trip_menu.html#a75dde9b0a855c40faa6a2f78f7c56479" title="Display the trip management menu and process selection." alt="" coords="5,107,120,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="152,132,120,131,120,125,152,126"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="135,109,167,108,167,114,135,114"/>
+</map>

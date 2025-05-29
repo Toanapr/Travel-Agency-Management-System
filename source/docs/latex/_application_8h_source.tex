@@ -1,0 +1,67 @@
+\doxysection{Application.\+h}
+\hypertarget{_application_8h_source}{}\label{_application_8h_source}\index{TravelAgency/source/src/Application.h@{TravelAgency/source/src/Application.h}}
+\mbox{\hyperlink{_application_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ APPLICATION\_H}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ APPLICATION\_H}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_database_connection_8h}{data/database/DatabaseConnection.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_repository_8h}{data/repositories/UserRepository.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_repository_8h}{data/repositories/TripRepository.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_repository_8h}{data/repositories/BookingRepository.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_user_service_8h}{business/services/UserService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trip_service_8h}{business/services/TripService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_booking_service_8h}{business/services/BookingService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_handler_8h}{presentation/menu/MenuHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_handler_8h}{presentation/console/InputHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_output_formatter_8h}{presentation/console/OutputFormatter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00024}\mbox{\hyperlink{class_application}{00024}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00026}00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ Database}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00028}\mbox{\hyperlink{class_application_a841232b6b959e1f5e4e4ba63c1d9b17c}{00028}}\ \ \ \ \ std::shared\_ptr<DatabaseConnection>\ \mbox{\hyperlink{class_application_a841232b6b959e1f5e4e4ba63c1d9b17c}{\_dbConnection}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00030}00030\ \ \ \ \ \textcolor{comment}{//\ Repositories}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00031}\mbox{\hyperlink{class_application_a0b1bb5ade2ee9d72b580266b40f734be}{00031}}\ \ \ \ \ std::shared\_ptr<IUserRepository>\ \mbox{\hyperlink{class_application_a0b1bb5ade2ee9d72b580266b40f734be}{\_userRepository}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00032}\mbox{\hyperlink{class_application_af1d7a73e4ec7bc82ef7f796088a8da97}{00032}}\ \ \ \ \ std::shared\_ptr<ITripRepository>\ \mbox{\hyperlink{class_application_af1d7a73e4ec7bc82ef7f796088a8da97}{\_tripRepository}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00033}\mbox{\hyperlink{class_application_a8d7b4d86bcdc9ea5c5e412851ebcd9b8}{00033}}\ \ \ \ \ std::shared\_ptr<IBookingRepository>\ \mbox{\hyperlink{class_application_a8d7b4d86bcdc9ea5c5e412851ebcd9b8}{\_bookingRepository}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00035}00035\ \ \ \ \ \textcolor{comment}{//\ Services}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00036}\mbox{\hyperlink{class_application_a212fe4bfca0b92e069f5c32117470c59}{00036}}\ \ \ \ \ std::shared\_ptr<UserService>\ \mbox{\hyperlink{class_application_a212fe4bfca0b92e069f5c32117470c59}{\_userService}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00037}\mbox{\hyperlink{class_application_a0b6075f3ea735a5641c88ada64a6c4f1}{00037}}\ \ \ \ \ std::shared\_ptr<TripService>\ \mbox{\hyperlink{class_application_a0b6075f3ea735a5641c88ada64a6c4f1}{\_tripService}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00038}\mbox{\hyperlink{class_application_a4020876f22dab0283fb5c91e812ed3e6}{00038}}\ \ \ \ \ std::shared\_ptr<BookingService>\ \mbox{\hyperlink{class_application_a4020876f22dab0283fb5c91e812ed3e6}{\_bookingService}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//\ UI\ Components}}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00041}\mbox{\hyperlink{class_application_a07ee73bec6395024fd2e876a7affef8c}{00041}}\ \ \ \ \ std::shared\_ptr<InputHandler>\ \mbox{\hyperlink{class_application_a07ee73bec6395024fd2e876a7affef8c}{\_inputHandler}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00042}\mbox{\hyperlink{class_application_a2e5f11c978f7ef8a9cc0a32795577974}{00042}}\ \ \ \ \ std::shared\_ptr<OutputFormatter>\ \mbox{\hyperlink{class_application_a2e5f11c978f7ef8a9cc0a32795577974}{\_outputFormatter}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00043}\mbox{\hyperlink{class_application_a1f2cb001df1fe69707f17709e55c47a7}{00043}}\ \ \ \ \ std::shared\_ptr<MenuHandler>\ \mbox{\hyperlink{class_application_a1f2cb001df1fe69707f17709e55c47a7}{\_menuHandler}};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_ae087205b30ec536f5785b3d68c44f3ba}{initializeDatabase}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_a16ea93b1f413947cffe199bfe6512ed5}{initializeRepositories}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_a91187955cec610c2fb67265cb8b0b81a}{initializeServices}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00063}00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_abc59dec33abfa9be858e95267fe8169e}{initializeUIComponents}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00070}00070\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00074}\mbox{\hyperlink{class_application_afaeec66a8591b6d88049b260133d13fc}{00074}}\ \ \ \ \ \mbox{\hyperlink{class_application_afaeec66a8591b6d88049b260133d13fc}{Application}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00079}\mbox{\hyperlink{class_application_a4bddd891168e3adc56dfd505ac41af7f}{00079}}\ \ \ \ \ \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}\ \&\mbox{\hyperlink{class_application_a4bddd891168e3adc56dfd505ac41af7f}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00085}00085\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}}\ \&\mbox{\hyperlink{class_application_aa3c1c63e078d14fb104431a15951a070}{getInstance}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00090}00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_af431bce25717b04a78d4d0940ed6a92c}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00095}00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_a68965449404743bf1add056784d6cf81}{run}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00100}00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_ad434bdac305884ce971ded815384c976}{shutdown}}();}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00101}00101\ \};}
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_application_8h_source_l00103}00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPLICATION\_H}}
+
+\end{DoxyCode}

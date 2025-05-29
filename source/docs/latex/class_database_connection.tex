@@ -1,0 +1,344 @@
+\doxysection{Database\+Connection Class Reference}
+\hypertarget{class_database_connection}{}\label{class_database_connection}\index{DatabaseConnection@{DatabaseConnection}}
+
+
+Singleton class for managing database connections.  
+
+
+
+
+{\ttfamily \#include $<$Database\+Connection.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_connection_a76d5fcb71beacd3d7afc5f68e96e0924}{Database\+Connection}} (const \mbox{\hyperlink{class_database_connection}{Database\+Connection}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete copy constructor to enforce Singleton pattern. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_database_connection}{Database\+Connection}} \& \mbox{\hyperlink{class_database_connection_a33f0014906a4c6efaaf52e5a522b81d9}{operator=}} (const \mbox{\hyperlink{class_database_connection}{Database\+Connection}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Delete assignment operator to enforce Singleton pattern. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_connection_aad441ace55a904dce5403e92b87d2850}{connect}} (const std\+::string \&data\+Path)
+\begin{DoxyCompactList}\small\item\em Connect to a database (creates or opens data directory) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_connection_a0722d2ce742a882eaabc3eb7ed518b64}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnect from the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_connection_a21f7ae84b8545048eda45809c1dafd1f}{is\+Connected}} () const
+\begin{DoxyCompactList}\small\item\em Check if connected to a database. \end{DoxyCompactList}\item 
+std\+::ifstream \mbox{\hyperlink{class_database_connection_a6c6afd4b64bf1dae6dc31a53c2dfe408}{open\+File\+For\+Reading}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Open a file for reading. \end{DoxyCompactList}\item 
+std\+::ofstream \mbox{\hyperlink{class_database_connection_aacb4317d7baa88b503e617a5af226747}{open\+File\+For\+Writing}} (const std\+::string \&filename, bool append=false)
+\begin{DoxyCompactList}\small\item\em Open a file for writing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ \mbox{\hyperlink{class_database_connection_a93ec35ab07456b6b6be7015f0cb487d1}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the singleton instance of \doxylink{class_database_connection}{Database\+Connection}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_connection_a7f50e17550775f1803dea4084f1987f1}{Database\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Private constructor for Singleton pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_database_connection_af53292d0042d10e9903bd7236284a6e3}{\+\_\+data\+Path}}
+\begin{DoxyCompactList}\small\item\em Path to data storage directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ \mbox{\hyperlink{class_database_connection_afcc02e157d8b0ddc0610dbd63be80f81}{\+\_\+instance}} = nullptr
+\begin{DoxyCompactList}\small\item\em Singleton instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class for managing database connections. 
+
+This class provides a central point for managing database connections in the application. It implements the Singleton pattern to ensure only one database connection exists across the application. 
+
+Definition at line \mbox{\hyperlink{_database_connection_8h_source_l00016}{16}} of file \mbox{\hyperlink{_database_connection_8h_source}{Database\+Connection.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_database_connection_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_database_connection_a7f50e17550775f1803dea4084f1987f1}\index{DatabaseConnection@{DatabaseConnection}!DatabaseConnection@{DatabaseConnection}}
+\index{DatabaseConnection@{DatabaseConnection}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{DatabaseConnection()}{DatabaseConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_database_connection_a7f50e17550775f1803dea4084f1987f1} 
+Database\+Connection\+::\+Database\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private constructor for Singleton pattern. 
+
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00020}{\+\_\+data\+Path}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_database_connection_a76d5fcb71beacd3d7afc5f68e96e0924}{Database\+Connection()}}, \mbox{\hyperlink{_database_connection_8cpp_source_l00011}{get\+Instance()}}, and \mbox{\hyperlink{class_database_connection_a33f0014906a4c6efaaf52e5a522b81d9}{operator=()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_connection_a7f50e17550775f1803dea4084f1987f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_database_connection_a76d5fcb71beacd3d7afc5f68e96e0924}\index{DatabaseConnection@{DatabaseConnection}!DatabaseConnection@{DatabaseConnection}}
+\index{DatabaseConnection@{DatabaseConnection}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{DatabaseConnection()}{DatabaseConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_database_connection_a76d5fcb71beacd3d7afc5f68e96e0924} 
+Database\+Connection\+::\+Database\+Connection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_database_connection}{Database\+Connection}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Delete copy constructor to enforce Singleton pattern. 
+
+
+
+References \mbox{\hyperlink{_database_connection_8cpp_source_l00007}{Database\+Connection()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_database_connection_a76d5fcb71beacd3d7afc5f68e96e0924_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_database_connection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_connection_aad441ace55a904dce5403e92b87d2850}\index{DatabaseConnection@{DatabaseConnection}!connect@{connect}}
+\index{connect@{connect}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_database_connection_aad441ace55a904dce5403e92b87d2850} 
+bool Database\+Connection\+::connect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Path}{}\end{DoxyParamCaption})}
+
+
+
+Connect to a database (creates or opens data directory) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Path} & Path to the data storage directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if connection successful, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00020}{\+\_\+data\+Path}}.
+
+\Hypertarget{class_database_connection_a0722d2ce742a882eaabc3eb7ed518b64}\index{DatabaseConnection@{DatabaseConnection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_database_connection_a0722d2ce742a882eaabc3eb7ed518b64} 
+void Database\+Connection\+::disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disconnect from the database. 
+
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+\Hypertarget{class_database_connection_a93ec35ab07456b6b6be7015f0cb487d1}\index{DatabaseConnection@{DatabaseConnection}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_database_connection_a93ec35ab07456b6b6be7015f0cb487d1} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ Database\+Connection\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the singleton instance of \doxylink{class_database_connection}{Database\+Connection}. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to the \doxylink{class_database_connection}{Database\+Connection} instance 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00019}{\+\_\+instance}}, and \mbox{\hyperlink{_database_connection_8cpp_source_l00007}{Database\+Connection()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_application_8cpp_source_l00032}{Application\+::initialize\+Database()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_database_connection_a93ec35ab07456b6b6be7015f0cb487d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_connection_a93ec35ab07456b6b6be7015f0cb487d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_database_connection_a21f7ae84b8545048eda45809c1dafd1f}\index{DatabaseConnection@{DatabaseConnection}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{class_database_connection_a21f7ae84b8545048eda45809c1dafd1f} 
+bool Database\+Connection\+::is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Check if connected to a database. 
+
+\begin{DoxyReturn}{Returns}
+true if connected, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00020}{\+\_\+data\+Path}}.
+
+\Hypertarget{class_database_connection_a6c6afd4b64bf1dae6dc31a53c2dfe408}\index{DatabaseConnection@{DatabaseConnection}!openFileForReading@{openFileForReading}}
+\index{openFileForReading@{openFileForReading}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{openFileForReading()}{openFileForReading()}}
+{\footnotesize\ttfamily \label{class_database_connection_a6c6afd4b64bf1dae6dc31a53c2dfe408} 
+std\+::ifstream Database\+Connection\+::open\+File\+For\+Reading (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Open a file for reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input file stream for reading 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00020}{\+\_\+data\+Path}}.
+
+\Hypertarget{class_database_connection_aacb4317d7baa88b503e617a5af226747}\index{DatabaseConnection@{DatabaseConnection}!openFileForWriting@{openFileForWriting}}
+\index{openFileForWriting@{openFileForWriting}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{openFileForWriting()}{openFileForWriting()}}
+{\footnotesize\ttfamily \label{class_database_connection_aacb4317d7baa88b503e617a5af226747} 
+std\+::ofstream Database\+Connection\+::open\+File\+For\+Writing (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{bool}]{append}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Open a file for writing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file to open \\
+\hline
+{\em append} & true to append to file, false to overwrite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output file stream for writing 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{_database_connection_8cpp_source}{Database\+Connection.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{_database_connection_8h_source_l00020}{\+\_\+data\+Path}}.
+
+\Hypertarget{class_database_connection_a33f0014906a4c6efaaf52e5a522b81d9}\index{DatabaseConnection@{DatabaseConnection}!operator=@{operator=}}
+\index{operator=@{operator=}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_database_connection_a33f0014906a4c6efaaf52e5a522b81d9} 
+\mbox{\hyperlink{class_database_connection}{Database\+Connection}} \& Database\+Connection\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_database_connection}{Database\+Connection}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Delete assignment operator to enforce Singleton pattern. 
+
+
+
+References \mbox{\hyperlink{_database_connection_8cpp_source_l00007}{Database\+Connection()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_database_connection_a33f0014906a4c6efaaf52e5a522b81d9_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_database_connection_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_database_connection_af53292d0042d10e9903bd7236284a6e3}\index{DatabaseConnection@{DatabaseConnection}!\_dataPath@{\_dataPath}}
+\index{\_dataPath@{\_dataPath}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{\_dataPath}{\_dataPath}}
+{\footnotesize\ttfamily \label{class_database_connection_af53292d0042d10e9903bd7236284a6e3} 
+std\+::string Database\+Connection\+::\+\_\+data\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path to data storage directory. 
+
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8h_source_l00020}{20}} of file \mbox{\hyperlink{_database_connection_8h_source}{Database\+Connection.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_database_connection_8cpp_source_l00020}{connect()}}, \mbox{\hyperlink{_database_connection_8cpp_source_l00007}{Database\+Connection()}}, \mbox{\hyperlink{_database_connection_8cpp_source_l00048}{is\+Connected()}}, \mbox{\hyperlink{_database_connection_8cpp_source_l00053}{open\+File\+For\+Reading()}}, and \mbox{\hyperlink{_database_connection_8cpp_source_l00088}{open\+File\+For\+Writing()}}.
+
+\Hypertarget{class_database_connection_afcc02e157d8b0ddc0610dbd63be80f81}\index{DatabaseConnection@{DatabaseConnection}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!DatabaseConnection@{DatabaseConnection}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \label{class_database_connection_afcc02e157d8b0ddc0610dbd63be80f81} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_database_connection}{Database\+Connection}} $>$ Database\+Connection\+::\+\_\+instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Singleton instance. 
+
+
+
+Definition at line \mbox{\hyperlink{_database_connection_8h_source_l00019}{19}} of file \mbox{\hyperlink{_database_connection_8h_source}{Database\+Connection.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_database_connection_8cpp_source_l00011}{get\+Instance()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Travel\+Agency/source/src/data/database/\mbox{\hyperlink{_database_connection_8h}{Database\+Connection.\+h}}\item 
+Travel\+Agency/source/src/data/database/\mbox{\hyperlink{_database_connection_8cpp}{Database\+Connection.\+cpp}}\end{DoxyCompactItemize}
