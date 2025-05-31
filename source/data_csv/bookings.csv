@@ -8,3 +8,7 @@ id,userId,tripId,bookingDate,numberOfPeople,totalCost,status
 7,1,1,2025-05-21,20,24000.000000,Cancelled
 8,1,8,2025-05-25,11,374.000000,Confirmed
 9,1,2,25-05-2025,3,7500.000000,Confirmed
+10,2,3,2025-05-26,1,1800.000000,Pending
+11,3,4,2025-05-27,2,2800.000000,Cancelled
+12,2,5,2025-05-28,4,4400.000000,Confirmed
+13,3,7,2025-05-29,23,805.000000,Completed
