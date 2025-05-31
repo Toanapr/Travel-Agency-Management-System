@@ -1,5 +1,7 @@
 <map id="TripRepository::getNextId" name="TripRepository::getNextId">
-<area shape="rect" id="Node000001" title="Generate the next available ID for a new trip." alt="" coords="189,5,360,32"/>
-<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="5,5,141,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+<area shape="rect" id="Node000001" title="Generate the next available ID for a new trip." alt="" coords="307,5,478,32"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="124,5,259,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,21,259,21,259,16,291,16"/>
+<area shape="rect" id="Node000003" href="$trip__repository__test_8cpp.html#ad0fe56cbd0f857afa7587fc801447b44" title=" " alt="" coords="5,5,76,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,21,76,21,76,16,108,16"/>
 </map>

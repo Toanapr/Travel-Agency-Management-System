@@ -1,5 +1,9 @@
 <map id="User::setId" name="User::setId">
-<area shape="rect" id="Node000001" title="Set the user&#39;s ID." alt="" coords="195,5,281,32"/>
-<area shape="rect" id="Node000002" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="5,5,147,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,21,147,21,147,16,179,16"/>
+<area shape="rect" id="Node000001" title="Set the user&#39;s ID." alt="" coords="313,31,399,57"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="124,5,265,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,38,265,32,266,27,298,32"/>
+<area shape="rect" id="Node000004" href="$user__test_8cpp.html#ab1fbd2b5ebe378d9ef2c49f36b8e34e7" title=" " alt="" coords="159,56,230,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,56,230,66,230,61,297,50"/>
+<area shape="rect" id="Node000003" href="$user__repository__test_8cpp.html#a2ab8a918824f88d3aee7c94a1f797ce6" title=" " alt="" coords="5,5,76,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,21,76,21,76,16,108,16"/>
 </map>

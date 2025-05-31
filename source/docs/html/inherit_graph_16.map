@@ -1,3 +1,21 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_trip_d_t_o.html" title="Data Transfer Object for Trip entities." alt="" coords="5,5,77,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,208,99,235"/>
+<area shape="rect" id="Node000001" href="$class_booking_repository_test.html" title=" " alt="" coords="147,5,303,32"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="58,192,70,158,88,118,113,77,145,42,163,30,166,35,148,46,117,80,93,120,75,160,63,194"/>
+<area shape="rect" id="Node000002" href="$class_booking_service_test.html" title=" " alt="" coords="156,56,294,83"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="64,193,97,142,119,115,145,92,166,81,169,86,148,97,123,119,101,145,69,196"/>
+<area shape="rect" id="Node000003" href="$class_booking_test.html" title=" " alt="" coords="178,107,272,133"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="76,195,108,168,145,143,177,130,179,135,148,148,111,172,79,199"/>
+<area shape="rect" id="Node000004" href="$class_trip_repository_test.html" title=" " alt="" coords="159,157,290,184"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="113,201,176,182,177,187,114,206"/>
+<area shape="rect" id="Node000005" href="$class_trip_service_test.html" title=" " alt="" coords="169,208,281,235"/>
+<area shape="poly" id="edge11_Node000000_Node000005" title=" " alt="" coords="114,219,168,219,168,224,114,224"/>
+<area shape="rect" id="Node000006" href="$class_trip_test.html" title=" " alt="" coords="191,259,259,285"/>
+<area shape="poly" id="edge12_Node000000_Node000006" title=" " alt="" coords="114,237,191,260,189,265,113,242"/>
+<area shape="rect" id="Node000007" href="$class_user_repository_test.html" title=" " alt="" coords="156,309,294,336"/>
+<area shape="poly" id="edge13_Node000000_Node000007" title=" " alt="" coords="79,243,111,270,148,295,173,306,171,311,145,300,108,274,76,247"/>
+<area shape="rect" id="Node000008" href="$class_user_service_test.html" title=" " alt="" coords="166,360,284,387"/>
+<area shape="poly" id="edge14_Node000000_Node000008" title=" " alt="" coords="69,247,101,297,123,323,148,346,169,357,166,362,145,350,119,327,97,301,64,250"/>
+<area shape="rect" id="Node000009" href="$class_user_test.html" title=" " alt="" coords="188,411,262,437"/>
+<area shape="poly" id="edge15_Node000000_Node000009" title=" " alt="" coords="63,249,75,283,93,323,117,362,148,397,167,408,188,416,186,421,165,413,145,401,113,366,88,325,70,285,58,251"/>
 </map>

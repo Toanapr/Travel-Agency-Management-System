@@ -1,7 +1,11 @@
 <map id="User::setEmail" name="User::setEmail">
-<area shape="rect" id="Node000001" title="Set the user&#39;s email." alt="" coords="616,5,725,32"/>
+<area shape="rect" id="Node000001" title="Set the user&#39;s email." alt="" coords="616,56,725,83"/>
 <area shape="rect" id="Node000002" href="$class_user_menu.html#ae2fab27f19100767213c16f24f4aeec1" title="Edit an existing user." alt="" coords="430,5,568,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="601,21,569,21,569,16,601,16"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="608,54,546,35,548,30,609,48"/>
+<area shape="rect" id="Node000005" href="$user__service__test_8cpp.html#ac07502b29c54c448416dc1cae2e797fd" title=" " alt="" coords="464,56,534,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="601,72,535,72,535,67,601,67"/>
+<area shape="rect" id="Node000006" href="$user__test_8cpp.html#ab1fbd2b5ebe378d9ef2c49f36b8e34e7" title=" " alt="" coords="464,107,534,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="609,90,535,112,534,107,607,85"/>
 <area shape="rect" id="Node000003" href="$class_user_menu.html#adc6cd631547a11cef41150c02ce5a2c9" title="Process user&#39;s menu choice." alt="" coords="174,5,382,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,21,382,21,382,16,415,16"/>
 <area shape="rect" id="Node000004" href="$class_user_menu.html#a86506f9b70c23435801e4f9a0c44dd28" title="Display the user management menu and process selection." alt="" coords="5,5,126,32"/>

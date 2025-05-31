@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$class_i_booking_repository.html" title="Interface for booking data persistence operations." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="Node000001" href="$class_booking_repository.html" title="Implementation of IBookingRepository for CSV file storage." alt="" coords="189,5,320,32"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+<area shape="rect" id="Node000000" href="$class_i_booking_repository.html" title="Interface for booking data persistence operations." alt="" coords="5,31,141,57"/>
+<area shape="rect" id="Node000001" href="$class_booking_repository.html" title="Implementation of IBookingRepository for CSV file storage." alt="" coords="205,5,336,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="156,31,204,24,205,30,157,36"/>
+<area shape="rect" id="Node000002" href="$class_mock_booking_repository.html" title=" " alt="" coords="189,56,352,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="157,52,188,56,188,61,156,57"/>
 </map>

@@ -9,6 +9,8 @@ var searchData=
   ['userdto_6',['UserDTO',['../class_user_d_t_o.html#a06fbe0627dff5fbeebf90553fe8df219',1,'UserDTO::UserDTO()'],['../class_user_d_t_o.html#aad4441aabe8ae69412425320a16fcd9e',1,'UserDTO::UserDTO(int id, const std::string &amp;name, const std::string &amp;address, const std::string &amp;phone, const std::string &amp;email)']]],
   ['usermenu_7',['UserMenu',['../class_user_menu.html#a04b6c77d23b1a26db1fa0c8eb291cd41',1,'UserMenu']]],
   ['userrepository_8',['UserRepository',['../class_user_repository.html#ae013fbfe2cfaf9d9bcc5e843704c960c',1,'UserRepository']]],
-  ['userservice_9',['UserService',['../class_user_service.html#a992b67d425a1944b3582d51fec54f9a0',1,'UserService']]],
-  ['userview_10',['UserView',['../class_user_view.html#adb41b1cd85dc2df397db4e5828dc9306',1,'UserView']]]
+  ['userrepositorytest_9',['UserRepositoryTest',['../class_user_repository_test.html#ad6a3a25f7e4a16e35afb45bbc6b0c75f',1,'UserRepositoryTest']]],
+  ['userservice_10',['UserService',['../class_user_service.html#a992b67d425a1944b3582d51fec54f9a0',1,'UserService']]],
+  ['userservicetest_11',['UserServiceTest',['../class_user_service_test.html#adb417ffce639ce37b31a556c3f9a2503',1,'UserServiceTest']]],
+  ['userview_12',['UserView',['../class_user_view.html#adb41b1cd85dc2df397db4e5828dc9306',1,'UserView']]]
 ];

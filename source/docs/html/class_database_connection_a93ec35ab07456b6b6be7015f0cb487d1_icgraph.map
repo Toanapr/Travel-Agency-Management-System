@@ -1,7 +1,19 @@
 <map id="DatabaseConnection::getInstance" name="DatabaseConnection::getInstance">
-<area shape="rect" id="Node000001" title="Get the singleton instance of DatabaseConnection." alt="" coords="438,5,581,48"/>
-<area shape="rect" id="Node000002" href="$class_application.html#ae087205b30ec536f5785b3d68c44f3ba" title="Initialize database connection." alt="" coords="194,13,390,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,29,390,29,390,24,423,24"/>
-<area shape="rect" id="Node000003" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,13,146,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,29,146,29,146,24,178,24"/>
+<area shape="rect" id="Node000001" title="Get the singleton instance of DatabaseConnection." alt="" coords="438,189,581,232"/>
+<area shape="rect" id="Node000002" href="$class_application.html#ae087205b30ec536f5785b3d68c44f3ba" title="Initialize database connection." alt="" coords="194,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,177,450,110,422,75,388,46,367,35,369,30,392,42,426,71,455,107,495,174"/>
+<area shape="rect" id="Node000004" href="$class_booking_repository_test.html#a16a997053a7d31e91f9177477bd233d4" title=" " alt="" coords="214,56,370,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="475,180,435,145,389,113,365,102,368,97,391,108,439,141,478,176"/>
+<area shape="rect" id="Node000005" href="$class_trip_repository_test.html#ae0a255152ee8dda8e2f7c3cb3b12e18a" title=" " alt="" coords="226,123,358,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="423,187,357,167,359,162,425,182"/>
+<area shape="rect" id="Node000006" href="$class_user_repository_test.html#ac8013d140f1459d7364a77ab86d9f03c" title=" " alt="" coords="223,189,360,232"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="423,213,361,213,361,208,423,208"/>
+<area shape="rect" id="Node000007" href="$booking__repository__test_8cpp.html#a19256d73c74f5f9e7be607b7fd0ec5e4" title=" " alt="" coords="257,256,327,283"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="424,237,391,247,328,263,327,258,389,241,422,232"/>
+<area shape="rect" id="Node000008" href="$trip__repository__test_8cpp.html#ad0fe56cbd0f857afa7587fc801447b44" title=" " alt="" coords="257,307,327,333"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="473,244,435,272,391,297,359,309,328,317,327,312,358,304,389,292,432,268,470,240"/>
+<area shape="rect" id="Node000009" href="$user__repository__test_8cpp.html#a2ab8a918824f88d3aee7c94a1f797ce6" title=" " alt="" coords="257,357,327,384"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="489,247,448,299,421,325,391,348,360,362,328,369,327,364,358,357,389,343,418,321,444,296,485,244"/>
+<area shape="rect" id="Node000003" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,5,146,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
 </map>

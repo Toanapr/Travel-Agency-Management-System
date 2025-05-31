@@ -1,0 +1,11 @@
+<map id="BookingServiceTest" name="BookingServiceTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="123,104,261,131"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,99,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,39,140,78,175,101,172,106,137,82,81,43"/>
+<area shape="rect" id="Node000003" href="$class_user.html" title="Represents a user in the travel agency system." alt="" coords="123,5,173,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,48,148,64,152,79,161,91,173,102,169,106,157,95,148,81,143,65,142,48"/>
+<area shape="rect" id="Node000004" href="$class_trip.html" title="Represents a travel trip offered by the agency." alt="" coords="216,5,259,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,47,200,105,195,103,223,45"/>
+<area shape="rect" id="Node000005" href="$class_booking.html" title="Represents a travel booking made by a user." alt="" coords="286,5,354,32"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="308,47,295,65,279,82,258,96,236,106,233,101,255,91,276,78,291,62,304,44"/>
+</map>

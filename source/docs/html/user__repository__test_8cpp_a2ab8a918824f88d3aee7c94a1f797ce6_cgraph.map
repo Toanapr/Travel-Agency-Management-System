@@ -1,0 +1,30 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,289,76,316"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="125,248,266,275"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,291,127,277,129,282,77,296"/>
+<area shape="rect" id="Node000013" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="124,311,267,353"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="76,307,109,313,108,318,75,312"/>
+<area shape="rect" id="Node000003" href="$class_user_repository.html#a52c72247448def6d127af3cdf34c13ef" title="Convert a User object to CSV format." alt="" coords="315,121,506,164"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="220,245,356,170,358,174,223,250"/>
+<area shape="rect" id="Node000009" href="$class_user_repository.html#a7e0e2307333756f568d18df3f65cbab4" title="Generate the next available ID for a new user." alt="" coords="322,235,499,261"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="266,254,306,252,307,257,266,260"/>
+<area shape="rect" id="Node000012" href="$class_user.html#a792a213160c4fccf098fa6a8d8d8f01e" title="Set the user&#39;s ID." alt="" coords="368,285,454,312"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="267,271,352,286,352,291,266,276"/>
+<area shape="rect" id="Node000004" href="$class_user.html#af45fe69fc61f83248b5542415fd60f62" title="Get the user&#39;s address." alt="" coords="569,5,693,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="437,119,489,80,553,42,566,36,568,41,556,46,492,85,440,123"/>
+<area shape="rect" id="Node000005" href="$class_user.html#a68c520e78268ba63c97ff04b6fb210a1" title="Get the user&#39;s email." alt="" coords="577,56,685,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="476,118,573,86,575,91,478,123"/>
+<area shape="rect" id="Node000006" href="$class_user.html#a010077fcd52d32fd3b4e1171f748a86a" title="Get the user&#39;s ID." alt="" coords="803,153,889,180"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="507,137,604,138,708,143,788,153,787,158,707,148,604,143,507,143"/>
+<area shape="rect" id="Node000007" href="$class_user.html#a446a64e63adafbc2e1428532275ad6a1" title="Get the user&#39;s name." alt="" coords="576,157,686,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="507,152,560,159,560,164,506,158"/>
+<area shape="rect" id="Node000008" href="$class_user.html#aa6b3271fff710eee0b406cc270fe7071" title="Get the user&#39;s phone number." alt="" coords="575,208,687,235"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="470,162,555,193,574,200,572,205,553,199,468,167"/>
+<area shape="rect" id="Node000010" href="$class_user_repository.html#a197d8fa753b7b8fffd5053bb99cd5ab6" title="Retrieve all users from storage." alt="" coords="554,259,708,285"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="500,255,539,259,538,265,500,260"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="678,256,707,244,762,216,810,186,813,191,764,220,709,249,680,261"/>
+<area shape="rect" id="Node000011" href="$class_user_repository.html#ae9f1e6f7deae63a13032170d9108ae79" title="Convert a CSV line to a User object." alt="" coords="756,251,936,293"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="708,269,740,269,740,275,708,275"/>
+<area shape="rect" id="Node000014" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="335,336,486,379"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="268,338,320,344,319,349,267,343"/>
+</map>

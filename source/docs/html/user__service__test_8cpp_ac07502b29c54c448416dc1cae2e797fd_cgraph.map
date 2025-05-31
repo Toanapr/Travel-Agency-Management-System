@@ -1,0 +1,7 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,76,57"/>
+<area shape="rect" id="Node000002" href="$class_user.html#a11a1d37fde91df2330f69c3c24de056b" title="Set the user&#39;s email." alt="" coords="125,5,233,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,35,109,29,110,34,77,40"/>
+<area shape="rect" id="Node000003" href="$class_user.html#abe087f191699f9d61bdc94d041e4fada" title="Set the user&#39;s name." alt="" coords="124,56,234,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="77,48,109,54,108,59,76,53"/>
+</map>

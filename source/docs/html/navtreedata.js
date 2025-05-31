@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "doxyfile", "index.html", [
+  [ "TravelAgency", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -39,6 +39,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]
@@ -48,8 +49,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cpp.html",
-"class_i_booking_repository.html",
-"class_user_menu.html#ae2fab27f19100767213c16f24f4aeec1"
+"class_booking_repository_test.html",
+"class_trip_d_t_o.html#afef9102442ad8b873b67ef6926d4ca2b",
+"trip__repository__test_8cpp.html#afec37d9e36f0bc86e671fe9f33f75bf5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

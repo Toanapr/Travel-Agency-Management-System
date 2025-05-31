@@ -1,0 +1,7 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,76,57"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="136,5,268,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,36,120,29,121,34,77,41"/>
+<area shape="rect" id="Node000003" href="$class_trip.html#a298ab4aaeb483479ff7570c71c042cd9" title="Set the number of available seats." alt="" coords="124,56,280,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="77,47,109,52,108,57,76,52"/>
+</map>

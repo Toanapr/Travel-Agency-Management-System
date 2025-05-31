@@ -1,0 +1,7 @@
+<map id="BookingRepositoryTest::SetUp" name="BookingRepositoryTest::SetUp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="210,5,353,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
+<area shape="rect" id="Node000003" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="401,5,552,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,24,386,24,386,29,353,29"/>
+</map>

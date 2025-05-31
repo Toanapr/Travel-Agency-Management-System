@@ -1,0 +1,7 @@
+<map id="TripRepositoryTest::SetUp" name="TripRepositoryTest::SetUp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,137,48"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="185,5,328,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,24,169,24,169,29,137,29"/>
+<area shape="rect" id="Node000003" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="376,5,527,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,24,361,24,361,29,328,29"/>
+</map>

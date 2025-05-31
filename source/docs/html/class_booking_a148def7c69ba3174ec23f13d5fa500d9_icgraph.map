@@ -1,15 +1,21 @@
 <map id="Booking::getNumberOfPeople" name="Booking::getNumberOfPeople">
-<area shape="rect" id="Node000001" title="Get the number of people." alt="" coords="467,64,661,91"/>
-<area shape="rect" id="Node000002" href="$class_booking_service.html#a746c4d2ae89abc0c3a5718eb769eb658" title="Cancel an existing booking." alt="" coords="214,5,419,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,63,375,35,376,30,491,57"/>
-<area shape="rect" id="Node000003" href="$class_booking_repository.html#a0fa53dbb9eac76bed63622e16254e240" title="Convert a Booking object to CSV format." alt="" coords="242,56,391,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="452,80,392,80,392,75,452,75"/>
-<area shape="rect" id="Node000007" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="234,123,399,165"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="497,98,399,125,398,119,496,93"/>
-<area shape="rect" id="Node000004" href="$class_booking_repository.html#aa4bf49cdf6b533b1dede777cda76ea53" title="Add a new booking to storage." alt="" coords="5,5,166,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,57,140,35,142,30,227,52"/>
-<area shape="rect" id="Node000005" href="$class_booking_repository.html#a9c034f14250d48a6e2fcbe7cf1945b02" title="Remove a booking from storage." alt="" coords="16,56,155,99"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="226,80,155,80,155,75,226,75"/>
-<area shape="rect" id="Node000006" href="$class_booking_repository.html#ae4a018cf7d476ded313b55d360a384b1" title="Update an existing booking in storage." alt="" coords="16,123,155,165"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="228,106,156,126,155,121,226,100"/>
+<area shape="rect" id="Node000001" title="Get the number of people." alt="" coords="585,131,780,157"/>
+<area shape="rect" id="Node000002" href="$class_booking_service.html#a746c4d2ae89abc0c3a5718eb769eb658" title="Cancel an existing booking." alt="" coords="332,5,537,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,123,600,84,536,46,505,35,507,30,538,42,603,79,656,119"/>
+<area shape="rect" id="Node000003" href="$class_booking_repository.html#a0fa53dbb9eac76bed63622e16254e240" title="Convert a Booking object to CSV format." alt="" coords="360,56,509,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="615,129,509,100,510,95,616,124"/>
+<area shape="rect" id="Node000008" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="352,123,517,165"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="570,147,518,147,518,141,570,141"/>
+<area shape="rect" id="Node000009" href="$booking__service__test_8cpp.html#a7644b00a562d3920b9d99e1059366ad9" title=" " alt="" coords="400,189,470,216"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="609,164,471,197,470,192,608,159"/>
+<area shape="rect" id="Node000010" href="$booking__test_8cpp.html#ab91d65bf0f69d0a6fcd14de072bc7da3" title=" " alt="" coords="400,240,470,267"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="650,169,599,200,538,230,471,250,469,245,536,226,596,196,648,164"/>
+<area shape="rect" id="Node000004" href="$class_booking_repository.html#aa4bf49cdf6b533b1dede777cda76ea53" title="Add a new booking to storage." alt="" coords="124,5,284,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,57,259,35,260,30,346,52"/>
+<area shape="rect" id="Node000006" href="$class_booking_repository.html#a9c034f14250d48a6e2fcbe7cf1945b02" title="Remove a booking from storage." alt="" coords="134,56,274,99"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="345,80,274,80,274,75,345,75"/>
+<area shape="rect" id="Node000007" href="$class_booking_repository.html#ae4a018cf7d476ded313b55d360a384b1" title="Update an existing booking in storage." alt="" coords="134,123,274,165"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="346,106,275,126,273,121,345,100"/>
+<area shape="rect" id="Node000005" href="$booking__repository__test_8cpp.html#a19256d73c74f5f9e7be607b7fd0ec5e4" title=" " alt="" coords="5,5,76,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="108,21,76,21,76,16,108,16"/>
 </map>

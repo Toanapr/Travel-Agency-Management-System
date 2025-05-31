@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['validatebooking_0',['validateBooking',['../class_booking_service.html#a201f831a4648b3f4e2e381f0aa729c17',1,'BookingService']]],
-  ['validatedate_1',['validateDate',['../class_input_handler.html#a08c567187785c8c29285cf33bb7a2d70',1,'InputHandler']]],
-  ['validateemail_2',['validateEmail',['../class_input_handler.html#a2924a4a54e6354edcba15a6b4a51abc9',1,'InputHandler']]],
-  ['validatephone_3',['validatePhone',['../class_input_handler.html#a5d13a83a22189572c25f063284a743ae',1,'InputHandler']]],
-  ['viewallbookings_4',['viewAllBookings',['../class_booking_menu.html#a4b1fecdaa03ee6fb820e10288c017b78',1,'BookingMenu']]],
-  ['viewalltrips_5',['viewAllTrips',['../class_trip_menu.html#aa1a7ce96527898c97e02e25f707a87b0',1,'TripMenu']]],
-  ['viewallusers_6',['viewAllUsers',['../class_user_menu.html#a65716d5c42d3ad5876c1d4bab860e361',1,'UserMenu']]]
+  ['validaddress_0',['validAddress',['../class_user_test.html#a5cce622a323229f63f1929ecfa6cf7d9',1,'UserTest']]],
+  ['validatebooking_1',['validateBooking',['../class_booking_service.html#a201f831a4648b3f4e2e381f0aa729c17',1,'BookingService']]],
+  ['validatedate_2',['validateDate',['../class_input_handler.html#a08c567187785c8c29285cf33bb7a2d70',1,'InputHandler']]],
+  ['validateemail_3',['validateEmail',['../class_input_handler.html#a2924a4a54e6354edcba15a6b4a51abc9',1,'InputHandler']]],
+  ['validatephone_4',['validatePhone',['../class_input_handler.html#a5d13a83a22189572c25f063284a743ae',1,'InputHandler']]],
+  ['validavailableseats_5',['validAvailableSeats',['../class_trip_test.html#a45c23cc95ad197b4830946b2a83b966b',1,'TripTest']]],
+  ['validbookingdate_6',['validBookingDate',['../class_booking_test.html#a245136f70fb0323adc6b39d4cd0495e0',1,'BookingTest']]],
+  ['validcost_7',['validCost',['../class_trip_test.html#a12f39226a53060b0706cb48edcd1395b',1,'TripTest']]],
+  ['validemail_8',['validEmail',['../class_user_test.html#aa4ee625b706ed7f54804acceda99cf78',1,'UserTest']]],
+  ['validenddate_9',['validEndDate',['../class_trip_test.html#a7e51ee22abc7a2c15019f3aefb419b82',1,'TripTest']]],
+  ['validid_10',['validId',['../class_booking_test.html#ac9e7cd71a300dc45ae1bed25b055ae25',1,'BookingTest::validId'],['../class_trip_test.html#ad1a3470782e207e756e9f5ab8b57ba73',1,'TripTest::validId'],['../class_user_test.html#a14beddbb31c81ae713e3123cf60da130',1,'UserTest::validId']]],
+  ['validname_11',['validName',['../class_trip_test.html#ae3c844c0fa5d3ba20627bc9ce70a012f',1,'TripTest::validName'],['../class_user_test.html#a4f4d897db84957662c41fd82698a151f',1,'UserTest::validName']]],
+  ['validnumberofpeople_12',['validNumberOfPeople',['../class_booking_test.html#a6b37003ffd5958e35c05eb33ce44e342',1,'BookingTest']]],
+  ['validphone_13',['validPhone',['../class_user_test.html#a4f8b87162f077015da3e7fe6df538426',1,'UserTest']]],
+  ['validstartdate_14',['validStartDate',['../class_trip_test.html#a0178c9c44026277cefd778df2fd0b8b1',1,'TripTest']]],
+  ['validstatus_15',['validStatus',['../class_booking_test.html#aae2239a3176533f8eeefe3ceba1af015',1,'BookingTest']]],
+  ['validtotalcost_16',['validTotalCost',['../class_booking_test.html#abbc038bf1d8d6ebb908960351f9b72d4',1,'BookingTest']]],
+  ['validtripid_17',['validTripId',['../class_booking_test.html#aa1a071d0a136bd22e4ec45cf77260a4b',1,'BookingTest']]],
+  ['validuserid_18',['validUserId',['../class_booking_test.html#a6c0d705089c0ade341ed544d3c86b590',1,'BookingTest']]],
+  ['viewallbookings_19',['viewAllBookings',['../class_booking_menu.html#a4b1fecdaa03ee6fb820e10288c017b78',1,'BookingMenu']]],
+  ['viewalltrips_20',['viewAllTrips',['../class_trip_menu.html#aa1a7ce96527898c97e02e25f707a87b0',1,'TripMenu']]],
+  ['viewallusers_21',['viewAllUsers',['../class_user_menu.html#a65716d5c42d3ad5876c1d4bab860e361',1,'UserMenu']]]
 ];

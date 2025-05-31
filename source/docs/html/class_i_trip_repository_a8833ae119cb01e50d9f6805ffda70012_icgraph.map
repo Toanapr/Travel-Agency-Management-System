@@ -1,0 +1,5 @@
+<map id="ITripRepository::getById" name="ITripRepository::getById">
+<area shape="rect" id="Node000001" title="Find a trip by its ID." alt="" coords="192,13,355,40"/>
+<area shape="rect" id="Node000002" href="$class_mock_trip_repository.html#a53a4f26ef2c634d36a36bb4f707caec9" title=" " alt="" coords="5,5,144,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,29,144,29,144,24,176,24"/>
+</map>

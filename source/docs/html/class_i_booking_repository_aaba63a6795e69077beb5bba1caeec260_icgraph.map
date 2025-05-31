@@ -1,0 +1,5 @@
+<map id="IBookingRepository::remove" name="IBookingRepository::remove">
+<area shape="rect" id="Node000001" title="Remove a booking from the data store." alt="" coords="217,5,352,48"/>
+<area shape="rect" id="Node000002" href="$class_mock_booking_repository.html#ad478d61b2d029d73b5a638e90b5beed3" title=" " alt="" coords="5,5,169,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,29,169,29,169,24,201,24"/>
+</map>
