@@ -75,7 +75,7 @@ Tiến độ được theo dõi qua:
 - Trao đổi qua nhóm chat để giải quyết vấn đề
 
 ### Hình ảnh GitHub Commit
-[Hình ảnh GitHub commit history sẽ được cập nhật sau]
+![GitHub Collaboration Insights](source/docs/git.png)
 
 ## Cải tiến mã nguồn mẫu
 
