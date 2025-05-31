@@ -1,0 +1,16 @@
+<map id="OutputFormatter::displayMenu" name="OutputFormatter::displayMenu">
+<area shape="rect" id="Node000001" title="Display a menu with options to the console." alt="" coords="5,107,203,133"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#a2acf1096df48119b4d9e32e76da60dbd" title="Clear the console screen." alt="" coords="251,5,444,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,104,181,73,250,42,270,34,272,39,252,46,184,78,129,109"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#a1f045a1f1d05138b7bf817053902a2c7" title="Draw a header with title on the console (simple version)" alt="" coords="251,56,445,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,103,265,84,266,89,172,109"/>
+<area shape="rect" id="Node000005" href="$class_output_formatter.html#a5a6c4fa5908fa2579f9e0d284fb4f3ef" title="Draw a horizontal line on the console (simple version)" alt="" coords="493,107,669,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="203,117,477,117,477,123,203,123"/>
+<area shape="rect" id="Node000006" href="$class_output_formatter.html#a990575e816e049d1a4a188a04a2be83d" title="Reset console text color to default." alt="" coords="256,157,440,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="172,131,266,151,265,156,171,137"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#afa16c7275082edd5198940cd3cf5a140" title="Set console text color." alt="" coords="261,208,434,235"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="129,131,184,162,252,194,272,201,270,206,250,198,181,167,126,136"/>
+<area shape="rect" id="Node000004" href="$class_output_formatter.html#ad47d2df9bb2363f5ae5cdf55e5381274" title="Center text on the console (simple version)" alt="" coords="501,56,661,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,67,485,67,485,72,446,72"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="413,81,502,100,501,105,412,86"/>
+</map>

@@ -79,9 +79,13 @@ public:
      * @brief Get the booking status
      * @return The current status (Confirmed, Pending, Cancelled)
      */
-    std::string getStatus() const;
+    std::string getStatus() const; // Setters
+    /**
+     * @brief Set the booking ID
+     * @param id The new ID for the booking
+     */
+    void setId(int id);
 
-    // Setters
     /**
      * @brief Set the user ID
      * @param userId The new user ID for the booking
@@ -117,6 +121,13 @@ public:
      * @param status The new status for the booking (Confirmed, Pending, Cancelled)
      */
     void setStatus(const std::string &status);
+
+    /**
+     * @brief Equality operator for comparing Booking objects
+     * @param other The other Booking object to compare with
+     * @return true if all fields are equal, false otherwise
+     */
+    bool operator==(const Booking &other) const;
 };
 
 #endif // BOOKING_H

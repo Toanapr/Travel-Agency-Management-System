@@ -1,0 +1,5 @@
+<map id="InputHandler::getDateInput" name="InputHandler::getDateInput">
+<area shape="rect" id="Node000001" title="Get a date input from the user in YYYY&#45;MM&#45;DD format." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="Node000002" href="$class_input_handler.html#a08c567187785c8c29285cf33bb7a2d70" title="Validate date format (YYYY&#45;MM&#45;DD)" alt="" coords="232,5,408,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,16,216,16,216,21,184,21"/>
+</map>

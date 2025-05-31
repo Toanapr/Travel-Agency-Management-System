@@ -18,16 +18,20 @@ std::vector<User> UserRepository::getAll()
     {
         std::string line;
 
-        // Skip header line if exists
-        if (std::getline(file, line) && line.substr(0, 2) != "id")
-        {
-            users.push_back(parseUserFromCsv(line));
-        }
+        // Skip header line
+        std::getline(file, line);
 
-        // Read all other lines
+        // Read all data lines
         while (std::getline(file, line))
         {
-            users.push_back(parseUserFromCsv(line));
+            if (!line.empty())
+            {
+                User user = parseUserFromCsv(line);
+                if (user.getId() > 0)
+                { // Only add valid users
+                    users.push_back(user);
+                }
+            }
         }
 
         file.close();
@@ -131,18 +135,20 @@ std::vector<User> UserRepository::findByName(const std::string &name)
 
 bool UserRepository::add(const User &user)
 {
+    // Generate a new ID for the user (max ID + 1)
+    int newId = getNextId();
+
+    // Create a copy of the user with the new ID
+    User newUser = user;
+    newUser.setId(newId);
+
+    // Open the file for appending
     std::ofstream file = _dbConnection->openFileForWriting(_filename, true);
 
     if (file.is_open())
     {
-        // Add header if the file is empty
-        if (file.tellp() == 0)
-        {
-            file << "id,name,address,phone,email" << std::endl;
-        }
-
-        // Add user data
-        file << convertUserToCsv(user) << std::endl;
+        // Only add the data (no header)
+        file << convertUserToCsv(newUser) << std::endl;
         file.close();
         return true;
     }
@@ -228,6 +234,18 @@ bool UserRepository::remove(int id)
 
 User UserRepository::parseUserFromCsv(const std::string &line)
 {
+    // Skip empty lines
+    if (line.empty())
+    {
+        return User(0, "", "", "", "");
+    }
+
+    // Skip header line
+    if (line.substr(0, 2) == "id")
+    {
+        return User(0, "", "", "", "");
+    }
+
     std::stringstream ss(line);
     std::string idStr, name, address, phone, email;
 
@@ -238,9 +256,16 @@ User UserRepository::parseUserFromCsv(const std::string &line)
     std::getline(ss, phone, ',');
     std::getline(ss, email);
 
-    int id = std::stoi(idStr);
-
-    return User(id, name, address, phone, email);
+    try
+    {
+        int id = std::stoi(idStr);
+        return User(id, name, address, phone, email);
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "Error parsing user ID from CSV: " << e.what() << " (line: " << line << ")" << std::endl;
+        return User(0, "", "", "", "");
+    }
 }
 
 std::string UserRepository::convertUserToCsv(const User &user)

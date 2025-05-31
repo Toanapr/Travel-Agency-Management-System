@@ -1,0 +1,7 @@
+<map id="BookingRepository::getNextId" name="BookingRepository::getNextId">
+<area shape="rect" id="Node000001" title="Generate the next available ID for a new booking." alt="" coords="5,5,145,48"/>
+<area shape="rect" id="Node000002" href="$class_booking_repository.html#a0ebb169d923d4db782b0dbe8be3cb302" title="Retrieve all bookings from storage." alt="" coords="193,5,332,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,24,177,24,177,29,145,29"/>
+<area shape="rect" id="Node000003" href="$class_booking_repository.html#aba4019c53b2a9ab99a7b68c427ab0276" title="Convert a CSV line to a Booking object." alt="" coords="380,5,534,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,24,365,24,365,29,333,29"/>
+</map>

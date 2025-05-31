@@ -1,0 +1,9 @@
+<map id="BookingMenu::updateBookingStatus" name="BookingMenu::updateBookingStatus">
+<area shape="rect" id="Node000001" title="Update the status of an existing booking." alt="" coords="5,48,200,91"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="248,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,45,240,34,242,39,195,50"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="251,56,378,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,67,235,67,235,72,200,72"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="248,107,381,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,89,242,100,240,105,194,94"/>
+</map>

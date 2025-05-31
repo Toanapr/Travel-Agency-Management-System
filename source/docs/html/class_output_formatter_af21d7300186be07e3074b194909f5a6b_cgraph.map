@@ -1,0 +1,7 @@
+<map id="OutputFormatter::displayInfoMessage" name="OutputFormatter::displayInfoMessage">
+<area shape="rect" id="Node000001" title="Display an information message to the console." alt="" coords="5,23,171,65"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#a990575e816e049d1a4a188a04a2be83d" title="Reset console text color to default." alt="" coords="219,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,32,203,28,203,34,172,37"/>
+<area shape="rect" id="Node000003" href="$class_output_formatter.html#afa16c7275082edd5198940cd3cf5a140" title="Set console text color." alt="" coords="224,56,398,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,51,209,55,208,60,171,56"/>
+</map>

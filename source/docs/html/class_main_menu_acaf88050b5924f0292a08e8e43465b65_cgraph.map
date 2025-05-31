@@ -1,0 +1,5 @@
+<map id="MainMenu::show" name="MainMenu::show">
+<area shape="rect" id="Node000001" title="Display the main menu and process user input." alt="" coords="5,5,126,32"/>
+<area shape="rect" id="Node000002" href="$class_main_menu.html#aea8511716df4f0d14ee77367a385a602" title="Process the user&#39;s menu selection." alt="" coords="174,5,382,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,16,158,16,158,21,126,21"/>
+</map>

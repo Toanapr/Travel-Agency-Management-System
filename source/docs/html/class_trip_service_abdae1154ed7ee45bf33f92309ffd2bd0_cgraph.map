@@ -1,0 +1,5 @@
+<map id="TripService::deleteTrip" name="TripService::deleteTrip">
+<area shape="rect" id="Node000001" title="Delete a trip from the system." alt="" coords="5,5,158,32"/>
+<area shape="rect" id="Node000002" href="$class_trip_service.html#afb683c3cd175c95153a4b9fbeae14561" title="Check if a trip has any associated bookings." alt="" coords="206,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,16,190,16,190,21,158,21"/>
+</map>

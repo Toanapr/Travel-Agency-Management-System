@@ -1,0 +1,31 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,317,76,344"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="128,276,263,303"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,319,127,305,129,310,77,324"/>
+<area shape="rect" id="Node000014" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="124,339,267,381"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="76,335,109,341,108,346,75,340"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a7ea328edbca928f10e45e44725ae0e77" title="Convert a Trip object to CSV format." alt="" coords="315,149,494,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,273,351,198,354,202,222,278"/>
+<area shape="rect" id="Node000010" href="$class_trip_repository.html#ac62a77faffca78eb55b8c97ad8ab8066" title="Generate the next available ID for a new trip." alt="" coords="319,263,490,289"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="263,282,303,280,303,285,263,288"/>
+<area shape="rect" id="Node000013" href="$class_trip.html#afbfe09c30b018bd36b0eafba5d317327" title="Set the trip ID." alt="" coords="364,313,445,340"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="264,299,350,314,349,320,263,304"/>
+<area shape="rect" id="Node000004" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="542,5,699,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="422,147,472,95,505,66,541,42,551,36,554,41,544,46,508,71,476,99,426,151"/>
+<area shape="rect" id="Node000005" href="$class_trip.html#aae8a752399f67ae8285c95fc48787cf4" title="Get the trip cost." alt="" coords="572,56,669,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="440,146,487,119,541,92,557,86,559,91,543,97,490,124,442,151"/>
+<area shape="rect" id="Node000006" href="$class_trip.html#a1bffa42e3ad67ff372a4db983054e33b" title="Get the trip end date." alt="" coords="560,107,681,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="494,147,545,135,546,140,495,152"/>
+<area shape="rect" id="Node000007" href="$class_trip.html#a8252498c2f6bc3fa1ee5b5741bf11817" title="Get the trip ID." alt="" coords="580,157,661,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="495,168,565,168,565,173,495,173"/>
+<area shape="rect" id="Node000008" href="$class_trip.html#afcd1ecc0f4d443d7780c0e03df12e9cb" title="Get the trip name." alt="" coords="568,208,673,235"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="495,189,554,203,553,208,494,194"/>
+<area shape="rect" id="Node000009" href="$class_trip.html#a2e89ab3f6311199106c9aa904988f6cb" title="Get the trip start date." alt="" coords="558,259,683,285"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="442,190,490,218,543,244,559,251,557,256,541,249,487,222,440,195"/>
+<area shape="rect" id="Node000011" href="$class_trip_repository.html#ae25b1b5288a754371d1e8b58d0038f9b" title="Retrieve all trips from storage." alt="" coords="547,309,694,336"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="470,287,541,303,540,308,469,292"/>
+<area shape="rect" id="Node000012" href="$class_trip_repository.html#a87b22ef05feeceed224d0a3f92ec1e7b" title="Convert a CSV line to a Trip object." alt="" coords="747,301,915,344"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="694,320,731,320,731,325,694,325"/>
+<area shape="rect" id="Node000015" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="329,364,480,407"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="268,366,314,372,313,377,267,371"/>
+</map>

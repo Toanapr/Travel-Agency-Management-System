@@ -1,0 +1,33 @@
+<map id="BookingMenu::processMenuChoice" name="BookingMenu::processMenuChoice">
+<area shape="rect" id="Node000001" title="Process booking&#39;s menu choice." alt="" coords="5,165,192,208"/>
+<area shape="rect" id="Node000002" href="$class_booking_menu.html#ae29c927fd3960f8d065d5b418b3c8b31" title="Cancel an existing booking." alt="" coords="497,72,690,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,162,179,133,239,108,300,94,363,85,481,79,481,84,364,90,301,99,240,113,182,138,132,167"/>
+<area shape="rect" id="Node000006" href="$class_booking_menu.html#a9afd7cd29eaffacb5675fb4a5417be8d" title="Create a new booking." alt="" coords="246,173,438,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="192,184,231,184,231,189,192,189"/>
+<area shape="rect" id="Node000007" href="$class_booking_menu.html#ab159e77e9b6f13fd5f9d71d050fdd882" title="Display the find booking submenu with different search options." alt="" coords="254,123,430,149"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="192,165,259,150,260,156,193,170"/>
+<area shape="rect" id="Node000011" href="$class_booking_menu.html#a9f1be00a218e3c9037e6c893fd52eaa6" title="Display the booking management menu and process selection." alt="" coords="272,224,412,251"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="166,206,258,226,256,231,165,211"/>
+<area shape="rect" id="Node000012" href="$class_booking_menu.html#a3257bb783762c61dc90403eb4d8a672a" title="Update the status of an existing booking." alt="" coords="496,5,691,48"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="118,163,170,117,203,94,239,75,299,54,362,39,424,30,481,25,481,31,424,36,363,45,300,59,241,80,206,98,173,121,122,167"/>
+<area shape="rect" id="Node000013" href="$class_booking_menu.html#a4b1fecdaa03ee6fb820e10288c017b78" title="Display all bookings in the system." alt="" coords="240,275,444,301"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="136,206,184,234,241,260,261,267,259,272,239,265,182,239,133,211"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="744,16,876,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="650,69,695,57,743,45,744,50,696,63,651,74"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="746,119,874,145"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="659,97,731,112,730,118,658,102"/>
+<area shape="rect" id="Node000005" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="743,68,877,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="691,81,728,80,728,86,691,86"/>
+<area shape="rect" id="Node000008" href="$class_booking_menu.html#a89d0c9819a84b67ddf00acbce5d8f015" title="Find a booking by its ID." alt="" coords="492,123,695,149"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="431,133,476,133,476,139,431,139"/>
+<area shape="rect" id="Node000009" href="$class_booking_menu.html#a3d273ea8c71b3c3bf6c7f05a1dbdf17d" title="Find all bookings for a specific trip." alt="" coords="502,173,685,216"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="403,147,487,167,486,172,402,152"/>
+<area shape="rect" id="Node000010" href="$class_booking_menu.html#a0dc734a9635d02b4aefe381de3827415" title="Find all bookings made by a specific user." alt="" coords="502,240,685,283"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="423,148,446,159,462,176,471,193,479,210,494,226,500,230,497,234,490,230,474,213,466,195,458,179,442,163,421,152"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="696,131,731,131,731,136,696,137"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="650,120,695,108,740,96,741,102,696,113,651,125"/>
+<area shape="poly" id="edge13_Node000011_Node000001" title=" " alt="" coords="305,226,206,203,207,198,306,221"/>
+<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="691,25,729,26,728,31,691,31"/>
+<area shape="poly" id="edge16_Node000012_Node000004" title=" " alt="" coords="674,46,697,58,712,70,722,81,731,93,745,104,753,109,750,114,742,109,727,97,717,85,708,73,694,62,672,51"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="681,46,740,61,739,66,680,51"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="TravelAgency/source/src/business/interfaces/ITripRepository.h" name="TravelAgency/source/src/business/interfaces/ITripRepository.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="39,5,200,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,63,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,66,59,102,55,99,90,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,112,152,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,64,122,96,117,96,117,64"/>
+<area shape="rect" id="Node000004" href="$_trip_8h.html" title=" " alt="" coords="176,112,289,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,62,206,100,203,104,154,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="206,187,259,213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="235,139,235,171,230,171,230,139"/>
+</map>

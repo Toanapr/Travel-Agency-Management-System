@@ -1,0 +1,7 @@
+<map id="UserRepository::getAll" name="UserRepository::getAll">
+<area shape="rect" id="Node000001" title="Retrieve all users from storage." alt="" coords="5,35,159,61"/>
+<area shape="rect" id="Node000002" href="$class_user.html#a010077fcd52d32fd3b4e1171f748a86a" title="Get the user&#39;s ID." alt="" coords="254,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,35,238,24,239,29,160,40"/>
+<area shape="rect" id="Node000003" href="$class_user_repository.html#ae9f1e6f7deae63a13032170d9108ae79" title="Convert a CSV line to a User object." alt="" coords="207,56,387,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,56,192,60,191,66,159,61"/>
+</map>

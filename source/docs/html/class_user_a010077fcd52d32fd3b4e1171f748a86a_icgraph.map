@@ -1,0 +1,35 @@
+<map id="User::getId" name="User::getId">
+<area shape="rect" id="Node000001" title="Get the user&#39;s ID." alt="" coords="780,266,866,293"/>
+<area shape="rect" id="Node000002" href="$class_user_repository.html#a52c72247448def6d127af3cdf34c13ef" title="Convert a User object to CSV format." alt="" coords="539,6,731,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="815,251,806,209,790,159,765,107,749,83,730,63,715,51,718,47,733,59,753,80,769,104,795,157,811,208,820,250"/>
+<area shape="rect" id="Node000006" href="$class_user_repository.html#a5d7e55cecb098c1fb7cc86c2d266de46" title="Update an existing user in storage." alt="" coords="322,123,481,150"/>
+<area shape="poly" id="edge18_Node000001_Node000006" title=" " alt="" coords="807,253,777,205,755,182,730,164,701,151,669,140,604,128,539,125,482,128,482,123,539,120,604,123,671,135,703,146,733,160,759,178,781,202,811,250"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="552,174,718,217"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="786,260,731,231,703,220,705,215,733,226,788,255"/>
+<area shape="rect" id="Node000008" href="$class_output_formatter.html#a8ef3b681f0522e008db9ebac31401c9e" title="Display a user&#39;s details to the console." alt="" coords="538,241,732,267"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="764,274,732,270,733,264,765,269"/>
+<area shape="rect" id="Node000009" href="$class_user_repository.html#a197d8fa753b7b8fffd5053bb99cd5ab6" title="Retrieve all users from storage." alt="" coords="558,73,712,99"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="810,252,781,185,759,150,730,120,698,102,701,98,733,116,763,147,786,183,815,250"/>
+<area shape="rect" id="Node000011" href="$class_user_repository.html#a5dec9d8d512d677395415ecb358cab9e" title="Find a user by their ID." alt="" coords="552,291,718,318"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="764,290,718,296,718,291,763,284"/>
+<area shape="rect" id="Node000012" href="$user__test_8cpp.html#ada26fb09e00226e819f0fe9e37f8ddf8" title=" " alt="" coords="600,342,670,369"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="789,303,733,332,671,351,670,346,731,327,786,299"/>
+<area shape="rect" id="Node000013" href="$user__test_8cpp.html#a2a9ec55079e256f1636f1517742c7ba5" title=" " alt="" coords="600,393,670,419"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="807,307,776,346,756,366,733,383,702,397,671,404,670,399,700,392,730,378,752,362,772,343,803,304"/>
+<area shape="rect" id="Node000014" href="$user__test_8cpp.html#aec4fb2a646da191e09b3d2ec62b4b63b" title=" " alt="" coords="600,443,670,470"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="815,309,785,372,762,405,733,433,703,449,671,456,670,451,701,444,730,429,758,402,781,369,810,306"/>
+<area shape="rect" id="Node000015" href="$user__test_8cpp.html#ab1fbd2b5ebe378d9ef2c49f36b8e34e7" title=" " alt="" coords="600,494,670,521"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="819,308,810,348,794,395,769,443,752,465,733,484,703,501,671,508,670,503,701,496,730,480,748,461,764,440,789,393,805,346,814,307"/>
+<area shape="rect" id="Node000003" href="$class_user_repository.html#a1801068866d3f7b0b0f60cb22ebc2ea1" title="Add a new user to storage." alt="" coords="124,22,265,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="524,15,421,9,313,13,249,24,248,19,313,7,421,4,524,10"/>
+<area shape="rect" id="Node000005" href="$class_user_repository.html#a09c11ddad0f11c08521e241d15d838a5" title="Remove a user from storage." alt="" coords="320,22,483,49"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="524,34,484,35,484,30,524,28"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="547,58,540,63,526,75,517,88,507,101,492,113,467,125,465,120,489,109,503,97,512,85,522,72,537,58,545,54"/>
+<area shape="rect" id="Node000004" href="$user__repository__test_8cpp.html#a2ab8a918824f88d3aee7c94a1f797ce6" title=" " alt="" coords="5,22,76,49"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,38,76,38,76,33,108,33"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="555,71,466,52,467,47,556,66"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="556,106,467,125,466,120,555,101"/>
+<area shape="rect" id="Node000010" href="$class_user_repository.html#a7e0e2307333756f568d18df3f65cbab4" title="Generate the next available ID for a new user." alt="" coords="313,73,490,99"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="543,89,491,89,491,83,543,83"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="328,71,251,52,253,47,330,66"/>
+</map>

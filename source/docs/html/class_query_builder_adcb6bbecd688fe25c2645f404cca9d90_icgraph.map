@@ -1,0 +1,7 @@
+<map id="QueryBuilder::QueryBuilder" name="QueryBuilder::QueryBuilder">
+<area shape="rect" id="Node000001" title="Constructor that initializes with a table name." alt="" coords="193,31,372,57"/>
+<area shape="rect" id="Node000002" href="$class_query_builder.html#a566b343a5b926859a0e719eb15721798" title="Select specific columns for the query." alt="" coords="5,5,145,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,34,145,30,146,25,178,29"/>
+<area shape="rect" id="Node000003" href="$class_query_builder.html#a7adf720efdd4c881a2c233f1ae4ceda9" title="Add a WHERE condition to filter results." alt="" coords="5,56,145,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,59,146,63,145,58,177,54"/>
+</map>

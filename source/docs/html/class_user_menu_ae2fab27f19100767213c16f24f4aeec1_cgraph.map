@@ -1,0 +1,19 @@
+<map id="UserMenu::editUser" name="UserMenu::editUser">
+<area shape="rect" id="Node000001" title="Edit an existing user." alt="" coords="5,183,144,209"/>
+<area shape="rect" id="Node000002" href="$class_user.html#af45fe69fc61f83248b5542415fd60f62" title="Get the user&#39;s address." alt="" coords="192,5,315,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,181,122,116,153,77,190,42,196,37,199,42,193,46,157,80,126,119,85,184"/>
+<area shape="rect" id="Node000003" href="$class_user.html#a68c520e78268ba63c97ff04b6fb210a1" title="Get the user&#39;s email." alt="" coords="199,56,308,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,180,130,138,190,92,199,87,202,92,193,97,134,142,90,184"/>
+<area shape="rect" id="Node000004" href="$class_user.html#a446a64e63adafbc2e1428532275ad6a1" title="Get the user&#39;s name." alt="" coords="198,107,308,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,180,191,143,204,137,206,142,193,148,108,185"/>
+<area shape="rect" id="Node000005" href="$class_user.html#aa6b3271fff710eee0b406cc270fe7071" title="Get the user&#39;s phone number." alt="" coords="197,157,310,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,184,181,178,182,183,144,189"/>
+<area shape="rect" id="Node000006" href="$class_user.html#ab2ec9076949f983ec832ebecf86e020d" title="Set the user&#39;s address." alt="" coords="192,208,315,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,203,177,208,176,213,144,208"/>
+<area shape="rect" id="Node000007" href="$class_user.html#a11a1d37fde91df2330f69c3c24de056b" title="Set the user&#39;s email." alt="" coords="199,259,308,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="108,207,193,244,206,250,204,255,191,249,106,212"/>
+<area shape="rect" id="Node000008" href="$class_user.html#abe087f191699f9d61bdc94d041e4fada" title="Set the user&#39;s name." alt="" coords="198,309,308,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="90,208,134,250,193,295,202,300,199,305,190,300,130,254,87,212"/>
+<area shape="rect" id="Node000009" href="$class_user.html#aef641637cf02a9f7ed13090a03bed720" title="Set the user&#39;s phone number." alt="" coords="197,360,310,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="85,208,126,273,157,312,193,346,199,350,196,355,190,350,153,315,122,276,81,211"/>
+</map>

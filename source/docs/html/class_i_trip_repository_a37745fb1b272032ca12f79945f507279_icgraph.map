@@ -1,0 +1,5 @@
+<map id="ITripRepository::findByName" name="ITripRepository::findByName">
+<area shape="rect" id="Node000001" title="Find trips by name or destination (partial match)" alt="" coords="192,13,382,40"/>
+<area shape="rect" id="Node000002" href="$class_mock_trip_repository.html#a936a956637e1991a4a88fe144199e4d0" title=" " alt="" coords="5,5,144,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,29,144,29,144,24,176,24"/>
+</map>

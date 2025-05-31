@@ -1,0 +1,30 @@
+<map id="Trip::getCost" name="Trip::getCost">
+<area shape="rect" id="Node000001" title="Get the trip cost." alt="" coords="653,224,751,251"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7ea328edbca928f10e45e44725ae0e77" title="Convert a Trip object to CSV format." alt="" coords="422,48,601,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="685,211,653,157,630,129,604,105,585,93,588,89,607,101,634,125,657,154,690,208"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a270a6b986549a8d46184396f7345cef7" title="Display a trip&#39;s details to the console." alt="" coords="418,115,605,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="677,215,645,184,604,156,577,144,580,140,607,151,648,180,681,211"/>
+<area shape="rect" id="Node000008" href="$class_trip_menu.html#a5ff831e62784f549057229c10d3606c4" title="Edit an existing trip." alt="" coords="448,165,575,192"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="648,221,605,207,566,195,567,190,606,201,650,216"/>
+<area shape="rect" id="Node000011" href="$class_trip_service.html#a48fba03bcfd658dff54e488fbf69e0c6" title="Search for trips based on multiple criteria." alt="" coords="430,216,593,259"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="638,240,594,240,594,235,638,235"/>
+<area shape="rect" id="Node000012" href="$booking__test_8cpp.html#ad0c9581f608091ab0f9fde05b5a3b254" title=" " alt="" coords="476,283,547,309"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="650,259,606,273,548,290,547,285,605,268,648,254"/>
+<area shape="rect" id="Node000013" href="$trip__test_8cpp.html#a04af41871c144e91b633e97439891357" title=" " alt="" coords="476,333,547,360"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="681,263,648,295,607,324,577,336,548,344,547,339,575,331,604,319,645,291,677,260"/>
+<area shape="rect" id="Node000014" href="$trip__test_8cpp.html#a2dc5d364f47683b2aa4c45e89d647ebe" title=" " alt="" coords="476,384,547,411"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="691,266,658,321,635,350,607,374,578,389,548,396,547,391,576,384,604,370,631,346,654,318,686,264"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="201,5,336,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,50,336,35,337,30,407,45"/>
+<area shape="rect" id="Node000005" href="$class_trip_repository.html#adf68a56fd9707eb1932aa8923c49b4c5" title="Remove a trip from storage." alt="" coords="190,56,348,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="407,72,348,72,348,67,407,67"/>
+<area shape="rect" id="Node000006" href="$class_trip_repository.html#aa3df897116b55f6ce8155c1d9a5a5e47" title="Update an existing trip in storage." alt="" coords="192,107,346,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="407,94,337,109,336,103,406,89"/>
+<area shape="rect" id="Node000004" href="$trip__repository__test_8cpp.html#ad0fe56cbd0f857afa7587fc801447b44" title=" " alt="" coords="27,5,98,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,21,98,21,98,16,186,16"/>
+<area shape="rect" id="Node000009" href="$class_trip_menu.html#af295149c42640ca0930b74390a002411" title="Process trip&#39;s menu choice." alt="" coords="168,165,370,192"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="433,181,370,181,370,176,433,176"/>
+<area shape="rect" id="Node000010" href="$class_trip_menu.html#a75dde9b0a855c40faa6a2f78f7c56479" title="Display the trip management menu and process selection." alt="" coords="5,165,120,192"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="152,190,120,189,120,184,152,185"/>
+<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="135,167,167,167,167,172,135,173"/>
+</map>

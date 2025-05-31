@@ -1,0 +1,25 @@
+<map id="DatabaseConnection::DatabaseConnection" name="DatabaseConnection::DatabaseConnection">
+<area shape="rect" id="Node000001" title="Private constructor for Singleton pattern." alt="" coords="637,189,789,232"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a76d5fcb71beacd3d7afc5f68e96e0924" title="Delete copy constructor to enforce Singleton pattern." alt="" coords="438,123,589,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="632,186,579,169,581,163,634,181"/>
+<area shape="rect" id="Node000003" href="$class_database_connection.html#a93ec35ab07456b6b6be7015f0cb487d1" title="Get the singleton instance of DatabaseConnection." alt="" coords="442,189,585,232"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="622,213,586,213,586,208,622,208"/>
+<area shape="rect" id="Node000012" href="$class_database_connection.html#a33f0014906a4c6efaaf52e5a522b81d9" title="Delete assignment operator to enforce Singleton pattern." alt="" coords="442,256,585,299"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="634,240,581,258,579,253,632,235"/>
+<area shape="rect" id="Node000004" href="$class_application.html#ae087205b30ec536f5785b3d68c44f3ba" title="Initialize database connection." alt="" coords="194,5,390,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="438,181,436,179,423,161,416,144,413,110,409,77,401,61,388,46,372,35,375,30,392,42,406,59,414,76,418,109,422,142,428,159,440,176,442,177"/>
+<area shape="rect" id="Node000006" href="$class_booking_repository_test.html#a16a997053a7d31e91f9177477bd233d4" title=" " alt="" coords="214,56,370,99"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="441,183,436,179,420,162,412,145,404,129,388,113,369,101,372,97,392,109,408,125,417,142,425,159,440,175,444,179"/>
+<area shape="rect" id="Node000007" href="$class_trip_repository_test.html#ae0a255152ee8dda8e2f7c3cb3b12e18a" title=" " alt="" coords="226,123,358,165"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="427,187,357,166,359,161,428,182"/>
+<area shape="rect" id="Node000008" href="$class_user_repository_test.html#ac8013d140f1459d7364a77ab86d9f03c" title=" " alt="" coords="223,189,360,232"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="427,213,361,213,361,208,427,208"/>
+<area shape="rect" id="Node000009" href="$booking__repository__test_8cpp.html#a19256d73c74f5f9e7be607b7fd0ec5e4" title=" " alt="" coords="257,256,327,283"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="428,237,391,247,328,263,327,258,389,241,427,231"/>
+<area shape="rect" id="Node000010" href="$trip__repository__test_8cpp.html#ad0fe56cbd0f857afa7587fc801447b44" title=" " alt="" coords="257,307,327,333"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="446,242,440,246,426,259,417,272,407,284,391,297,360,311,328,318,327,313,358,306,389,292,403,281,412,269,422,256,436,242,443,238"/>
+<area shape="rect" id="Node000011" href="$user__repository__test_8cpp.html#a2ab8a918824f88d3aee7c94a1f797ce6" title=" " alt="" coords="257,357,327,384"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="442,244,440,246,423,271,418,296,411,322,404,335,392,347,361,364,328,371,327,366,359,359,388,343,399,332,406,320,412,295,418,269,436,242,439,240"/>
+<area shape="rect" id="Node000005" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,5,146,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="InputHandler::getEmailInput" name="InputHandler::getEmailInput">
+<area shape="rect" id="Node000001" title="Get a valid email address from the user." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="Node000002" href="$class_input_handler.html#a2924a4a54e6354edcba15a6b4a51abc9" title="Validate email format." alt="" coords="237,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,16,221,16,221,21,189,21"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="UserRepository::convertUserToCsv" name="UserRepository::convertUserToCsv">
+<area shape="rect" id="Node000001" title="Convert a User object to CSV format." alt="" coords="5,99,197,141"/>
+<area shape="rect" id="Node000002" href="$class_user.html#af45fe69fc61f83248b5542415fd60f62" title="Get the user&#39;s address." alt="" coords="245,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,96,243,42,255,36,258,41,246,46,142,100"/>
+<area shape="rect" id="Node000003" href="$class_user.html#a68c520e78268ba63c97ff04b6fb210a1" title="Get the user&#39;s email." alt="" coords="252,56,360,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,95,236,84,238,89,191,101"/>
+<area shape="rect" id="Node000004" href="$class_user.html#a010077fcd52d32fd3b4e1171f748a86a" title="Get the user&#39;s ID." alt="" coords="263,107,350,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,117,248,117,248,123,197,123"/>
+<area shape="rect" id="Node000005" href="$class_user.html#a446a64e63adafbc2e1428532275ad6a1" title="Get the user&#39;s name." alt="" coords="251,157,362,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="191,139,237,151,236,156,189,145"/>
+<area shape="rect" id="Node000006" href="$class_user.html#aa6b3271fff710eee0b406cc270fe7071" title="Get the user&#39;s phone number." alt="" coords="250,208,362,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="142,140,246,194,258,199,255,204,243,198,140,144"/>
+</map>

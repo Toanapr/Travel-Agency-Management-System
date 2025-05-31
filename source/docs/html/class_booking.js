@@ -1,0 +1,26 @@
+var class_booking =
+[
+    [ "Booking", "class_booking.html#aa5175187f0c56facb39434e194cb236a", null ],
+    [ "getBookingDate", "class_booking.html#ad3c20d475fba9f2c45ca370d54c7097e", null ],
+    [ "getId", "class_booking.html#a6b0b4f46c4df3f4467aedb3e7daf0d71", null ],
+    [ "getNumberOfPeople", "class_booking.html#a148def7c69ba3174ec23f13d5fa500d9", null ],
+    [ "getStatus", "class_booking.html#a3b06b911132fda6023567eeff110ccb8", null ],
+    [ "getTotalCost", "class_booking.html#a714cb235ccddb17151a7b7ea27bd62f2", null ],
+    [ "getTripId", "class_booking.html#a28241aca20429d4a6592205bdd136137", null ],
+    [ "getUserId", "class_booking.html#ad7b3d208911ce6b3af171575bc782d19", null ],
+    [ "operator==", "class_booking.html#a630d02f3c137392bfeaffa8e905d8921", null ],
+    [ "setBookingDate", "class_booking.html#a22cce79df5c584a7605f354e601222ce", null ],
+    [ "setId", "class_booking.html#af0b99c9a0f9ef7b59cb3aec1dd41650e", null ],
+    [ "setNumberOfPeople", "class_booking.html#aaf3605f08902fc9781ccbfc35296ad5c", null ],
+    [ "setStatus", "class_booking.html#abb9a713b88b194e46f493db5c3d70119", null ],
+    [ "setTotalCost", "class_booking.html#ae5e6fb9cfb064a24c76d853d1cf3d5c0", null ],
+    [ "setTripId", "class_booking.html#a44f347d46182e5cd5b1b1ae3df8e9a8f", null ],
+    [ "setUserId", "class_booking.html#a290bc91ee715ae2a2eff3ca856db24ee", null ],
+    [ "_bookingDate", "class_booking.html#ab0e111dc9a2b9c2f19541ff75db8395f", null ],
+    [ "_id", "class_booking.html#a7189d74c03883c492456a0e8c6fdc167", null ],
+    [ "_numberOfPeople", "class_booking.html#a0af645c1cf0f10265106296064e0baee", null ],
+    [ "_status", "class_booking.html#a999c6b95d108a4711c3fb760ad570a58", null ],
+    [ "_totalCost", "class_booking.html#ac6d69839563f0ea0943969ec2f9c4c93", null ],
+    [ "_tripId", "class_booking.html#a9b1bfb54fcf81a58bdd4269ff586e380", null ],
+    [ "_userId", "class_booking.html#a0aec12c285507e2c327229fe01bfc441", null ]
+];

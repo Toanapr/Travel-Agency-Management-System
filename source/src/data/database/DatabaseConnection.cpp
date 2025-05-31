@@ -35,12 +35,14 @@ bool DatabaseConnection::connect(const std::string &dataPath)
         }
     }
 
+    std::cout << "Connected to data directory: " << _dataPath << std::endl;
     return true;
 }
 
 void DatabaseConnection::disconnect()
 {
     // Nothing to do for file-based storage
+    std::cout << "Database disconnected successfully." << std::endl;
 }
 
 bool DatabaseConnection::isConnected() const
@@ -50,14 +52,30 @@ bool DatabaseConnection::isConnected() const
 
 std::ifstream DatabaseConnection::openFileForReading(const std::string &filename)
 {
-    std::string fullPath = _dataPath + "/" + filename;
+    // Remove "#file:source" prefix if present
+    std::string cleanFilename = filename;
+    std::string prefix = "#file:source";
+    if (cleanFilename.substr(0, prefix.length()) == prefix)
+    {
+        cleanFilename = cleanFilename.substr(prefix.length());
+    }
+
+    // Construct the path using filesystem to ensure proper path handling
+    std::filesystem::path filePath = std::filesystem::path(_dataPath) / cleanFilename;
+    std::string fullPath = filePath.string();
+
+    // std::cout << "Opening file for reading: " << fullPath << std::endl;
+
     std::ifstream file(fullPath);
 
     if (!file.is_open())
     {
+        std::cout << "File not found: " << fullPath << std::endl;
+
         // If file doesn't exist, create an empty one
         if (!std::filesystem::exists(fullPath))
         {
+            std::cout << "Creating new file: " << fullPath << std::endl;
             std::ofstream newFile(fullPath);
             newFile.close();
             file.open(fullPath);
@@ -69,7 +87,18 @@ std::ifstream DatabaseConnection::openFileForReading(const std::string &filename
 
 std::ofstream DatabaseConnection::openFileForWriting(const std::string &filename, bool append)
 {
-    std::string fullPath = _dataPath + "/" + filename;
+    // Remove "#file:source" prefix if present
+    std::string cleanFilename = filename;
+    std::string prefix = "#file:source";
+    if (cleanFilename.substr(0, prefix.length()) == prefix)
+    {
+        cleanFilename = cleanFilename.substr(prefix.length());
+    }
+
+    // Construct the path using filesystem to ensure proper path handling
+    std::filesystem::path filePath = std::filesystem::path(_dataPath) / cleanFilename;
+    std::string fullPath = filePath.string();
+
     std::ofstream file;
 
     if (append)

@@ -1,0 +1,12 @@
+<map id="Trip::setName" name="Trip::setName">
+<area shape="rect" id="Node000001" title="Set the trip name." alt="" coords="592,31,697,57"/>
+<area shape="rect" id="Node000002" href="$class_trip_menu.html#a5ff831e62784f549057229c10d3606c4" title="Edit an existing trip." alt="" coords="418,5,544,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,36,544,31,545,26,577,31"/>
+<area shape="rect" id="Node000005" href="$trip__service__test_8cpp.html#a67b717518b4cab12bf8a002daed6d8b3" title=" " alt="" coords="446,56,516,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="577,57,517,67,516,61,577,52"/>
+<area shape="rect" id="Node000003" href="$class_trip_menu.html#af295149c42640ca0930b74390a002411" title="Process trip&#39;s menu choice." alt="" coords="168,5,370,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,21,370,21,370,16,402,16"/>
+<area shape="rect" id="Node000004" href="$class_trip_menu.html#a75dde9b0a855c40faa6a2f78f7c56479" title="Display the trip management menu and process selection." alt="" coords="5,5,120,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,30,120,29,120,24,152,25"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="135,7,167,7,167,12,135,13"/>
+</map>

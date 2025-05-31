@@ -1,0 +1,5 @@
+<map id="IBookingRepository::findByUserId" name="IBookingRepository::findByUserId">
+<area shape="rect" id="Node000001" title="Find all bookings for a specific user." alt="" coords="217,5,352,48"/>
+<area shape="rect" id="Node000002" href="$class_mock_booking_repository.html#a9901202735dc1397b1a2b1736f0a5624" title=" " alt="" coords="5,5,169,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,29,169,29,169,24,201,24"/>
+</map>

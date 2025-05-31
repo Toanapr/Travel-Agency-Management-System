@@ -1,0 +1,7 @@
+<map id="TripRepository::getNextId" name="TripRepository::getNextId">
+<area shape="rect" id="Node000001" title="Generate the next available ID for a new trip." alt="" coords="5,13,177,40"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#ae25b1b5288a754371d1e8b58d0038f9b" title="Retrieve all trips from storage." alt="" coords="225,13,372,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,24,209,24,209,29,177,29"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a87b22ef05feeceed224d0a3f92ec1e7b" title="Convert a CSV line to a Trip object." alt="" coords="420,5,588,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,24,404,24,404,29,372,29"/>
+</map>

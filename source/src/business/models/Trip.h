@@ -68,9 +68,13 @@ public:
      * @brief Get the trip end date
      * @return The end date in YYYY-MM-DD format
      */
-    std::string getEndDate() const;
+    std::string getEndDate() const; // Setters
+    /**
+     * @brief Set the trip ID
+     * @param id The new ID for the trip
+     */
+    void setId(int id);
 
-    // Setters
     /**
      * @brief Set the trip name
      * @param name The new name or description for the trip
@@ -100,6 +104,13 @@ public:
      * @param endDate The new end date in YYYY-MM-DD format
      */
     void setEndDate(const std::string &endDate);
+
+    /**
+     * @brief Equality operator for comparing Trip objects
+     * @param other The other Trip object to compare with
+     * @return true if all fields are equal, false otherwise
+     */
+    bool operator==(const Trip &other) const;
 };
 
 #endif // TRIP_H

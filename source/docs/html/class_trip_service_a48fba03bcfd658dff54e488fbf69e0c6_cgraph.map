@@ -1,0 +1,9 @@
+<map id="TripService::searchTripsByCriteria" name="TripService::searchTripsByCriteria">
+<area shape="rect" id="Node000001" title="Search for trips based on multiple criteria." alt="" coords="5,48,169,91"/>
+<area shape="rect" id="Node000002" href="$class_trip.html#aae8a752399f67ae8285c95fc48787cf4" title="Get the trip cost." alt="" coords="231,5,328,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,45,215,33,216,38,170,50"/>
+<area shape="rect" id="Node000003" href="$class_trip.html#a1bffa42e3ad67ff372a4db983054e33b" title="Get the trip end date." alt="" coords="219,56,340,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,67,204,67,204,72,169,72"/>
+<area shape="rect" id="Node000004" href="$class_trip.html#a2e89ab3f6311199106c9aa904988f6cb" title="Get the trip start date." alt="" coords="217,107,342,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,88,212,100,210,105,169,94"/>
+</map>

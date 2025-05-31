@@ -1,0 +1,5 @@
+<map id="BookingService::validateBooking" name="BookingService::validateBooking">
+<area shape="rect" id="Node000001" title="Validate a booking request." alt="" coords="257,5,422,48"/>
+<area shape="rect" id="Node000002" href="$class_booking_service.html#a4a7653c1474cc029707a8b3d7f3da5f5" title="Create a new booking." alt="" coords="5,13,209,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,29,209,29,209,24,241,24"/>
+</map>

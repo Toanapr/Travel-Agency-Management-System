@@ -1,0 +1,17 @@
+<map id="Booking::getBookingDate" name="Booking::getBookingDate">
+<area shape="rect" id="Node000001" title="Get the booking date." alt="" coords="545,131,715,157"/>
+<area shape="rect" id="Node000002" href="$class_booking_repository.html#a0fa53dbb9eac76bed63622e16254e240" title="Convert a Booking object to CSV format." alt="" coords="340,56,489,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,128,485,102,487,97,570,123"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="332,123,497,165"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="530,147,498,147,498,141,530,141"/>
+<area shape="rect" id="Node000008" href="$booking__test_8cpp.html#a9276b22de9ab9f3a56a08c6cc98291bc" title=" " alt="" coords="380,189,450,216"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="565,164,451,196,449,191,563,159"/>
+<area shape="rect" id="Node000003" href="$class_booking_repository.html#aa4bf49cdf6b533b1dede777cda76ea53" title="Add a new booking to storage." alt="" coords="124,5,284,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,55,254,35,256,30,325,50"/>
+<area shape="rect" id="Node000005" href="$class_booking_repository.html#a9c034f14250d48a6e2fcbe7cf1945b02" title="Remove a booking from storage." alt="" coords="134,56,274,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="324,80,274,80,274,75,324,75"/>
+<area shape="rect" id="Node000006" href="$class_booking_repository.html#ae4a018cf7d476ded313b55d360a384b1" title="Update an existing booking in storage." alt="" coords="134,123,274,165"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="332,106,275,125,273,119,330,101"/>
+<area shape="rect" id="Node000004" href="$booking__repository__test_8cpp.html#a19256d73c74f5f9e7be607b7fd0ec5e4" title=" " alt="" coords="5,5,76,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,21,76,21,76,16,108,16"/>
+</map>

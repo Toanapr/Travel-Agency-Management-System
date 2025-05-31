@@ -8,6 +8,9 @@
 #include "../interfaces/IUserRepository.h"
 #include "../models/User.h"
 
+// Forward declaration to avoid circular dependency
+class BookingService;
+
 /**
  * @class UserService
  * @brief Service class for user-related business logic
@@ -20,13 +23,16 @@ class UserService
 {
 private:
     std::shared_ptr<IUserRepository> _userRepository; ///< Repository for user data access
+    std::shared_ptr<BookingService> _bookingService;  ///< Service for booking operations
 
 public:
     /**
      * @brief Constructor for UserService
      * @param userRepository Repository implementation for user data access
+     * @param bookingService Service for booking operations
      */
-    UserService(std::shared_ptr<IUserRepository> userRepository);
+    UserService(std::shared_ptr<IUserRepository> userRepository,
+               std::shared_ptr<BookingService> bookingService = nullptr);
 
     // User management methods
     /**
@@ -61,28 +67,22 @@ public:
      * @param user The user object with updated information
      * @return true if successfully updated, false otherwise
      */
-    bool updateUser(const User &user);
-
-    /**
+    bool updateUser(const User &user);    /**
      * @brief Delete a user from the system
      * @param id The unique identifier of the user to delete
      * @return true if successfully deleted, false otherwise
+     *         Returns false if the user is referenced in any bookings
      */
     bool deleteUser(int id);
+    
+    /**
+     * @brief Check if a user has any associated bookings
+     * @param userId The unique identifier of the user
+     * @return true if bookings exist for this user, false otherwise
+     */
+    bool hasUserBookings(int userId);
 
     // Authentication methods
-    /**
-     * @brief Authenticate a user with email and password
-     * @param email User's email address
-     * @param password User's password
-     * @return true if authentication successful, false otherwise
-     */
-    bool login(const std::string &email, const std::string &password);
-
-    /**
-     * @brief End the current user session
-     */
-    void logout();
 };
 
 #endif // USER_SERVICE_H

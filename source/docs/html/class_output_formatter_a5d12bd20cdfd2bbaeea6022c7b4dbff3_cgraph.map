@@ -1,0 +1,27 @@
+<map id="OutputFormatter::displayBooking" name="OutputFormatter::displayBooking">
+<area shape="rect" id="Node000001" title="Display a booking&#39;s details to the console." alt="" coords="5,276,171,319"/>
+<area shape="rect" id="Node000002" href="$class_output_formatter.html#a5a6c4fa5908fa2579f9e0d284fb4f3ef" title="Draw a horizontal line on the console (simple version)" alt="" coords="228,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,275,105,227,129,163,166,98,190,68,217,42,223,37,226,42,220,46,194,72,171,101,134,166,110,228,97,276"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#ad3c20d475fba9f2c45ca370d54c7097e" title="Get the booking date." alt="" coords="231,56,400,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,275,111,236,137,186,172,136,193,113,217,93,225,88,227,92,220,97,197,116,176,139,141,189,116,238,99,277"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#a6b0b4f46c4df3f4467aedb3e7daf0d71" title="Get the booking ID." alt="" coords="263,107,368,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,274,146,209,179,173,217,143,247,129,249,134,220,148,182,177,150,212,104,277"/>
+<area shape="rect" id="Node000005" href="$class_trip.html#a8252498c2f6bc3fa1ee5b5741bf11817" title="Get the trip ID." alt="" coords="276,157,356,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="109,274,157,233,217,194,260,178,262,183,220,198,160,237,113,278"/>
+<area shape="rect" id="Node000006" href="$class_user.html#a010077fcd52d32fd3b4e1171f748a86a" title="Get the user&#39;s ID." alt="" coords="273,208,359,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="140,273,218,244,257,233,258,238,220,249,142,278"/>
+<area shape="rect" id="Node000007" href="$class_trip.html#afcd1ecc0f4d443d7780c0e03df12e9cb" title="Get the trip name." alt="" coords="264,259,368,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="171,285,248,277,248,282,172,291"/>
+<area shape="rect" id="Node000008" href="$class_user.html#a446a64e63adafbc2e1428532275ad6a1" title="Get the user&#39;s name." alt="" coords="261,309,371,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="172,304,245,312,245,317,171,309"/>
+<area shape="rect" id="Node000009" href="$class_booking.html#a148def7c69ba3174ec23f13d5fa500d9" title="Get the number of people." alt="" coords="219,360,413,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="142,317,220,345,244,353,242,358,218,351,140,322"/>
+<area shape="rect" id="Node000010" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="250,411,382,437"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="113,317,160,358,220,396,236,403,234,408,217,401,157,362,109,321"/>
+<area shape="rect" id="Node000011" href="$class_booking.html#a714cb235ccddb17151a7b7ea27bd62f2" title="Get the total cost." alt="" coords="241,461,391,488"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="104,318,150,382,182,417,220,447,230,452,227,457,217,452,179,421,146,386,100,321"/>
+<area shape="rect" id="Node000012" href="$class_output_formatter.html#a990575e816e049d1a4a188a04a2be83d" title="Reset console text color to default." alt="" coords="224,512,408,539"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="99,318,116,357,141,406,176,456,197,478,220,498,227,503,225,507,217,502,193,482,172,459,137,409,111,359,94,320"/>
+<area shape="rect" id="Node000013" href="$class_output_formatter.html#afa16c7275082edd5198940cd3cf5a140" title="Set console text color." alt="" coords="229,563,402,589"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="97,318,110,366,134,429,171,494,194,523,220,549,226,553,223,557,217,553,190,527,166,497,129,431,105,368,92,320"/>
+</map>

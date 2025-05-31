@@ -1,0 +1,5 @@
+<map id="Application::initializeDatabase" name="Application::initializeDatabase">
+<area shape="rect" id="Node000001" title="Initialize database connection." alt="" coords="194,5,390,32"/>
+<area shape="rect" id="Node000002" href="$class_application.html#af431bce25717b04a78d4d0940ed6a92c" title="Initialize all application components." alt="" coords="5,5,146,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,21,146,21,146,16,178,16"/>
+</map>

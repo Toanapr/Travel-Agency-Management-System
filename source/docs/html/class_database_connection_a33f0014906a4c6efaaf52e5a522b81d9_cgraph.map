@@ -1,0 +1,5 @@
+<map id="DatabaseConnection::operator=" name="DatabaseConnection::operator=">
+<area shape="rect" id="Node000001" title="Delete assignment operator to enforce Singleton pattern." alt="" coords="5,5,149,48"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="197,5,348,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,24,181,24,181,29,149,29"/>
+</map>

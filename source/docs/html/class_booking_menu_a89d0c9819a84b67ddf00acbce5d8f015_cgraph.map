@@ -1,0 +1,7 @@
+<map id="BookingMenu::findBookingById" name="BookingMenu::findBookingById">
+<area shape="rect" id="Node000001" title="Find a booking by its ID." alt="" coords="5,31,209,57"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="260,5,387,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,29,244,25,244,31,209,35"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="257,56,390,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,53,241,57,241,62,209,59"/>
+</map>

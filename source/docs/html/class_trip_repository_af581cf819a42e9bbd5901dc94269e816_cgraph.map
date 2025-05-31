@@ -1,0 +1,7 @@
+<map id="TripRepository::findByName" name="TripRepository::findByName">
+<area shape="rect" id="Node000001" title="Find trips by name (partial match)" alt="" coords="5,35,192,61"/>
+<area shape="rect" id="Node000002" href="$class_trip.html#afcd1ecc0f4d443d7780c0e03df12e9cb" title="Get the trip name." alt="" coords="272,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,33,256,25,257,30,193,38"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a87b22ef05feeceed224d0a3f92ec1e7b" title="Convert a CSV line to a Trip object." alt="" coords="240,56,408,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,58,225,62,224,67,192,63"/>
+</map>

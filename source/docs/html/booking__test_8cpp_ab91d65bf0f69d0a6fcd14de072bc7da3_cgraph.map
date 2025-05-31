@@ -1,0 +1,7 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,76,57"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a148def7c69ba3174ec23f13d5fa500d9" title="Get the number of people." alt="" coords="124,5,318,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,36,108,32,109,37,76,42"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#aaf3605f08902fc9781ccbfc35296ad5c" title="Set the number of people." alt="" coords="124,56,318,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="76,46,109,51,108,56,76,52"/>
+</map>

@@ -1,7 +1,8 @@
 #include "UserService.h"
+#include "BookingService.h"
 
-UserService::UserService(std::shared_ptr<IUserRepository> userRepository)
-    : _userRepository(userRepository)
+UserService::UserService(std::shared_ptr<IUserRepository> userRepository, std::shared_ptr<BookingService> bookingService)
+    : _userRepository(userRepository), _bookingService(bookingService)
 {
 }
 
@@ -32,29 +33,21 @@ bool UserService::updateUser(const User &user)
 
 bool UserService::deleteUser(int id)
 {
+    // Check if there are any bookings for this user
+    if (_bookingService && hasUserBookings(id))
+    {
+        // Can't delete a user that has bookings
+        return false;
+    }
     return _userRepository->remove(id);
 }
 
-// In a real application, this would use password hashing and proper authentication
-bool UserService::login(const std::string &email, const std::string &password)
+bool UserService::hasUserBookings(int userId)
 {
-    // Simplified implementation for demo purposes
-    // In a real application, you would check against stored credentials
-    auto users = _userRepository->getAll();
-
-    for (const auto &user : users)
+    if (!_bookingService)
     {
-        if (user.getEmail() == email)
-        {
-            // In a real app, we would verify the password here
-            return true;
-        }
+        return false;
     }
-
-    return false;
-}
-
-void UserService::logout()
-{
-    // In a real application, this would clear session data
+      auto bookings = _bookingService->findBookingsByUserId(userId);
+    return !bookings.empty();
 }

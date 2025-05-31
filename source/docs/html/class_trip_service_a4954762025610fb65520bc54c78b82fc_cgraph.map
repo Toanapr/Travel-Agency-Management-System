@@ -1,0 +1,7 @@
+<map id="TripService::updateAvailableSeats" name="TripService::updateAvailableSeats">
+<area shape="rect" id="Node000001" title="Update the number of available seats for a trip." alt="" coords="5,23,193,65"/>
+<area shape="rect" id="Node000002" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="241,5,397,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,31,225,27,225,32,193,36"/>
+<area shape="rect" id="Node000003" href="$class_trip.html#a298ab4aaeb483479ff7570c71c042cd9" title="Set the number of available seats." alt="" coords="241,56,397,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,52,225,56,225,61,193,57"/>
+</map>

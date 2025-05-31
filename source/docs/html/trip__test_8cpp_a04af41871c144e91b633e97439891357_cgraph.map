@@ -1,0 +1,13 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,76,133"/>
+<area shape="rect" id="Node000002" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="124,5,280,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,104,81,73,122,42,133,36,135,41,125,46,85,77,55,108"/>
+<area shape="rect" id="Node000003" href="$class_trip.html#aae8a752399f67ae8285c95fc48787cf4" title="Get the trip cost." alt="" coords="153,56,250,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,106,142,85,144,90,77,112"/>
+<area shape="rect" id="Node000004" href="$class_trip.html#a1bffa42e3ad67ff372a4db983054e33b" title="Get the trip end date." alt="" coords="142,107,262,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="76,117,126,117,126,123,76,123"/>
+<area shape="rect" id="Node000005" href="$class_trip.html#a8252498c2f6bc3fa1ee5b5741bf11817" title="Get the trip ID." alt="" coords="162,157,242,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="77,128,148,151,146,156,75,134"/>
+<area shape="rect" id="Node000006" href="$class_trip.html#a2e89ab3f6311199106c9aa904988f6cb" title="Get the trip start date." alt="" coords="139,208,264,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="55,132,85,163,125,194,135,199,133,204,122,198,81,167,51,136"/>
+</map>

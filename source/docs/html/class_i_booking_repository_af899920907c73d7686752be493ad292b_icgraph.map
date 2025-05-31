@@ -1,0 +1,5 @@
+<map id="IBookingRepository::getById" name="IBookingRepository::getById">
+<area shape="rect" id="Node000001" title="Find a booking by its ID." alt="" coords="217,5,352,48"/>
+<area shape="rect" id="Node000002" href="$class_mock_booking_repository.html#a4781260ed61a68860429397a41aedf7a" title=" " alt="" coords="5,5,169,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,29,169,29,169,24,201,24"/>
+</map>

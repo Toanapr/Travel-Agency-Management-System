@@ -1,0 +1,6 @@
+<map id="TripMenu::show" name="TripMenu::show">
+<area shape="rect" id="Node000001" title="Display the trip management menu and process selection." alt="" coords="256,5,370,32"/>
+<area shape="rect" id="Node000002" href="$class_trip_menu.html#af295149c42640ca0930b74390a002411" title="Process trip&#39;s menu choice." alt="" coords="5,5,208,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,30,208,30,208,25,240,25"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="223,7,255,8,255,13,223,12"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DatabaseConnection::DatabaseConnection" name="DatabaseConnection::DatabaseConnection">
+<area shape="rect" id="Node000001" title="Delete copy constructor to enforce Singleton pattern." alt="" coords="5,5,157,48"/>
+<area shape="rect" id="Node000002" href="$class_database_connection.html#a7f50e17550775f1803dea4084f1987f1" title="Private constructor for Singleton pattern." alt="" coords="205,5,356,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
+</map>

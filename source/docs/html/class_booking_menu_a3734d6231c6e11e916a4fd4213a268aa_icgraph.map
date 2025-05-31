@@ -1,0 +1,6 @@
+<map id="BookingMenu::processMenuChoice" name="BookingMenu::processMenuChoice">
+<area shape="rect" id="Node000001" title="Process booking&#39;s menu choice." alt="" coords="193,5,379,48"/>
+<area shape="rect" id="Node000002" href="$class_booking_menu.html#a9f1be00a218e3c9037e6c893fd52eaa6" title="Display the booking management menu and process selection." alt="" coords="5,13,145,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,38,145,38,145,33,177,33"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="160,15,193,15,193,20,160,20"/>
+</map>

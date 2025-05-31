@@ -1,0 +1,8 @@
+<map id="BookingMenu::updateBookingStatus" name="BookingMenu::updateBookingStatus">
+<area shape="rect" id="Node000001" title="Update the status of an existing booking." alt="" coords="427,5,621,48"/>
+<area shape="rect" id="Node000002" href="$class_booking_menu.html#a3734d6231c6e11e916a4fd4213a268aa" title="Process booking&#39;s menu choice." alt="" coords="193,5,379,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,29,380,29,380,24,412,24"/>
+<area shape="rect" id="Node000003" href="$class_booking_menu.html#a9f1be00a218e3c9037e6c893fd52eaa6" title="Display the booking management menu and process selection." alt="" coords="5,13,145,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,38,145,38,145,33,177,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="160,15,193,15,193,20,160,20"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="BookingService::cancelBooking" name="BookingService::cancelBooking">
+<area shape="rect" id="Node000001" title="Cancel an existing booking." alt="" coords="5,132,211,159"/>
+<area shape="rect" id="Node000002" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="278,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,129,181,86,218,62,258,42,274,35,276,40,260,46,221,67,184,91,127,134"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#a148def7c69ba3174ec23f13d5fa500d9" title="Get the number of people." alt="" coords="259,56,453,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,129,258,92,284,85,285,90,259,97,149,134"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="290,107,422,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,132,274,126,274,131,211,137"/>
+<area shape="rect" id="Node000005" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="292,157,420,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="211,153,277,160,276,165,211,159"/>
+<area shape="rect" id="Node000006" href="$class_trip.html#a298ab4aaeb483479ff7570c71c042cd9" title="Set the number of available seats." alt="" coords="278,208,434,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,157,259,193,285,201,284,206,258,199,147,162"/>
+<area shape="rect" id="Node000007" href="$class_booking.html#abb9a713b88b194e46f493db5c3d70119" title="Set the booking status." alt="" coords="290,259,422,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="127,157,184,200,221,224,260,244,276,251,274,256,258,249,218,228,181,204,124,161"/>
+</map>

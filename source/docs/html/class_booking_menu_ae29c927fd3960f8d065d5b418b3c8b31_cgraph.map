@@ -1,0 +1,9 @@
+<map id="BookingMenu::cancelBooking" name="BookingMenu::cancelBooking">
+<area shape="rect" id="Node000001" title="Cancel an existing booking." alt="" coords="5,56,199,83"/>
+<area shape="rect" id="Node000002" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="247,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,53,239,34,240,39,162,58"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="250,56,377,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,67,234,67,234,72,199,72"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="247,107,380,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,81,240,100,239,105,160,86"/>
+</map>

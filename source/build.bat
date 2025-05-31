@@ -19,11 +19,30 @@ if %ERRORLEVEL% == 0 (
  source/src/business/services/TripService.cpp^
  source/src/business/services/BookingService.cpp^
  source/src/data/database/DatabaseConnection.cpp^
+ source/src/data/database/QueryBuilder.cpp^
  source/src/data/repositories/UserRepository.cpp^
+ source/src/data/repositories/TripRepository.cpp^
+ source/src/data/repositories/BookingRepository.cpp^
+ source/src/data/dto/UserDTO.cpp^
+ source/src/data/dto/TripDTO.cpp^
+ source/src/data/dto/BookingDTO.cpp^
+ source/src/presentation/console/InputHandler.cpp^
+ source/src/presentation/console/OutputFormatter.cpp^
+ source/src/presentation/menu/MainMenu.cpp^
+ source/src/presentation/menu/UserMenu.cpp^
+ source/src/presentation/menu/TripMenu.cpp^
+ source/src/presentation/menu/BookingMenu.cpp^
+ source/src/presentation/menu/MenuHandler.cpp^
+ source/src/presentation/view/UserView.cpp^
+ source/src/presentation/view/TripView.cpp^
+ source/src/presentation/view/BookingView.cpp^
  -Isource/src -o release/TravelAgencySystem.exe
  
     if %ERRORLEVEL% == 0 (
         echo Build successful! Executable is in the release folder.
+        echo Running application...
+        cd release
+        TravelAgencySystem.exe
     ) else (
         echo Build failed! Check compiler errors above.
     )

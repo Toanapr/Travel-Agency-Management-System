@@ -1,0 +1,24 @@
+<map id="BookingRepository::update" name="BookingRepository::update">
+<area shape="rect" id="Node000001" title="Update an existing booking in storage." alt="" coords="5,149,145,192"/>
+<area shape="rect" id="Node000002" href="$class_booking_repository.html#a0fa53dbb9eac76bed63622e16254e240" title="Convert a Booking object to CSV format." alt="" coords="193,149,342,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,168,177,168,177,173,145,173"/>
+<area shape="rect" id="Node000004" href="$class_booking.html#a6b0b4f46c4df3f4467aedb3e7daf0d71" title="Get the booking ID." alt="" coords="434,5,540,32"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="124,146,244,96,389,41,419,32,421,38,391,47,246,101,126,151"/>
+<area shape="rect" id="Node000010" href="$class_booking_repository.html#a0ebb169d923d4db782b0dbe8be3cb302" title="Retrieve all bookings from storage." alt="" coords="198,288,337,331"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="108,190,226,277,223,281,105,195"/>
+<area shape="rect" id="Node000003" href="$class_booking.html#ad3c20d475fba9f2c45ca370d54c7097e" title="Get the booking date." alt="" coords="402,56,572,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,147,339,119,389,92,407,85,409,90,391,97,342,123,299,151"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="285,147,338,88,366,60,389,42,418,29,421,34,391,46,369,64,342,92,289,151"/>
+<area shape="rect" id="Node000005" href="$class_booking.html#a148def7c69ba3174ec23f13d5fa500d9" title="Get the number of people." alt="" coords="390,107,584,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="342,151,411,135,412,140,343,156"/>
+<area shape="rect" id="Node000006" href="$class_booking.html#a3b06b911132fda6023567eeff110ccb8" title="Get the booking status." alt="" coords="421,157,553,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="342,168,406,168,406,173,342,173"/>
+<area shape="rect" id="Node000007" href="$class_booking.html#a714cb235ccddb17151a7b7ea27bd62f2" title="Get the total cost." alt="" coords="412,208,562,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="343,185,412,201,411,207,342,190"/>
+<area shape="rect" id="Node000008" href="$class_booking.html#a28241aca20429d4a6592205bdd136137" title="Get the trip ID." alt="" coords="424,259,551,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="299,190,342,218,391,244,410,251,408,256,389,249,339,223,296,195"/>
+<area shape="rect" id="Node000009" href="$class_booking.html#ad7b3d208911ce6b3af171575bc782d19" title="Get the user ID." alt="" coords="420,309,554,336"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="286,191,329,244,359,271,391,295,407,303,405,308,389,300,355,276,325,247,282,194"/>
+<area shape="rect" id="Node000011" href="$class_booking_repository.html#aba4019c53b2a9ab99a7b68c427ab0276" title="Convert a CSV line to a Booking object." alt="" coords="410,360,564,403"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="336,329,406,352,405,357,334,334"/>
+</map>

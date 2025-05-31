@@ -1,0 +1,26 @@
+<map id="Trip::getName" name="Trip::getName">
+<area shape="rect" id="Node000001" title="Get the trip name." alt="" coords="653,181,758,208"/>
+<area shape="rect" id="Node000002" href="$class_trip_repository.html#a7ea328edbca928f10e45e44725ae0e77" title="Convert a Trip object to CSV format." alt="" coords="422,48,601,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="681,172,647,138,604,105,582,94,584,89,607,100,650,134,685,168"/>
+<area shape="rect" id="Node000007" href="$class_output_formatter.html#a5d12bd20cdfd2bbaeea6022c7b4dbff3" title="Display a booking&#39;s details to the console." alt="" coords="429,115,594,157"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="643,179,584,160,585,155,645,174"/>
+<area shape="rect" id="Node000008" href="$class_output_formatter.html#a270a6b986549a8d46184396f7345cef7" title="Display a trip&#39;s details to the console." alt="" coords="418,181,605,208"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="638,197,606,197,606,192,638,192"/>
+<area shape="rect" id="Node000009" href="$class_trip_menu.html#a5ff831e62784f549057229c10d3606c4" title="Edit an existing trip." alt="" coords="448,232,575,259"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="639,215,566,234,565,229,638,210"/>
+<area shape="rect" id="Node000012" href="$class_trip_repository.html#af581cf819a42e9bbd5901dc94269e816" title="Find trips by name (partial match)" alt="" coords="418,283,605,309"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="681,221,647,248,607,273,578,284,576,280,604,268,644,244,677,217"/>
+<area shape="rect" id="Node000003" href="$class_trip_repository.html#a7a71e9df74fd202bdfa9991c746224e4" title="Add a new trip to storage." alt="" coords="201,5,336,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,50,336,35,337,30,407,45"/>
+<area shape="rect" id="Node000005" href="$class_trip_repository.html#adf68a56fd9707eb1932aa8923c49b4c5" title="Remove a trip from storage." alt="" coords="190,56,348,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="407,72,348,72,348,67,407,67"/>
+<area shape="rect" id="Node000006" href="$class_trip_repository.html#aa3df897116b55f6ce8155c1d9a5a5e47" title="Update an existing trip in storage." alt="" coords="192,107,346,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="407,94,337,109,336,103,406,89"/>
+<area shape="rect" id="Node000004" href="$trip__repository__test_8cpp.html#ad0fe56cbd0f857afa7587fc801447b44" title=" " alt="" coords="27,5,98,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,21,98,21,98,16,186,16"/>
+<area shape="rect" id="Node000010" href="$class_trip_menu.html#af295149c42640ca0930b74390a002411" title="Process trip&#39;s menu choice." alt="" coords="168,232,370,259"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="433,248,370,248,370,243,433,243"/>
+<area shape="rect" id="Node000011" href="$class_trip_menu.html#a75dde9b0a855c40faa6a2f78f7c56479" title="Display the trip management menu and process selection." alt="" coords="5,232,120,259"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="152,257,120,256,120,251,152,252"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="135,234,167,234,167,239,135,239"/>
+</map>

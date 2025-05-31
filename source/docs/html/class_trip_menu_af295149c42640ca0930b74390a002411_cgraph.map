@@ -1,0 +1,38 @@
+<map id="TripMenu::processMenuChoice" name="TripMenu::processMenuChoice">
+<area shape="rect" id="Node000001" title="Process trip&#39;s menu choice." alt="" coords="5,309,208,336"/>
+<area shape="rect" id="Node000002" href="$class_trip_menu.html#adc492c3bdc509c12427203c3c1c0885f" title="Add a new trip to the system." alt="" coords="270,81,396,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,307,305,117,309,121,123,311"/>
+<area shape="rect" id="Node000004" href="$class_trip_menu.html#aec73d6a9f8292db1fb6c5cead5ec0b23" title="Delete a trip from the system." alt="" coords="263,208,403,235"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,307,187,276,255,244,271,238,273,243,257,249,189,281,133,311"/>
+<area shape="rect" id="Node000005" href="$class_trip_menu.html#a5ff831e62784f549057229c10d3606c4" title="Edit an existing trip." alt="" coords="270,259,396,285"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="169,306,255,287,256,292,170,311"/>
+<area shape="rect" id="Node000016" href="$class_trip_menu.html#a169b9156d9be7aee52d7ef22a55127ff" title="Find a trip by ID or name." alt="" coords="270,309,396,336"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="208,320,254,320,254,325,208,325"/>
+<area shape="rect" id="Node000017" href="$class_trip_menu.html#a75dde9b0a855c40faa6a2f78f7c56479" title="Display the trip management menu and process selection." alt="" coords="276,360,390,387"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="141,334,261,363,260,368,140,339"/>
+<area shape="rect" id="Node000018" href="$class_trip_menu.html#aa1a7ce96527898c97e02e25f707a87b0" title="Display all trips in the system." alt="" coords="256,411,410,437"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="133,334,189,364,257,396,273,403,271,407,255,401,187,369,131,339"/>
+<area shape="rect" id="Node000003" href="$class_trip_menu.html#ae50bfeb9a229782359c5bc1231d86e4b" title="Check if the end date is valid (after the start date)" alt="" coords="458,5,630,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,78,457,41,478,35,480,40,459,47,367,83"/>
+<area shape="rect" id="Node000006" href="$class_trip.html#af15a099b0a9d1d63fee6191253896c27" title="Get the number of available seats." alt="" coords="466,56,622,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="393,256,408,245,422,226,429,208,431,170,434,132,441,112,456,93,460,89,463,93,460,96,446,115,439,133,436,171,434,209,427,229,412,249,396,260"/>
+<area shape="rect" id="Node000007" href="$class_trip.html#aae8a752399f67ae8285c95fc48787cf4" title="Get the trip cost." alt="" coords="496,107,593,133"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="391,256,408,245,419,233,425,221,431,195,437,169,444,156,456,143,479,129,482,134,460,147,449,159,442,171,436,196,430,222,423,236,412,249,394,260"/>
+<area shape="rect" id="Node000008" href="$class_trip.html#a1bffa42e3ad67ff372a4db983054e33b" title="Get the trip end date." alt="" coords="484,157,604,184"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="386,256,409,244,423,232,432,220,441,207,457,194,468,187,471,192,459,198,445,210,436,223,427,236,411,249,388,260"/>
+<area shape="rect" id="Node000009" href="$class_trip.html#afcd1ecc0f4d443d7780c0e03df12e9cb" title="Get the trip name." alt="" coords="492,208,596,235"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="391,255,476,235,477,240,392,261"/>
+<area shape="rect" id="Node000010" href="$class_trip.html#a2e89ab3f6311199106c9aa904988f6cb" title="Get the trip start date." alt="" coords="482,259,607,285"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="396,269,466,269,466,275,396,275"/>
+<area shape="rect" id="Node000011" href="$class_trip.html#a298ab4aaeb483479ff7570c71c042cd9" title="Set the number of available seats." alt="" coords="466,309,622,336"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="392,283,471,303,470,308,391,289"/>
+<area shape="rect" id="Node000012" href="$class_trip.html#ad0309a14d064ee9b13277a19b89e7468" title="Set the trip cost." alt="" coords="496,360,593,387"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="388,284,411,295,427,308,436,321,445,334,459,346,482,357,480,361,457,350,441,337,432,324,423,312,409,300,386,288"/>
+<area shape="rect" id="Node000013" href="$class_trip.html#ae017594fe67c5c4381feaa8251889499" title="Set the trip end date." alt="" coords="484,411,604,437"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="394,284,412,295,423,308,430,322,436,348,442,373,449,385,460,397,471,405,468,409,456,401,444,388,437,375,431,349,425,323,419,311,408,299,391,288"/>
+<area shape="rect" id="Node000014" href="$class_trip.html#a858c7d5bd80bc698b0d3e5e7447c6764" title="Set the trip name." alt="" coords="492,461,596,488"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="396,284,412,295,427,315,434,335,436,373,439,411,446,429,460,447,479,460,476,465,456,451,441,432,434,412,431,374,429,336,422,318,408,299,393,288"/>
+<area shape="rect" id="Node000015" href="$class_trip.html#a94eb75c5c0bbcb521d27d50988dbdd7c" title="Set the trip start date." alt="" coords="482,512,607,539"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="397,284,412,296,430,322,438,348,439,374,436,399,434,424,435,449,443,474,460,498,469,506,466,510,456,502,438,476,430,450,429,424,431,399,433,374,432,349,425,324,408,299,394,288"/>
+<area shape="poly" id="edge17_Node000017_Node000001" title=" " alt="" coords="298,362,222,342,223,337,300,357"/>
+</map>
